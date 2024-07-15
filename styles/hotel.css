@@ -1,4 +1,10 @@
 /* FONTS */
+.ms-madi-regular {
+    font-family: "Ms Madi", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 .open-sans {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -112,18 +118,27 @@ header {
 .languagemenu a:hover {
     text-decoration: overline;
 }
-.languagemenu a:active {
-    color:burlywood
-}
 /* Introduction */
 .introduction p {
-    padding: 40px 0;
+    padding-top: 40px;
     text-align: justify;
     line-height: 150%;
 }
-
+.signature {
+    font-family: "Ms Madi", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25pt;
+    color:#3700ff;
+}
+.gm{
+    font-weight: bold;
+}
 main{
     margin: 50px 150px;
+}
+main h2{
+    text-align: center;
 }
 /* Tabs styling */
 .tabshere {
@@ -171,8 +186,6 @@ main{
     color:#b47c56;
     margin-bottom: 20px;
 }
-
-
 /* Box styling for content sections */
 .box-container {
     display: flex;
@@ -191,7 +204,7 @@ main{
 }
 
 .box img {
-    max-width: 100%;
+    max-width: 50px;
     height: auto;
     margin-bottom: 10px;
 }
