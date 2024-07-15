@@ -1,0 +1,233 @@
+/* FONTS */
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1, h2, h3, h4, h5, h6, a, button, p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11pt;
+}
+:root {
+    --primary-color: #000000;
+    --secondary-color: #363636;
+    --accent1-color: #6a7c9a;
+    --accent2-color: #b47c56;
+}
+body {
+    margin: 50px;
+    padding-bottom: 0;
+    border-style: solid;
+    border-color:#b47c56;
+    border-width: 0.5pt;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin:0;
+}
+
+.glvlogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+    width: 100%;
+}
+.glvlogo a{
+    width: 15%;
+    margin: auto;
+    justify-content: center;
+    align-items: center; 
+    align-content: center;
+    padding-top:30px;
+}
+
+.glvlogo img {
+    width: 100%;
+    padding:0;
+}
+
+/* Title */
+.title {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.title h1{
+    font-size: 28pt;
+    letter-spacing: 2pt;
+    color: #CC894B;
+}
+/* Language Menu */
+.languagemenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 20px;
+    max-width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    color:#0f3f54;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.menu-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #b47c56;
+    column-gap: 10px;
+    max-width: 100%;
+}
+
+.languagemenu a {
+    text-decoration: none;
+    color:white;
+    letter-spacing: 1.2pt;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 10pt;
+}
+.languagemenu a:hover {
+    text-decoration: overline;
+}
+.languagemenu a:active {
+    color:burlywood
+}
+/* Introduction */
+.introduction p {
+    padding: 40px 0;
+    text-align: justify;
+    line-height: 150%;
+}
+
+main{
+    margin: 50px 150px;
+}
+/* Tabs styling */
+.tabshere {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.tabshere h3 {
+    color: #b47c56;
+    font-size: 20pt;
+}
+
+.tablinks {
+    color: #b47c56;
+    font-size: 14pt;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.3s;
+    margin: 0 5px;
+    background-color: transparent;
+}
+
+.tablinks:hover {
+    text-decoration: overline;
+}
+
+.tablinks.active {
+    text-decoration: overline;
+}
+
+.tabcontent {
+    display: none;
+    padding: 50px;
+    border: 1px solid #ccc;
+    height: calc(120vh - 200px); /* Adjust height as necessary */
+    overflow-y: auto; /* Enable vertical scroll */
+}
+
+.tabcontent h3 {
+    font-size: 20pt;
+    color:#b47c56;
+    margin-bottom: 20px;
+}
+
+
+/* Box styling for content sections */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    column-gap: 30px;
+    flex-direction: row;
+    flex: 1 1 calc(50% - 20px); /* Adjust width and margins */
+    padding: 10px;
+    border: 1px solid #ccc;
+    overflow-y: auto; /* Enable scroll within each box */
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 12pt;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+/* footer */
+footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   margin: auto;
+   padding: 50px;
+}
+.contact-icons a{
+    width: 100%;
+    padding: 10px;
+}
+.copyright h6{
+    font-size: 12pt;
+    text-align: center;
+    color: #b47c56;
+    padding:5px;
+    margin:0;
+}
+.copyright p{
+    font-size: 10pt;
+    text-align: center;
+    color: #b47c56;
+    padding-top:20px;
+    margin:0;
+}

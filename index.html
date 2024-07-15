@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR STAY GUIDE</title>
+    <meta name="description" content="We are delighted to welcome you with warm gratitude for being here with us!">
+    <meta name="author" content="La Vogue Group">
+    <link rel="stylesheet" href="styles/hotel.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <div class="glvlogo">
+            <a href="index.html"><img src="icons/glv.png" alt="glvlogo"></a></div>
+            <img style="width: 50%; padding: 0; margin:0;" src="icons/sihanoukville.png">
+        <div class="title">
+            <h1>YOUR STAY GUIDE</h1>
+        </div>
+        <nav class="languagemenu">
+            <button class="menu-toggle"><img src="icons/translate.png"></button>
+            <div class="menu-links">
+                <a href="index.html">ENGLISH</a>
+                <a href="#">日本語</a>
+                <a href="#">ភាសាខ្មែរ</a>
+                <a href="#">한국어</a>
+                <a href="#">中文</a>
+            </div>
+        </nav>
+    </header>
+<!-- BODY -->
+<main>
+    <div class="tabshere">
+        <h3>SECTIONS HERE</h3>
+        <button class="tablinks" onclick="openTab(event, 'StayGuide')">STAY GUIDE</button>
+        <button class="tablinks" onclick="openTab(event, 'FloorGuide')">FLOOR GUIDE</button>
+        <button class="tablinks" onclick="openTab(event, 'RoomServices')">SERVICES</button>
+        <button class="tablinks" onclick="openTab(event, 'Safety')">SAFETY</button>
+        <button class="tablinks" onclick="openTab(event, 'Dining')">DINING</button>
+    </div>
+    
+    <!-- Tab content -->
+    <div id="StayGuide" class="tabcontent">
+        <h3>Stay Guide</h3>
+        <div class="box-container">
+            <section class="box">
+                <img src="icons/wifi.jpg" alt="wifi-icon">
+                <p>WIFI_〇F<br>PASSWORD: 12345678</p>
+            </section>
+            <section class="box">
+                <img src="icons/bed.jpg" alt="bed-icon">
+                <p>CHECK-IN / CHECK-OUT<br>3:00PM - 12:00PM</p>
+            </section>
+            
+            <!-- Add more sections as needed -->
+        </div>
+    </div>
+    
+    <div id="FloorGuide" class="tabcontent">
+        <h3>Floor Guide</h3>
+        <div class="box-container">
+            <section class="box">
+                <img src="icons/floor.jpg" alt="floor icon">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </section>
+            <!-- Add more sections as needed -->
+        </div>
+    </div>
+    
+    <div id="RoomServices" class="tabcontent">
+        <h3>Room Services</h3>
+        <div class="box-container">
+            <section class="box">
+                <img src="icons/services.jpg" alt="services icon">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </section>
+            <!-- Add more sections as needed -->
+        </div>
+    </div>
+    
+    <div id="Safety" class="tabcontent">
+        <h3>Safety</h3>
+        <div class="box-container">
+            <section class="box">
+                <img src="icons/safety.jpg" alt="safety icon">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </section>
+            <!-- Add more sections as needed -->
+        </div>
+    </div>
+    
+    <div id="Dining" class="tabcontent">
+        <h3>Dining</h3>
+        <div class="box-container">
+            <section class="box">
+                <img src="icons/dining.jpg" alt="dining icon">
+                <p>Coming Soon</p>
+            </section>
+            <!-- Add more sections as needed -->
+        </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="introduction">
+        <p>Welcome to Grand La Vogue. Established in 2024, our hotel is dedicated to bringing you an unparalleled experience of Japanese excellence right here in Cambodia. We strive to blend the rich traditions of Japanese hospitality with the vibrant culture of our local surroundings, ensuring that every moment of your stay is extraordinary.<br><br>From the meticulously designed rooms to the exquisite culinary offerings, every detail at Grand La Vogue is crafted to provide you with a unique and memorable experience. Our commitment to impeccable service and serene ambiance guarantees that you will enjoy the finest comforts and warmest welcomes.<br><br>We are delighted to have you with us and look forward to making your stay exceptional.<br><br>Experience the Harmony of Japan in the Heart of Cambodia.<br><br>The Management<br>Grand La Vogue Hotel & Casino</p>
+    </div>
+</main>
+
+<!-- FOOTER -->
+    <footer>
+        <div class="contact-icons">
+            <a href="#"><img src="icons/messenger.svg" alt="messenger"></a>
+            <a href="#"><img src="icons/call.svg" alt="landline"></a>
+        </div>
+        <div class="copyright">
+            <h6>GRAND LA VOGUE HOTEL & CASINO</h6>
+            <h6>A Property of La Vogue Group</h6>
+            <p>©2024 All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="scripts/hotel.js"></script>
+</body>
+</html>
