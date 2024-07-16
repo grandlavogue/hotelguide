@@ -1,6 +1,5 @@
 @media (max-width: 768px){
     p {
-        font-family: "Open Sans", sans-serif;
         font-size: 11pt;
     }
     body {
@@ -70,7 +69,7 @@
         padding: 5px;
         margin: auto;
         color:#b47c56;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Roboto", sans-serif;
         text-decoration: none;
         justify-content: center;
         align-items: center;

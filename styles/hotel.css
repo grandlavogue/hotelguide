@@ -5,18 +5,26 @@
     font-style: normal;
   }
   
-.open-sans {
-    font-family: "Open Sans", sans-serif;
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .playfair {
+    font-family: "Playfair", serif;
     font-optical-sizing: auto;
-    font-weight: 00;
-}
+    font-weight:400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+  }
 
 h1, h2, h3, h4, h5, h6, a, button, p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Playfair", serif;
     font-weight: 100;
 }
 p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 11pt;
     text-align:justify;
 }
