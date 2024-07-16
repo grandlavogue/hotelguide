@@ -197,9 +197,9 @@ main h2{
     display: flex;
     column-gap: 30px;
     flex-direction: row;
-    flex: 1 1 calc(50% - 20px); /* Adjust width and margins */
+    flex: 1 1 calc(50% - 20px); 
     padding: 10px;
-    overflow-y: auto; /* Enable scroll within each box */
+    overflow-y: auto;
 }
 
 .box img {
