@@ -66,10 +66,11 @@
         display: flex;
         flex-direction: column;
         list-style: none;
-        padding: 5px;
+        padding: 10px;
         margin: auto;
         color:#b47c56;
         font-family: "Roboto", sans-serif;
+        font-size: 12pt;
         text-decoration: none;
         justify-content: center;
         align-items: center;
