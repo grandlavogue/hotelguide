@@ -128,7 +128,6 @@
         flex-direction: row;
         flex: 1 1 calc(50% - 20px); 
         padding: 10px;
-        border: 1px solid #ccc;
         overflow-y: auto; 
     }
     .box img {
