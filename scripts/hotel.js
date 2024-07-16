@@ -1,11 +1,13 @@
- // DROPDOWN MENU
- document.addEventListener('DOMContentLoaded', function() {
-    var menuToggle = document.querySelector('.menu-toggle');
-    var menuLinks = document.querySelector('.menu-links');
-    menuToggle.addEventListener('click', function() {
-      menuLinks.classList.toggle('show');
-    });
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const languageMenu = document.querySelector('.languagemenu');
+  
+  menuToggle.addEventListener('click', function() {
+      languageMenu.classList.toggle('open');
   });
+});
+
+
 
   // TABS
   

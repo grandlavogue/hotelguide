@@ -1,0 +1,174 @@
+@media (max-width: 768px){
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 11pt;
+    }
+    body {
+        margin: 20px;
+    }
+    /* HEADER */
+    header {
+        padding: 20px 0;
+        margin:0;
+    }
+    .glvlogo {
+        margin: 0;
+        width: 100%;
+    }
+    .glvlogo a{
+        width: 25%;
+    }
+    /* Title */
+    .title h1{
+        font-size: 16pt;
+        letter-spacing: 3pt;
+    }
+    /* Language Menu */
+    .languagemenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        max-width: 100%;
+    }
+    
+    .menu-toggle {
+        display: block;
+        background: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+    }
+    
+    .languagemenu.open .menu-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+    }
+    
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        background-color:transparent;
+    }
+    
+    .menu-links a {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 5px;
+        margin: auto;
+        color:#b47c56;
+        font-family: "Open Sans", sans-serif;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .menu-links a:hover {
+        text-decoration: overline;
+    }
+    
+    main{
+        margin: 10px 20px;
+    }
+    /* Introduction */
+    .signature {
+        font-size: 25pt;
+    }
+    /* sections */
+    /* Tabs styling */
+    .tabshere {
+        overflow: hidden;
+        padding: 0 0;
+    }
+    .tabshere h3 {
+        font-size:15pt;
+        letter-spacing: 4pt;
+    }
+    .tablinks {
+        font-size: 10pt;
+        letter-spacing: 1pt;
+        padding: 10px;
+        transition: 0.3s;
+        margin: 10px 2px;
+        color: #ffffff;
+        background-color:#b47c56;
+    }
+    
+    .tabcontent {
+        display: none;
+        padding: 10px;
+        height: calc(120vh - 200px); 
+        overflow-y: auto;
+    }
+    
+    .tabcontent h3 {
+        font-size: 16pt;
+        margin-bottom: 20px;
+    }
+    /* Box styling for content sections */
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .box {
+        display: flex;
+        column-gap: 10px;
+        flex-direction: row;
+        flex: 1 1 calc(50% - 20px); 
+        padding: 10px;
+        border: 1px solid #ccc;
+        overflow-y: auto; 
+    }
+    .box img {
+        max-width: 30px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .box p {
+        font-size: 10pt;
+        line-height: 2;
+        text-align: left;
+    }
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        padding: 50px 0;
+     }
+     .contact-icons a{
+         width: 100%;
+         padding: 10px;
+     }
+     .contact-icons a img{
+        width: 40px;
+        padding-bottom: 20px;
+     }
+     .copyright h6{
+         font-size: 9pt;
+         text-align: center;
+         padding:5px;
+         margin:0;
+     }
+     .copyright p{
+         font-size: 9pt;
+         padding-top:20px;
+         margin:0;
+     }
+    }
