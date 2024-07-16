@@ -128,7 +128,7 @@
     .box {
         display: flex;
         column-gap: 10px;
-        flex-direction: row;
+        flex-direction: column;
         flex: 1 1 calc(50% - 20px); 
         padding: 10px;
         overflow-y: auto; 
