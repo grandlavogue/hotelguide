@@ -142,7 +142,7 @@
     .box p {
         font-size: 11pt;
         line-height: 2;
-        text-align: justify;
+        text-align: left;
     }
     /* footer */
     footer{
