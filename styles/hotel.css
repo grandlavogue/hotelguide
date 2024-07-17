@@ -131,7 +131,11 @@ header {
     text-align: justify;
     line-height: 150%;
 }
-
+.signature p{
+    font-family: "Ms Madi", cursive;
+    font-size: 25pt;
+    color:#405f96;
+}
 .gm{
     font-weight: bold;
 }
