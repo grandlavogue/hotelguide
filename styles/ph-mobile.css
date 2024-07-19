@@ -2,9 +2,6 @@
 /* Language Menu */
 .languagemenu {
     display: flex;
-    flex-direct/* Language Menu */
-.languagemenu {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     top:-0%;
@@ -32,10 +29,11 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: auto;
+
     background-color: #2d456d;
     margin-top: 50px;
 }
+
 .menu-links {
     display: none;
     flex-direction: column;
@@ -216,7 +214,6 @@ body {
     object-fit: fill;
     object-position: right;
 }
-
 /* footer */
 footer{
     display: flex;
