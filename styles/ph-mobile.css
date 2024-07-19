@@ -106,7 +106,7 @@ body {
 }
 .tabshere {
     max-width: 25%;
-    height: 70vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;    
     padding: 10px;
@@ -198,11 +198,10 @@ body {
     align-items: center;
     align-content: center;
     width: 80%;
-    height: 70vh;
+    height: 50vh;
 }
 .introduction{
-    background-color: #e9e9e9;
-    padding: 20px;
+    padding: 10px 0;
     margin:0;
 }
 .introduction h2{
@@ -213,10 +212,7 @@ body {
     line-height: 150%;
 }
 .Home video{
-    aspect-ratio: 2 / 2;
-    width: auto;
-    object-fit: fill;
-    object-position: right;
+    width:100%;
 }
 /* footer */
 footer{
@@ -227,6 +223,7 @@ footer{
     align-content: center;
     margin: auto;
     padding: 20px;
+
  }
  .contact-icons a{
      width: 100%;
