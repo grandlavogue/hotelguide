@@ -38,6 +38,17 @@ p {
     --accent1-color: #6a7c9a;
     --accent2-color: #b47c56;
 }
+.home-logo{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+.home-logo img{
+    width:100px;
+}
 /* Language Menu */
 .languagemenu {
     display: flex;
