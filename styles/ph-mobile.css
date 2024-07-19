@@ -2,9 +2,12 @@
 /* Language Menu */
 .languagemenu {
     display: flex;
+    flex-direct/* Language Menu */
+.languagemenu {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
+    top:-0%;
     max-width: 100%;
     padding: 20px;
     position:fixed;
@@ -31,9 +34,8 @@
     align-content: center;
     margin: auto;
     background-color: #2d456d;
-    margin-top: 150px;
+    margin-top: 50px;
 }
-
 .menu-links {
     display: none;
     flex-direction: column;
