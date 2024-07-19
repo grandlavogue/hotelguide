@@ -6,520 +6,537 @@
     <title>お客様の滞在ガイド</title>
     <meta name="description" content="We are delighted to welcome you with warm gratitude for being here with us!">
     <meta name="author" content="La Vogue Group">
-    <!-- google fonts -->
+<!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Ms+Madi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
-
+<!-- style -->
+    <link rel="stylesheet" href="styles/ph.css">
+    <link rel="stylesheet" href="styles/ph-mobile.css">
 <!-- script -->
-    <link rel="stylesheet" href="styles/hotel.css">
-    <link rel="stylesheet" href="styles/hotel-mobile.css">
+    <script src="scripts/ph.js"></script>
 </head>
 <body>
-<!-- HEADER -->
-    <header>
-        <div class="glvlogo">
-            <a href="index.html"><img src="icons/glv.png" alt="glvlogo"></a></div>
-        <div class="title">
-            <h1>お客様の滞在ガイド</h1>
-        </div>
+    <div class="body">
+        <h6>GRAND LA VOGUE HOTEL & CASINO</h6>
         <nav class="languagemenu">
             <button class="menu-toggle"><img src="icons/translate.svg"></button>
             <div class="menu-links">
-                <a href="eng.html">ENGLISH</a>
-                <a href="jp.html">日本語</a>
-                <a href="kh.html">ភាសាខ្មែរ</a>
-                <a href="kr.html">한국어</a>
-                <a href="cn.html">中文</a>
+                <a href="ph.html">ENGLISH</a>
+                <a href="#">日本語</a>
+                <a href="#">ភាសាខ្មែរ</a>
+                <a href="#">한국어</a>
+                <a href="#">中文</a>
+                <a href="tel:+85569838300" target="_blank">電話</a>
+                <a href="mailto:info@grandlavogue.com" target="_blank">メール</a>
             </div>
         </nav>
+    </div>
+
+    <header>
+        <h1>お客様の滞在ガイド</h1>
     </header>
-<!-- BODY -->
     <main>
-<!-- tabs -->
-        <div class="tabshere">
-            <h3>以下のセクション</h3>
-            <button class="tablinks" onclick="openTab(event, 'StayGuide')">宿泊ガイド</button>
-            <button class="tablinks" onclick="openTab(event, 'Rules')">ルール</button>
-            <button class="tablinks" onclick="openTab(event, 'Regulation')">規制</button>
-            <button class="tablinks" onclick="openTab(event, 'FloorGuide')">フロアガイド</button>
-            <button class="tablinks" onclick="openTab(event, 'RoomServices')">サービス</button>
-            <button class="tablinks" onclick="openTab(event, 'Safety')">安全性</button>
-        </div>
-<!--Stay Guide -->
-        <div id="StayGuide" class="tabcontent">
-            <h3>ここにいる間</h3>
-            <div class="box-container">
-                <section class="box">
-                    <img src="icons/wifi.svg" alt="wifi-icon">
-                    <p>WIFI_〇F<br>パスワード: 12345678</p>
-                </section>
-                <section class="box">
-                    <img src="icons/bed.svg" alt="bed-icon">
-                    <p>チェックイン / チェックアウト<br>午後 3 時～午後 12 時</p>
-                </section>
-                <section class="box">
-                    <img src="icons/breakfast.svg" alt="breakfast-icon">
-                    <p>朝食<br>午前 7:00 ～ 午前 10:00 ➵ 7 階</p>
-                </section>
-                <section class="box">
-                    <img src="icons/reserve.svg" alt="reserve-icon">
-                    <p>予約<br>予約、延長、キャンセル、またはその他の部屋のリクエストについては、フロントオフィスまでご連絡ください。</p>
-                </section>
-                <section class="box">
-                    <img src="icons/restaurant-svgrepo-com.svg" alt="restaurant-icon">
-                    <p>レストラン<br>7:00AM - 23:00PM ➵ 7F</p>
-                </section>
-                <section class="box">
-                    <img src="icons/brandy-svgrepo-com.svg" alt="bar-icon">
-                    <p>BAR BARON<br>AM5:00～AM2:00 ➵ 2F<br>月曜定休</p>
-                </section>
-                <section class="box">
-                    <img src="icons/steak-2-svgrepo-com.svg" alt="steak-icon">
-                    <p>鉄板焼き<br>AM4:00～AM12:00 ➵ 8F<br><span style="color:#b47c56">(要予約)</span></p>
-                </section>
-                <section class="box">
-                    <img src="icons/swim.svg" alt="SWIM-icon">
-                    <p>スイミングプール<br>午前8時～午後21時 ➵ 7階</p>
-                </section>
-                <section class="box">
-                    <img src="icons/sauna.svg" alt="spa-icon">
-                    <p>スチームバス＆サウナ<br>午前8時～午後21時 ➵ 7階<br><span style="color:#b47c56">（ご相談ください）</span></p>
-                </section>
-                <!-- Add more sections as needed -->
+        <section class="guide">
+            <nav class="tabshere">
+                <button class="tablinks" onclick="openTab(event, 'Cover')">ホーム</button>
+                <button class="tablinks" onclick="openTab(event, 'StayGuide')">宿泊ガイド</button>
+                <button class="tablinks" onclick="openTab(event, 'Rules')">ルール</button>
+                <button class="tablinks" onclick="openTab(event, 'Regulation')">規制</button>
+                <button class="tablinks" onclick="openTab(event, 'FloorGuide')">フロアガイド</button>
+                <button class="tablinks" onclick="openTab(event, 'RoomServices')">サービス</button>
+                <button class="tablinks" onclick="openTab(event, 'Safety')">安全性</button>
+                <button class="tablinks" onclick="openTab(event, 'Dining')">ダイニング</button>
+            </nav>
+            <div id="Cover" class="tabcontent">
+                <div class="box-container">
+                    <section class="Home">
+                        <video src="videos/ceremony.mp4" controls autoplay loop muted> Your browser does not support the video tag.</video>
+                    </section>
+                </div>
             </div>
-        </div>
-<!-- Rules -->
-        <div id="Rules" class="tabcontent">
-            <p>当ホテルでは、ホテルの品位を保ち、またお客様に安全にかつ快適にお過ごしいただくため、宿泊約款第11条に基づき、下記の通り利用規則を定めておりますので、ご協力くださいますようお願い申しあげます。この規則をお守りいただけない時は、宿泊またはホテル内の諸施設のご利用をお断り申しあげます。また、この規則を守られないことによって生じた事故につきましては、当ホテルに故意または重大な過失がある場合を除き、当ホテルは責任を負いかねますので特にご留意くださるようお願い申しあげます。
-            </p>
-            <div class="box-container">
-                <section class="box">
-                    <p>１. ご到着後直ちに客室入口ドアの裏側に掲示してある避難経路図および各階 の非常口をご確認ください。</p>
-                </section>
-                <section class="box">
-                    <p>2. 火災が発生する恐れがあるため、客室内または指定された場所以外での喫煙は禁止されています。指定された場所以外での喫煙が発覚した場合には300ドルの罰金が課せられます。</p>
-                </section>
-                <section class="box">
-                    <p>3. 消費電力の高い家電製品を使用することは禁止されています。</p>
-                </section>
-                <section class="box">
-                    <p>4. 客室は宿泊専用です。</p>
-                </section>
-                <section class="box">
-                    <p>5. 客室の変更は、フロントにご連絡ください。</p>
-                </section>
-                <section class="box">
-                    <p>6.当ホテルの什器・備品は、本来の目的以外に使用したり、当ホテルから持ち出すことはできません。.</p>
-                </section>
-                <section class="box">
-                    <p>7. 客室内に次のものを持ち込むことはできません：<br>
-                        <span style="display: block; margin-left: 20px;">
-                            a. 可燃性爆発物<br>
-                            b. 不快な臭いを発するもの(ドリアン等)<br>
-                            c. カンボジアの法律で禁止されているもの<br>
-                            d. 動物、鳥類<br>
-                         
-                        ● ホテル内の電気系統に障害を及ぼす恐れがあるものについては、ご使用をお断りいたします。</p>
-                </section>
-                <section class="box">
-                    <p>8.当ホテルは、次の期間を超えてホテルに残された物品について責任を負いません：<br>
-                        <span style="display: block; margin-left: 20px;">
-                            a. 預け荷物：3ヶ月<br>
-                            b. 忘れ物: 3ヶ月</span></p>
-                </section>
-                <section class="box">
-                    <p>9. 暴力団・暴力団関係団体またはその関係者、その他反社会的勢力およびその関係者等の当ホテルのご利用はお断りいたします。また、ご予約後あるいはご利用中にその事実が判明した場合には、その時点でご利用をお断りいたします。</p>
-                </section>
-                <section class="box">
-                    <p>10. 暴行、脅迫、恐喝、威圧的な不当要求およびこれに類する行為が認められた場合は、直ちに当ホテルの利用はお断りいたします。</p>
-                </section>
-                <section class="box">
-                    <p>11. 泥酔、乱暴な言動等の、他の宿泊者に迷惑を及ぼし、また、及ぼすおそれのある行為をなさらないでください。</p>
-                </section>
-                <section class="box">
-                    <p>12. 違法賭博、その他風紀を乱す行為はなさらないでください。</p>
-                </section>
-                <section class="box">
-                    <p>13. 客室内の諸設備、諸備品などを許可なく移動なさらないでください。</p>
-                </section>
-                <section class="box">
-                    <p>14. バスローブ・スリッパ等にて、廊下・ロビー等客室以外の施設を利用なさらないでください(プールとサウナを除く)。</p>
-                </section>
-                <section class="box">
-                    <p>15. 館内で許可なく他のお客様に広告物の配布や物品の販売などをなさらないでください。</p>
-                </section>
-                <section class="box">
-                    <p>16. 館内外の諸設備、備品の損傷、紛失につきましては、実費を申し受けます。
-                    </p>
-                </section>
-                <section class="box">
-                    <p>17. 客室内に残された物品で当ホテルにおいてお客様がお捨てになったと判断したものは、当ホテルの内規に従って処分させていただきます。
-                    </p>
-                </section>
-                <section class="box">
-                    <p>18. 支払いは、出発時または請求書が提示された際にフロントデスクにて行ってください。
-                    </p>
-                </section>
-                <section class="box">
-                    <p>19. フロントデスクおよび客室のセーフティーボックスは無料でご利用いただけます。グランド・ヴォーグ・ホテル＆カジノは、ホテル敷地内での貴重品の紛失や盗難について責任を負いません。
-                    </p>
-                </section>
-                <section class="box">
-                    <p>20．当ホテルの客室設定人数は２名様です。(ペントハウス除く)大人1人に付き、５歳以下のお子様、また11歳以下の添い寝のお子様の宿泊料は無料となります。
-                    </p>
-                </section>
-                <section class="box">
-                    <p style="font-weight: bold;">*本規定をお守りいただけない場合は、退館していただくことがあります。また、本規定をお守りいただけなかったことにより発生した損害について責任を負っていただく場合があります。
-                    </p>
-                </section>
+            <div id="StayGuide" class="tabcontent">
+                <h3>ここにいる間</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/wifi.svg" alt="wifi-icon">
+                        <p>WIFI_〇F<br>パスワード: 12345678</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/bed.svg" alt="bed-icon">
+                        <p>チェックイン / チェックアウト<br>午後 3 時～午後 12 時</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/breakfast.svg" alt="breakfast-icon">
+                        <p>朝食<br>午前 7:00 ～ 午前 10:00 ➵ 7 階</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/reserve.svg" alt="reserve-icon">
+                        <p>予約<br>予約、延長、キャンセル、またはその他の部屋のリクエストについては、フロントオフィスまでご連絡ください。</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/restaurant-svgrepo-com.svg" alt="restaurant-icon">
+                        <p>レストラン<br>7:00AM - 23:00PM ➵ 7F</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/brandy-svgrepo-com.svg" alt="bar-icon">
+                        <p>BAR BARON<br>AM5:00～AM2:00 ➵ 2F<br>月曜定休</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/steak-2-svgrepo-com.svg" alt="steak-icon">
+                        <p>鉄板焼き<br>AM4:00～AM12:00 ➵ 8F<br><span style="color:#b47c56">(要予約)</span></p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/swim.svg" alt="SWIM-icon">
+                        <p>スイミングプール<br>午前8時～午後21時 ➵ 7階</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/sauna.svg" alt="spa-icon">
+                        <p>STEAM BATH & SAUNA<br>8:00AM - 21:00PM ➵ 7F<br><span style="color:#b47c56">(Please Ask for Assistance)</span></p><p>スチームバス＆サウナ<br>午前8時～午後21時 ➵ 7階<br><span style="color:#b47c56">（ご相談ください）</span></p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
             </div>
-        </div>
-
-<!-- Floor Guide -->
-        <div id="FloorGuide" class="tabcontent">
-            <h3>フロアガイド</h3>
-            <div class="box-container">
-                <section class="box">
-                    <img src="icons/casino.svg" alt="casino-icon">
-                    <p><span style="font-weight:bold">カジノ</span><br>
-                        洗練されたフロアで多彩なテーブルゲームやスロットマシンをご用意しています。<br>
-                        バカラ、ブラックジャック、ニュウニュウ、テキサスホールデムなど、多種多様なゲームを毎回訪れるたびに異なる特別な体験をお楽しみください。<br><br>
+    <!-- Rules -->
+            <div id="Rules" class="tabcontent">
+                <p>当ホテルでは、ホテルの品位を保ち、またお客様に安全にかつ快適にお過ごしいただくため、宿泊約款第11条に基づき、下記の通り利用規則を定めておりますので、ご協力くださいますようお願い申しあげます。この規則をお守りいただけない時は、宿泊またはホテル内の諸施設のご利用をお断り申しあげます。また、この規則を守られないことによって生じた事故につきましては、当ホテルに故意または重大な過失がある場合を除き、当ホテルは責任を負いかねますので特にご留意くださるようお願い申しあげます。
+                </p>
+                <div class="box-container">
+                    <section class="box">
+                        <p>１. ご到着後直ちに客室入口ドアの裏側に掲示してある避難経路図および各階 の非常口をご確認ください。</p>
+                    </section>
+                    <section class="box">
+                        <p>2. 火災が発生する恐れがあるため、客室内または指定された場所以外での喫煙は禁止されています。指定された場所以外での喫煙が発覚した場合には300ドルの罰金が課せられます。</p>
+                    </section>
+                    <section class="box">
+                        <p>3. 消費電力の高い家電製品を使用することは禁止されています。</p>
+                    </section>
+                    <section class="box">
+                        <p>4. 客室は宿泊専用です。</p>
+                    </section>
+                    <section class="box">
+                        <p>5. 客室の変更は、フロントにご連絡ください。</p>
+                    </section>
+                    <section class="box">
+                        <p>6.当ホテルの什器・備品は、本来の目的以外に使用したり、当ホテルから持ち出すことはできません。.</p>
+                    </section>
+                    <section class="box">
+                        <p>7. 客室内に次のものを持ち込むことはできません：<br>
+                            <span style="display: block; margin-left: 20px;">
+                                a. 可燃性爆発物<br>
+                                b. 不快な臭いを発するもの(ドリアン等)<br>
+                                c. カンボジアの法律で禁止されているもの<br>
+                                d. 動物、鳥類<br>
+                             
+                            ● ホテル内の電気系統に障害を及ぼす恐れがあるものについては、ご使用をお断りいたします。</p>
+                    </section>
+                    <section class="box">
+                        <p>8.当ホテルは、次の期間を超えてホテルに残された物品について責任を負いません：<br>
+                            <span style="display: block; margin-left: 20px;">
+                                a. 預け荷物：3ヶ月<br>
+                                b. 忘れ物: 3ヶ月</span></p>
+                    </section>
+                    <section class="box">
+                        <p>9. 暴力団・暴力団関係団体またはその関係者、その他反社会的勢力およびその関係者等の当ホテルのご利用はお断りいたします。また、ご予約後あるいはご利用中にその事実が判明した場合には、その時点でご利用をお断りいたします。</p>
+                    </section>
+                    <section class="box">
+                        <p>10. 暴行、脅迫、恐喝、威圧的な不当要求およびこれに類する行為が認められた場合は、直ちに当ホテルの利用はお断りいたします。</p>
+                    </section>
+                    <section class="box">
+                        <p>11. 泥酔、乱暴な言動等の、他の宿泊者に迷惑を及ぼし、また、及ぼすおそれのある行為をなさらないでください。</p>
+                    </section>
+                    <section class="box">
+                        <p>12. 違法賭博、その他風紀を乱す行為はなさらないでください。</p>
+                    </section>
+                    <section class="box">
+                        <p>13. 客室内の諸設備、諸備品などを許可なく移動なさらないでください。</p>
+                    </section>
+                    <section class="box">
+                        <p>14. バスローブ・スリッパ等にて、廊下・ロビー等客室以外の施設を利用なさらないでください(プールとサウナを除く)。</p>
+                    </section>
+                    <section class="box">
+                        <p>15. 館内で許可なく他のお客様に広告物の配布や物品の販売などをなさらないでください。</p>
+                    </section>
+                    <section class="box">
+                        <p>16. 館内外の諸設備、備品の損傷、紛失につきましては、実費を申し受けます。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>17. 客室内に残された物品で当ホテルにおいてお客様がお捨てになったと判断したものは、当ホテルの内規に従って処分させていただきます。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>18. 支払いは、出発時または請求書が提示された際にフロントデスクにて行ってください。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>19. フロントデスクおよび客室のセーフティーボックスは無料でご利用いただけます。グランド・ヴォーグ・ホテル＆カジノは、ホテル敷地内での貴重品の紛失や盗難について責任を負いません。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>20．当ホテルの客室設定人数は２名様です。(ペントハウス除く)大人1人に付き、５歳以下のお子様、また11歳以下の添い寝のお子様の宿泊料は無料となります。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p style="font-weight: bold;">*本規定をお守りいただけない場合は、退館していただくことがあります。また、本規定をお守りいただけなかったことにより発生した損害について責任を負っていただく場合があります。
+                        </p>
+                    </section>
+                </div>
+            </div>
+    
+    <!-- Floor Guide -->
+            <div id="FloorGuide" class="tabcontent">
+                <h3>フロアガイド</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/casino.svg" alt="casino-icon">
+                        <p><span style="font-weight:bold">カジノ</span><br>
+                            洗練されたフロアで多彩なテーブルゲームやスロットマシンをご用意しています。<br>
+                            バカラ、ブラックジャック、ニュウニュウ、テキサスホールデムなど、多種多様なゲームを毎回訪れるたびに異なる特別な体験をお楽しみください。<br><br>
+                            
+                            場所 ：1階<br>
+                            バカラ、ブラックジャック、ニュウニュウ、スロットマシンゲーム<br>
+                            営業時間：午後6時 – 午前2時</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/brandy-svgrepo-com.svg" alt="bar-icon">
+                        <p><span style="font-weight:bold">BAR BARON</span>
+                        <br>
+                        東京に店舗を構えるバーが、シアヌークビルに出店しました。日本人バーテンダーが奏でる極上のカクテルの他、厳選されたウィスキーを豊富にご用意しております。上質でクラシカルな空間でお酒の余韻に浸りつつ、シガーもお楽しみ頂けます。洗練された大人の時間をごゆっくりとお過ごしください。<br><br>
                         
-                        場所 ：1階<br>
-                        バカラ、ブラックジャック、ニュウニュウ、スロットマシンゲーム<br>
-                        営業時間：午後6時 – 午前2時</p>
-                </section>
-                <section class="box">
-                    <img src="icons/brandy-svgrepo-com.svg" alt="bar-icon">
-                    <p><span style="font-weight:bold">BAR BARON</span>
-                    <br>
-                    東京に店舗を構えるバーが、シアヌークビルに出店しました。日本人バーテンダーが奏でる極上のカクテルの他、厳選されたウィスキーを豊富にご用意しております。上質でクラシカルな空間でお酒の余韻に浸りつつ、シガーもお楽しみ頂けます。洗練された大人の時間をごゆっくりとお過ごしください。<br><br>
-                    
-                    場所：2階<br>
-                    営業時間：午後5時 – 午前2時（定休日：月曜）</p>
-                </section>
-                <section class="box">
-                    <img src="icons/restaurant-svgrepo-com.svg" alt="restau-icon">
-                    <p><span style="font-weight:bold">レストラン</span>
-                    <br>
-                    多彩な味わいを楽しめる、当レストランでは、和、洋、韓、クメールと多様な料理をご堪能いただけます。それぞれの料理が持つ独自の魅力、四つの異なる料理文化が一堂に会いする当レストランで、素晴らしい食の旅をご体験ください。<br><br>
-                    多彩なメニューを提供するオールデイダイニングのほか、ビジネスシーンやご家族、ご友人との会食など様々なニーズに合わせご利用いただけるレストラン＆バーでは、魅力的な食体験をお楽しみいただけます。さらに、時間帯によって移り変わる美しい景色も魅力の一つです。<br>
-                    場所：7階<br>
-                    営業時間：午前7時 – 午後11時<br>
-                    朝食：午前7時 – 午前11時
-                    </p>
-                </section>
-                <section class="box">
-                    <img src="icons/spa-svgrepo-com.svg" alt="sauna-icon">
-                    <p><span style="font-weight:bold">スイミングプール＆サウナ</span>
-                    <br>開放感あふれるプールで、ゆったりとくつろぐことができます。小さなお子様も安心して遊べる浅いプールもご用意しておりますので、ご家族連れのお客様にもおすすめです。サウナで温まった体をクールダウンし、心身ともにリフレッシュできる特別なひとときをお過ごしください。<br><br>
-
-                    場所 : 7階<br>
-                    営業時間 : 午前8時 – 午後9時</p>
-                </section>
-                <section class="box">
-                    <img src="icons/steak-2-svgrepo-com.svg" alt="steak-icon">
-                    <p><span style="font-weight:bold">鉄板焼　松波</span>
-                    <br>Location: 8th floor
-                    <br>日本の東京・浅草に1978年創業の老舗高級ステーキハウスがカンボジアに出店。神戸牛をはじめ、厳選された特選黒毛和牛をお客様の目の前にて鉄板で調理しご提供します。プライベート性が高い、全室完全個室を採用し「特別なひととき」をご提供します。<br><br>
-                    場所：8階<br>
-                    営業時間：午後4時 – 午前0時　<br>
-                    <span style="color:#b47c56">（予約制）</span></p>
-                </section>
-                <!-- Add more sections as needed -->
+                        場所：2階<br>
+                        営業時間：午後5時 – 午前2時（定休日：月曜）</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/restaurant-svgrepo-com.svg" alt="restau-icon">
+                        <p><span style="font-weight:bold">レストラン</span>
+                        <br>
+                        多彩な味わいを楽しめる、当レストランでは、和、洋、韓、クメールと多様な料理をご堪能いただけます。それぞれの料理が持つ独自の魅力、四つの異なる料理文化が一堂に会いする当レストランで、素晴らしい食の旅をご体験ください。<br><br>
+                        多彩なメニューを提供するオールデイダイニングのほか、ビジネスシーンやご家族、ご友人との会食など様々なニーズに合わせご利用いただけるレストラン＆バーでは、魅力的な食体験をお楽しみいただけます。さらに、時間帯によって移り変わる美しい景色も魅力の一つです。<br>
+                        場所：7階<br>
+                        営業時間：午前7時 – 午後11時<br>
+                        朝食：午前7時 – 午前11時
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/spa-svgrepo-com.svg" alt="sauna-icon">
+                        <p><span style="font-weight:bold">スイミングプール＆サウナ</span>
+                        <br>開放感あふれるプールで、ゆったりとくつろぐことができます。小さなお子様も安心して遊べる浅いプールもご用意しておりますので、ご家族連れのお客様にもおすすめです。サウナで温まった体をクールダウンし、心身ともにリフレッシュできる特別なひとときをお過ごしください。<br><br>
+    
+                        場所 : 7階<br>
+                        営業時間 : 午前8時 – 午後9時</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/steak-2-svgrepo-com.svg" alt="steak-icon">
+                        <p><span style="font-weight:bold">鉄板焼　松波</span>
+                        <br>Location: 8th floor
+                        <br>日本の東京・浅草に1978年創業の老舗高級ステーキハウスがカンボジアに出店。神戸牛をはじめ、厳選された特選黒毛和牛をお客様の目の前にて鉄板で調理しご提供します。プライベート性が高い、全室完全個室を採用し「特別なひととき」をご提供します。<br><br>
+                        場所：8階<br>
+                        営業時間：午後4時 – 午前0時　<br>
+                        <span style="color:#b47c56">（予約制）</span></p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
             </div>
-        </div>
-<!-- Services -->
-        <div id="RoomServices" class="tabcontent">
-            <h3>サービス</h3>
-            <div class="box-container">
-                <section class="box">
-                    <img src="icons/customer-service-agent-svgrepo-com.svg" alt="customer-service-icon">
-                    <p><span style="font-weight:bold;">ゲストリレーション</span><br>
-                        フロントオフィスでは、多言語に対応できるスタッフが、VIPエスコート、観光/ショッピングに関するサービス（島行のボートの案内、予約など）、イベントに関するサービス（案内、予約など）、ゲスト対応、VIP手配など、さまざまなサービスをご提供いたします。
-                    </p>
-                </section>
-                <section class="box">
-                    <img src="icons/airport.svg" alt="airport-transfer-icon">
-                    <p><span style="font-weight:bold;">送迎サービス・空港送迎</span><br>観光地や空港送迎については、フロントにお問い合わせください。
-                    </p>
-                </section>
-                <section class="box">
-                    <img src="icons/taxi.svg" alt="taxi-transfer-icon">
-                    <p><span style="font-weight:bold;">タクシー</span><br>
-                    タクシーをご利用の際は、フロントまでご連絡ください。
-                    </p>
-                </section>
-                <section class="box">
-                    <img src="icons/baggage.svg" alt="luggage-assistance-icon">
-                    <p><span style="font-weight:bold;">お荷物のお手伝い</span><br>
-                        手荷物およびその他サービスに関するお問い合わせは、フロントまでご連絡ください。
-                    </p>
-                </section>
-                <section class="box">
-                    <img src="icons/housekeeping.svg" alt="housekeeping-icon">
-                    <p><span style="font-weight:bold;">ハウスキーピング</span><br>
-                    客室清掃は毎日午前9時から午後5時までです。ご希望の時間帯や追加のアメニティのご希望がございましたら、お気軽にフロントまでお問い合わせください。
-                    </p>
-                </section>
-                <section class="box">
-                    <img src="icons/laundry.svg" alt="laundry-icon">
-                    <p><span style="font-weight:bold;">ランドリーサービス</span><br>
-                    ご希望によりランドリーサービスをご利用いただけます。ランドリーバッグはクローゼットの中に設置しております。所定の用紙にご記入の上、フロントまでご連絡ください。
-                    </p>
-                </section>
-                <section class="box">
-                    <img src="icons/adapter.svg" alt="adapter-icon">
-                    <p><span style="font-weight:bold;">アダプター</span><br>
-                        カンボジアの電圧は <span style="color:#b47c56;">AC110-220V</span>です。お手持ちの電気製品の電圧をお使いになる前にご確認ください。</p>
-                </section>
-                <section class="box">
-                    <img src="icons/ambulance.svg" alt="medical-icon">
-                    <p><span style="font-weight:bold;">メディカル・アシスタンスE</span><br>当ホテルのゲストリレーションでは、市内の病院をご案内いたします。<br><br>フロントまでご連絡ください。</p>
-                </section>
-                <section class="box">
-                    <img src="icons/room-service.svg" alt="medical-icon">
-                    <p><span style="font-weight:bold;">客室のご予約・延泊</span>グランド・ラ・ヴォーグ・ホテル＆カジノを再度ご利用になる場合のご予約は、
-                        フロントまでご連絡ください。</p>
-                </section>
-                <section class="box">
-                    <img src="icons/safe.svg" alt="safebox-icon">
-                    <p><span style="font-weight:bold;">セーフティーボックス</span><br>当ホテルでは、各客室にセーフティーボックスをご用意しております。無料でご利用いただけます。利用方法：客室内に設置されているセーフティーボックスは、暗証番号によってロック及び解除ができます。ご利用の際は、説明文に従って操作してください。ホテルの責任：セーフティーボックスに保管された貴重品の紛失、盗難については、ホテルは一切の責任を負いかねますので、あらかじめご了承ください。保管される貴重品の価値については、お客様ご自身で判断いただき、セーフティーボックスに収まらない大きさの貴重品などは、フロントにてお預かりするサービスをご利用ください。</p>
-                </section>
-                <!-- Add more sections as needed -->
+    <!-- Services -->
+            <div id="RoomServices" class="tabcontent">
+                <h3>サービス</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/customer-service-agent-svgrepo-com.svg" alt="customer-service-icon">
+                        <p><span style="font-weight:bold;">ゲストリレーション</span><br>
+                            フロントオフィスでは、多言語に対応できるスタッフが、VIPエスコート、観光/ショッピングに関するサービス（島行のボートの案内、予約など）、イベントに関するサービス（案内、予約など）、ゲスト対応、VIP手配など、さまざまなサービスをご提供いたします。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/airport.svg" alt="airport-transfer-icon">
+                        <p><span style="font-weight:bold;">送迎サービス・空港送迎</span><br>観光地や空港送迎については、フロントにお問い合わせください。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/taxi.svg" alt="taxi-transfer-icon">
+                        <p><span style="font-weight:bold;">タクシー</span><br>
+                        タクシーをご利用の際は、フロントまでご連絡ください。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/baggage.svg" alt="luggage-assistance-icon">
+                        <p><span style="font-weight:bold;">お荷物のお手伝い</span><br>
+                            手荷物およびその他サービスに関するお問い合わせは、フロントまでご連絡ください。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/housekeeping.svg" alt="housekeeping-icon">
+                        <p><span style="font-weight:bold;">ハウスキーピング</span><br>
+                        客室清掃は毎日午前9時から午後5時までです。ご希望の時間帯や追加のアメニティのご希望がございましたら、お気軽にフロントまでお問い合わせください。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/laundry.svg" alt="laundry-icon">
+                        <p><span style="font-weight:bold;">ランドリーサービス</span><br>
+                        ご希望によりランドリーサービスをご利用いただけます。ランドリーバッグはクローゼットの中に設置しております。所定の用紙にご記入の上、フロントまでご連絡ください。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/adapter.svg" alt="adapter-icon">
+                        <p><span style="font-weight:bold;">アダプター</span><br>
+                            カンボジアの電圧は <span style="color:#b47c56;">AC110-220V</span>です。お手持ちの電気製品の電圧をお使いになる前にご確認ください。</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/ambulance.svg" alt="medical-icon">
+                        <p><span style="font-weight:bold;">メディカル・アシスタンスE</span><br>当ホテルのゲストリレーションでは、市内の病院をご案内いたします。<br><br>フロントまでご連絡ください。</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/room-service.svg" alt="medical-icon">
+                        <p><span style="font-weight:bold;">客室のご予約・延泊</span>グランド・ラ・ヴォーグ・ホテル＆カジノを再度ご利用になる場合のご予約は、
+                            フロントまでご連絡ください。</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/safe.svg" alt="safebox-icon">
+                        <p><span style="font-weight:bold;">セーフティーボックス</span><br>当ホテルでは、各客室にセーフティーボックスをご用意しております。無料でご利用いただけます。利用方法：客室内に設置されているセーフティーボックスは、暗証番号によってロック及び解除ができます。ご利用の際は、説明文に従って操作してください。ホテルの責任：セーフティーボックスに保管された貴重品の紛失、盗難については、ホテルは一切の責任を負いかねますので、あらかじめご了承ください。保管される貴重品の価値については、お客様ご自身で判断いただき、セーフティーボックスに収まらない大きさの貴重品などは、フロントにてお預かりするサービスをご利用ください。</p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
             </div>
-        </div>
-<!-- regulation -->
-        <div id="Regulation" class="tabcontent">
-            <h3>宿泊に関する規定</h3>
-            <div class="box-container">
-                <!-- article 1 -->
+    <!-- regulation -->
+            <div id="Regulation" class="tabcontent">
+                <h3>宿泊に関する規定</h3>
+                <div class="box-container">
+                    <!-- article 1 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/reserve.svg"><br><span style="color:#b47c56; font-weight: bold;">第1条 規定の適用</span><br>
+                        1. 当ホテルが締結する宿泊約款及びこれに関連する契約は、この約款の定めるところによるものとし、この約款に定めのない事項については、法令及び慣習によるものとします。<br>
+                        2. クレジットカードによる予約は、この約款の定めるところによるものとし、その内容については、当ホテルとクレジットカード会社との間で定めるところによります。<br>
+                        3. 当ホテルは、前項の規定にかかわらず、本規定及び法令・慣習の趣旨に反しない範囲で必要な契約を締結することがあります。
+                        </p>
+                    </section><br><br>
+            <!-- article 2 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;">第2条 宿泊要請の拒否
+                        </span><br>
+                        当ホテルは、次に掲げる場合において、宿泊の申込みをお断りすることがあります。<br>
+                        1. 宿泊の申込みが、この約款によらないものであるとき。
+                        2. 満室で客室に余裕がないとき。<br>
+                        3. 宿泊しようとする者が、法令の規定又は公衆の秩序若しくは善良な風俗の維持に反する態様で宿泊施設を利用するおそれがあるとき。<br>
+                        4. 宿泊しようとする者が伝染病に罹患していることが明らかに認められるとき。<br>
+                        5. 宿泊に関し、当ホテルに特別の負担を求めたとき。
+                        6. 宿泊しようとする者が、不正な薬物又は愛玩動物を所持していることが判明したとき。<br>
+                        7. 天災地変、施設の損壊、その他やむを得ない事由により、当ホテルが宿泊を提供できないとき。<br>
+                        8. カンボジア王国の法令に定める規則に反するとき。<br>
+                        9. 宿泊しようとする者が、宿泊に関してまたは当ホテル内で、暴行、脅迫、 恐喝、不当な要求、賭博行為、使用禁止薬物の所持もしくは使用、他の 利用客に著しく迷惑を及ぼす行為、その他法令または公序良俗に反する 行為をするおそれがあるとき。</p>
+                    </section><br><br>
+            <!-- article 3 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/passport-1-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">第3条 氏名等の明示</span><br>
+                        当ホテルは、宿泊日の前日までに宿泊の申込みをお引受けした場合には、所定の期間内に、宿泊しようとする者に対し、次の事項を明らかにするよう求めることがあります：<br>
+                        1. 宿泊しようとする者の氏名、性別、国籍及び職業<br>
+                        2. その他当ホテルが必要と認めた事項</p>
+                    </section><br><br>
+            <!-- article 4 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/deposit-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">第4条 予約金</span><br>
+                        1. 当ホテルは、宿泊予約の申込みを予約金の支払いをもって保証といたします。
+                        クレジットカードによる宿泊代金前払いについても、その予約を保証いたします。
+                        2. 第5条の規定に該当する場合は、前項の予約金を取消料に充当し、残額は予約者に払い戻しいたします。但し、クレジットカードによる予約の場合は、第５条をご参照ください。
+                        3. 当ホテルは、予約を取り消す場合には、予約番号、予約日、予約担当者名及び取消料の内容を予約者に通知します。</p></section><br><br>
+            <!-- article 5 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;"><br>第5条 予約の解除 宿泊客による予約の解除</span><br>
+                        予約金の支払いを完了するお客様に対して、キャンセルされた客室の総額に応じて、次のとおりキャンセル料を申し受けます。<br>
+                        1. ご到着日の2日以上前：無料<br>
+                        2. ご到着日の前日：初日宿泊料金の50％<br>
+                        3. ご到着日当日：初日宿泊料金の100％<br>
+                        4. ノーショー：予約された客室の全額<br>
+                        5. 旅行代理店経由のクレジットカードで予約をキャンセルについては、旅行代理店にお問い合わせください。</p></section><br><br>
+            <!-- article 6 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;">第6条 ホテルによる予約の取消</span><br>
+                        1.ホテルは、別に定める場合を除き、次の場合には宿泊予約を解除することがあります。<br>
+                        <span style="display: block; margin-left: 20px;">a.第２条第1項から第９項までの規定による請求をしたにもかかわらず、所定の期間内にその請求に応じなかったとき。</span><br>
+                        2.第4条第1項の予約金の支払いを請求した場合において、所定の期間内にその支払いがなかったとき。当ホテルは、前各項により予約を解除した場合、お預かりした予約申込金を返還いたします。</p></section><br><br>
+            <!-- article 7 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/register.svg"><br><span style="color:#b47c56; font-weight: bold;">第7条 登録
+                        </span><br>
+                        宿泊客は、到着日当日、当館フロントにおいて、次の事項を登録していただきます。<br>
+                        1. 第3条第1項に定める事項。<br>
+                        2. 外国人宿泊客：旅券番号、カンボジア入国年月日。<br>
+                        3. カンボジア人宿泊者：国民登録番号。<br>
+                        4. 現住所、連絡先、職業、生年月日。<br>
+                        5. 出国の日時。<br>
+                        6. その他当ホテルが必要と認めた事項。<br>
+                        なお、ご記入いただいた個人情報につきましては、ご宿泊の目的の達成に 必要な場合においてのみ利用し、目的以外に使用することはありません。</p></section><br><br>
+            <!-- article 8 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/bedroom-sleeping-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">第8条　客室の使用時間</span><br>
+                        1. 宿泊客が当ホテルの客室を使用できる時間は、15時から翌日午後12時までとします。ただし、連続して宿泊する場合においては、到着日および出発日を除き、 終日使用することができます。<br>
+    
+                        2. 前項の規定にかかわらず、チェックアウト時間を超えて客室を使用された場合、当ホテルは次のとおり追加料金を申し受けることがあります：<br>
+                        <span style="display: block; margin-left: 20px;">1. 午後3時まで 宿泊料金の30%
+                        2. 午後6時まで 宿泊料金の50%
+                        3. 午後6時以降 宿泊料金の100%</span>
+                            
+                        3. チェックインタイム以前の利用<br>
+                        <span style="display: block; margin-left: 20px;">
+                        1. 午前8時59分以前 宿泊料金の100%
+                        2. 午前9時から午前11時59分まで 宿泊料金の50%
+                        3. 午後12時から午後2時59分まで 宿泊料金の30%</span></p></section><br><br>
+            <!-- article 9 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/hour.svg"><br><span style="color:#b47c56; font-weight: bold;">第9条 営業時間</span><br>当ホテルの各施設の営業時間は、本ディレクトリーのフロアガイドインフォメーションに記載しております。</p>
+                    </section>
+            <!-- article 10 -->
                 <section class="box">                
-                    <p><img style="width: 40px; padding: 0; margin:0"src="icons/reserve.svg"><br><span style="color:#b47c56; font-weight: bold;">第1条 規定の適用</span><br>
-                    1. 当ホテルが締結する宿泊約款及びこれに関連する契約は、この約款の定めるところによるものとし、この約款に定めのない事項については、法令及び慣習によるものとします。<br>
-                    2. クレジットカードによる予約は、この約款の定めるところによるものとし、その内容については、当ホテルとクレジットカード会社との間で定めるところによります。<br>
-                    3. 当ホテルは、前項の規定にかかわらず、本規定及び法令・慣習の趣旨に反しない範囲で必要な契約を締結することがあります。
-                    </p>
-                </section><br><br>
-        <!-- article 2 -->
-                <section class="box">                
-                    <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;">第2条 宿泊要請の拒否
-                    </span><br>
-                    当ホテルは、次に掲げる場合において、宿泊の申込みをお断りすることがあります。<br>
-                    1. 宿泊の申込みが、この約款によらないものであるとき。
-                    2. 満室で客室に余裕がないとき。<br>
-                    3. 宿泊しようとする者が、法令の規定又は公衆の秩序若しくは善良な風俗の維持に反する態様で宿泊施設を利用するおそれがあるとき。<br>
-                    4. 宿泊しようとする者が伝染病に罹患していることが明らかに認められるとき。<br>
-                    5. 宿泊に関し、当ホテルに特別の負担を求めたとき。
-                    6. 宿泊しようとする者が、不正な薬物又は愛玩動物を所持していることが判明したとき。<br>
-                    7. 天災地変、施設の損壊、その他やむを得ない事由により、当ホテルが宿泊を提供できないとき。<br>
-                    8. カンボジア王国の法令に定める規則に反するとき。<br>
-                    9. 宿泊しようとする者が、宿泊に関してまたは当ホテル内で、暴行、脅迫、 恐喝、不当な要求、賭博行為、使用禁止薬物の所持もしくは使用、他の 利用客に著しく迷惑を及ぼす行為、その他法令または公序良俗に反する 行為をするおそれがあるとき。</p>
-                </section><br><br>
-        <!-- article 3 -->
-                <section class="box">                
-                    <p><img style="width: 40px; padding: 0; margin:0"src="icons/passport-1-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">第3条 氏名等の明示</span><br>
-                    当ホテルは、宿泊日の前日までに宿泊の申込みをお引受けした場合には、所定の期間内に、宿泊しようとする者に対し、次の事項を明らかにするよう求めることがあります：<br>
-                    1. 宿泊しようとする者の氏名、性別、国籍及び職業<br>
-                    2. その他当ホテルが必要と認めた事項</p>
-                </section><br><br>
-        <!-- article 4 -->
-                <section class="box">                
-                    <p><img style="width: 40px; padding: 0; margin:0"src="icons/deposit-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">第4条 予約金</span><br>
-                    1. 当ホテルは、宿泊予約の申込みを予約金の支払いをもって保証といたします。
-                    クレジットカードによる宿泊代金前払いについても、その予約を保証いたします。
-                    2. 第5条の規定に該当する場合は、前項の予約金を取消料に充当し、残額は予約者に払い戻しいたします。但し、クレジットカードによる予約の場合は、第５条をご参照ください。
-                    3. 当ホテルは、予約を取り消す場合には、予約番号、予約日、予約担当者名及び取消料の内容を予約者に通知します。</p></section><br><br>
-        <!-- article 5 -->
-                <section class="box">                
-                    <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;"><br>第5条 予約の解除 宿泊客による予約の解除</span><br>
-                    予約金の支払いを完了するお客様に対して、キャンセルされた客室の総額に応じて、次のとおりキャンセル料を申し受けます。<br>
-                    1. ご到着日の2日以上前：無料<br>
-                    2. ご到着日の前日：初日宿泊料金の50％<br>
-                    3. ご到着日当日：初日宿泊料金の100％<br>
-                    4. ノーショー：予約された客室の全額<br>
-                    5. 旅行代理店経由のクレジットカードで予約をキャンセルについては、旅行代理店にお問い合わせください。</p></section><br><br>
-        <!-- article 6 -->
-                <section class="box">                
-                    <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;">第6条 ホテルによる予約の取消</span><br>
-                    1.ホテルは、別に定める場合を除き、次の場合には宿泊予約を解除することがあります。<br>
-                    <span style="display: block; margin-left: 20px;">a.第２条第1項から第９項までの規定による請求をしたにもかかわらず、所定の期間内にその請求に応じなかったとき。</span><br>
-                    2.第4条第1項の予約金の支払いを請求した場合において、所定の期間内にその支払いがなかったとき。当ホテルは、前各項により予約を解除した場合、お預かりした予約申込金を返還いたします。</p></section><br><br>
-        <!-- article 7 -->
-                <section class="box">                
-                    <p><img style="width: 40px; padding: 0; margin:0"src="icons/register.svg"><br><span style="color:#b47c56; font-weight: bold;">第7条 登録
-                    </span><br>
-                    宿泊客は、到着日当日、当館フロントにおいて、次の事項を登録していただきます。<br>
-                    1. 第3条第1項に定める事項。<br>
-                    2. 外国人宿泊客：旅券番号、カンボジア入国年月日。<br>
-                    3. カンボジア人宿泊者：国民登録番号。<br>
-                    4. 現住所、連絡先、職業、生年月日。<br>
-                    5. 出国の日時。<br>
-                    6. その他当ホテルが必要と認めた事項。<br>
-                    なお、ご記入いただいた個人情報につきましては、ご宿泊の目的の達成に 必要な場合においてのみ利用し、目的以外に使用することはありません。</p></section><br><br>
-        <!-- article 8 -->
-                <section class="box">                
-                    <p><img style="width: 40px; padding: 0; margin:0"src="icons/bedroom-sleeping-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">第8条　客室の使用時間</span><br>
-                    1. 宿泊客が当ホテルの客室を使用できる時間は、15時から翌日午後12時までとします。ただし、連続して宿泊する場合においては、到着日および出発日を除き、 終日使用することができます。<br>
-
-                    2. 前項の規定にかかわらず、チェックアウト時間を超えて客室を使用された場合、当ホテルは次のとおり追加料金を申し受けることがあります：<br>
-                    <span style="display: block; margin-left: 20px;">1. 午後3時まで 宿泊料金の30%
-                    2. 午後6時まで 宿泊料金の50%
-                    3. 午後6時以降 宿泊料金の100%</span>
-                        
-                    3. チェックインタイム以前の利用<br>
-                    <span style="display: block; margin-left: 20px;">
-                    1. 午前8時59分以前 宿泊料金の100%
-                    2. 午前9時から午前11時59分まで 宿泊料金の50%
-                    3. 午後12時から午後2時59分まで 宿泊料金の30%</span></p></section><br><br>
-        <!-- article 9 -->
-                <section class="box">                
-                    <p><img style="width: 40px; padding: 0; margin:0"src="icons/hour.svg"><br><span style="color:#b47c56; font-weight: bold;">第9条 営業時間</span><br>当ホテルの各施設の営業時間は、本ディレクトリーのフロアガイドインフォメーションに記載しております。</p>
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/cash-payment.svg"><br><span style="color:#b47c56; font-weight: bold;">第10条 料金の支払い</span><br>
+                        宿泊料金の支払いは、通貨、クレジットカード又は当ホテルが認めたクーポン等によるものとし、宿泊客の出発の際又は利用残高が多い場合等当ホテルが請求したときに、フロントデスクにお支払いいただきます。当ホテルは、個人小切手を受付けません。<br><br>
+                        宿泊者が客室を使用しない場合であっても、宿泊開始日より宿泊料金が申し受けます。</p>
                 </section>
-        <!-- article 10 -->
-            <section class="box">                
-                <p><img style="width: 20px; padding: 0; margin:0"src="icons/cash-payment.svg"><br><span style="color:#b47c56; font-weight: bold;">第10条 料金の支払い</span><br>
-                    宿泊料金の支払いは、通貨、クレジットカード又は当ホテルが認めたクーポン等によるものとし、宿泊客の出発の際又は利用残高が多い場合等当ホテルが請求したときに、フロントデスクにお支払いいただきます。当ホテルは、個人小切手を受付けません。<br><br>
-                    宿泊者が客室を使用しない場合であっても、宿泊開始日より宿泊料金が申し受けます。</p>
-            </section>
-        <!-- article 11 -->
-            <section class="box">                
-                <p><img style="width: 20px; padding: 0; margin:0"src="icons/regulation.svg"><br><span style="color:#b47c56; font-weight: bold;">第11条 規則の遵守</span><br>宿泊客は、当ホテルが定めた当ホテル内に掲示した規則をお守り下さい。
-                </p>
-            </section>
-        <!-- article 12 -->
-            <section class="box">                
-                <p><img style="width: 20px; padding: 0; margin:0"src="icons/refuse.svg"><br><span style="color:#b47c56; font-weight: bold;">第12条 宿泊の継続のお断り</span><br>
-                    当ホテルは、宿泊客をお引き受けした場合であっても、次の場合には、その宿泊の継続をお断りすることがあります。<br>
-                    1. 第2条第2項から第9項までの規定に該当するとき。<br>
-                    2. 宿泊客が当ホテルの規則を守らないとき。<br>
-                </p>
-            </section>
-        <!-- article 13 -->
-            <section class="box">                
-                <p><img style="width: 20px; padding: 0; margin:0"src="icons/responsibility.svg"><br><span style="color:#b47c56; font-weight: bold;">第13条 ホテルの責任</span><br>
-                    1. 当ホテルの宿泊に関する責任は、宿泊客が当ホテルのフロントにおいて宿泊の登録を行った時又は宿泊客が客室に入った時のうち、いずれか早い時に始まり、宿泊客のチェックアウト完了時に終わります。<br>
-                    2. 宿泊客が当ホテルの規則を守らなかったことにより生じた事故については、当ホテルは責任を負いません。<br>
-                    3. 当ホテルは、宿泊客に契約した客室を提供できないときは、宿泊客の了解を得て、できる限り同一の条件による他の宿泊施設を斡旋するものとします。 当ホテルは、前項の規定にかかわらず他の宿泊施設の斡旋ができないときは、お取消料相当額の補償料を宿泊客に支払い、その補償料は損害賠償額に充当します。ただし、客室が提供できないことについて、当ホテルの責めに帰すべき事由がないときは、補償料を支払いません。<br>
-                    4. 宿泊客が当ホテルの駐車場をご利用になる場合、車両のキーの寄託の如何にかかわらず、当ホテルは場所をお貸しするものであって、車両の管理責任まで負うものではありません。ただし、駐車場の管理にあたり、当ホテルの故意または過失によって損害を与えたときは、その賠償の責めに任じます。 <br>
-                </p>
-            </section>
-        <!-- article 14 -->
-            <section class="box">                
-                <p><img style="width: 20px; padding: 0; margin:0"src="icons/hotel-keycard.svg"><br><span style="color:#b47c56; font-weight: bold;">第14条 ルームキーの発行と返却</span><br>
-                    1. 宿泊客は、受付時にフロントにおいてルームキーをお預かりし、チェックアウト時の精算時にフロントへご返却いただきます。<br>
-                    2. 宿泊客が、当ホテルのルームキーを紛失したときは、当ホテル受付カウンターまでお申し出下さい。鍵を紛失したときは、別途料金を申し受けます。<br>
-                    3. 宿泊客が、ルームキーを携帯して宿泊施設を出発したときは、遅滞なく当ホテルにルームキーを郵送、その他の方法により返還していただきます。
-                </p>
-            </section>
-        <!-- article 15 -->
-            <section class="box">                
-                <p><img style="width: 20px; padding: 0; margin:0"src="icons/responsibility.svg"><br><span style="color:#b47c56; font-weight: bold;">第15条 宿泊者の責任</span><br>
-                宿泊客の故意または過失により当ホテルが損害を被ったときは、当該宿泊客は当ホテルに対し、その損害を賠償していただきます。</p>
-            </section>
-        <!-- article 16 -->
-            <section class="box">                
-                <p><img style="width: 20px; padding: 0; margin:0"src="icons/disclaimer.svg"><br><span style="color:#b47c56; font-weight: bold;">第16条 免責事項</span><br>
-                当ホテルからのコンピューター通信のご利用にあたっては、ご利用者ご自身の責任において行うものとします。コンピューター通信のご利用中にシステム障害その他の理由によりサービスが中断し、その結果利用者がいかなる損害を受けた場合においても、当ホテルの故意または重過失による場合を除き、当ホテルは一切の責任を負いません。また、コンピューター通信のご利用に当ホテルが不適切と判断した行為があり、これにより当ホテルおよび第三者に損害が生じた場合には、当該損害を賠償していただきます。
-                </p>
-            </section>
+            <!-- article 11 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/regulation.svg"><br><span style="color:#b47c56; font-weight: bold;">第11条 規則の遵守</span><br>宿泊客は、当ホテルが定めた当ホテル内に掲示した規則をお守り下さい。
+                    </p>
+                </section>
+            <!-- article 12 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/refuse.svg"><br><span style="color:#b47c56; font-weight: bold;">第12条 宿泊の継続のお断り</span><br>
+                        当ホテルは、宿泊客をお引き受けした場合であっても、次の場合には、その宿泊の継続をお断りすることがあります。<br>
+                        1. 第2条第2項から第9項までの規定に該当するとき。<br>
+                        2. 宿泊客が当ホテルの規則を守らないとき。<br>
+                    </p>
+                </section>
+            <!-- article 13 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/responsibility.svg"><br><span style="color:#b47c56; font-weight: bold;">第13条 ホテルの責任</span><br>
+                        1. 当ホテルの宿泊に関する責任は、宿泊客が当ホテルのフロントにおいて宿泊の登録を行った時又は宿泊客が客室に入った時のうち、いずれか早い時に始まり、宿泊客のチェックアウト完了時に終わります。<br>
+                        2. 宿泊客が当ホテルの規則を守らなかったことにより生じた事故については、当ホテルは責任を負いません。<br>
+                        3. 当ホテルは、宿泊客に契約した客室を提供できないときは、宿泊客の了解を得て、できる限り同一の条件による他の宿泊施設を斡旋するものとします。 当ホテルは、前項の規定にかかわらず他の宿泊施設の斡旋ができないときは、お取消料相当額の補償料を宿泊客に支払い、その補償料は損害賠償額に充当します。ただし、客室が提供できないことについて、当ホテルの責めに帰すべき事由がないときは、補償料を支払いません。<br>
+                        4. 宿泊客が当ホテルの駐車場をご利用になる場合、車両のキーの寄託の如何にかかわらず、当ホテルは場所をお貸しするものであって、車両の管理責任まで負うものではありません。ただし、駐車場の管理にあたり、当ホテルの故意または過失によって損害を与えたときは、その賠償の責めに任じます。 <br>
+                    </p>
+                </section>
+            <!-- article 14 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/hotel-keycard.svg"><br><span style="color:#b47c56; font-weight: bold;">第14条 ルームキーの発行と返却</span><br>
+                        1. 宿泊客は、受付時にフロントにおいてルームキーをお預かりし、チェックアウト時の精算時にフロントへご返却いただきます。<br>
+                        2. 宿泊客が、当ホテルのルームキーを紛失したときは、当ホテル受付カウンターまでお申し出下さい。鍵を紛失したときは、別途料金を申し受けます。<br>
+                        3. 宿泊客が、ルームキーを携帯して宿泊施設を出発したときは、遅滞なく当ホテルにルームキーを郵送、その他の方法により返還していただきます。
+                    </p>
+                </section>
+            <!-- article 15 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/responsibility.svg"><br><span style="color:#b47c56; font-weight: bold;">第15条 宿泊者の責任</span><br>
+                    宿泊客の故意または過失により当ホテルが損害を被ったときは、当該宿泊客は当ホテルに対し、その損害を賠償していただきます。</p>
+                </section>
+            <!-- article 16 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/disclaimer.svg"><br><span style="color:#b47c56; font-weight: bold;">第16条 免責事項</span><br>
+                    当ホテルからのコンピューター通信のご利用にあたっては、ご利用者ご自身の責任において行うものとします。コンピューター通信のご利用中にシステム障害その他の理由によりサービスが中断し、その結果利用者がいかなる損害を受けた場合においても、当ホテルの故意または重過失による場合を除き、当ホテルは一切の責任を負いません。また、コンピューター通信のご利用に当ホテルが不適切と判断した行為があり、これにより当ホテルおよび第三者に損害が生じた場合には、当該損害を賠償していただきます。
+                    </p>
+                </section>
+                </div>
             </div>
-        </div>
-        <!-- safety -->
-        <div id="Safety" class="tabcontent">
-            <h3>安全に関する情報</h3>
-            <div class="box-container">
-                <section class="box">
-                    <img src="icons/lock.svg" alt="lock-icon">
-                    <p><span style="font-weight:bold;">ドアロック</span><br>客室のドアは、客室カードキーによるオートロックシステムです。プライバシーとセキュリティのため、ご滞在中はセーフティバーをご利用ください。
-                    </p>
-                </section>
-                <section class="box">
-                    <img src="icons/peephole.svg" alt="entrance-icon">
-                    <p><span style="font-weight:bold;">エントランスドア</span><br>ドアを開けることなく、お部屋の外の廊下をご覧いただけるドアスコープを設置しております。ノックに応じて、お部屋に招き入れる前にご利用ください。ホテルの従業員は、名札を着用し、3回ノックした後に自分の存在を告げることが義務付けられています。
-                    </p>
-                </section>
-                <section class="box">
-                    <img src="icons/hotel-keycard.svg" alt="keycard-icon">
-                    <p><span style="font-weight:bold;">ゲストルームの鍵</span><br>客室の鍵は安全な場所に保管することをお勧めします。鍵を紛失された場合は、フロントまでご連絡ください。フロントの従業員は、客室の鍵を発行する前に身分証明書を確認させていただきます。ご出発予定日の午後（チェックアウトタイム）には、客室キーは無効となります。予めご了承ください。</p>
-                </section>
-                <section class="box">
-                    <img src="icons/door-close-svgrepo-com.svg" alt="roomnumber-icon">
-                    <p><span style="font-weight:bold;">客室番号</span><br>セーフティーボックスのご利用をお勧めいたします。各客室にセーフティーボックスをご用意しております。セーフティーボックスはフロントにもあり、24時間ご利用いただけます。</p>
-                </section>
-                <section class="box">
-                    <img src="icons/time-is-money-svgrepo-com.svg" alt="valuables-icon">
-                    <p><span style="font-weight:bold;">貴重品</span><br>セーフティーボックスのご利用をお勧めいたします。各客室にセーフティーボックスをご用意しております。セーフティーボックスはフロントにもあり、24時間ご利用いただけます。
-                    </p>
-                </section>
-                <section class="box">
-                    <img src="icons/privacy-tips-svgrepo-com.svg" alt="privacy-icon">
-                    <p><span style="font-weight:bold;">プライバシーとセキュリティ</span><br>お部屋への訪問をご希望されない場合は、客室内のタッチパネル【DND】 "Do Not Disturb "のサインを押してください。また、セーフティバーとドアにあるドアスコープで、不審者の侵入を防ぎます。ホテルの従業員は、登録されたお客様の部屋番号を開示しないよう指示されています。
-                    </p>
-                </section>
-                <section style="background-color:#DEDEDE" class="box">
-                    <p><span style="font-weight:bold;">安全に関する情報</span><br>【緊急時の対応方法<br><br>グランド・ラヴォーグ・ホテル＆カジノでは、万が一緊急事態が発生した場合に備えて、お客様の安全のために以下の情報を提供しています。<br><br>
-        <!-- in case of emergency -->
-                    <span style="font-weight:bold;">緊急の場合</span><br>
-                    緊急の場合は、フロントにご連絡ください。客室ドアの内側にある避難マップにて、各階の出口、階段、消防設備の位置をご確認ください。<br><br>
-        <!-- fire emergency -->
-                    <span style="font-weight:bold;">A. 火災時の対応e</span><br>
-        <!-- in case of fire alarm -->
-                    <span style="text-decoration: underline;">1. 火災の場合・火災報知器が鳴った場合</span><br>
-                    <span style="display: block; margin-left: 20px;">‐フロントまでご連絡ください。<br>
-                        ‐ルームキーは常にお持ちください。<br>
-                            - 冷静に行動し、パニックを避けてください。<br>
-                            - 最寄りの非常口に向かい、避難してください。<br>
-                        非常口の位置は客室ドアの内側に掲示されている避難経路図を確認してください。<br>
-                            - 客室ドアを開ける前に、ドアノブが熱くないか手の甲で確認してください。</span><br><br>
-        <!-- if the door is hot -->
-                    <span style="text-decoration: underline;">2. ‐ドアが熱い場合</span><br>
-                    <span style="display: block; margin-left: 20px;">部屋にいてドアを閉め、エアコンを切ってください。濡れタオルをドアの下と、
-                        煙のある換気口に当ててください。フロントに連絡し、スタッフに自分の居場所を
-                        知らせてください。そして館内放送を待ってください。また部屋に煙がある場合は、
-                        できるだけ低い姿勢を取って、落ち着いて行動してください。<br>
-                        ‐部屋にとどまる場合は、窓の外にシーツをかけて、室内に閉じ込められていることを
-                        知らせてください。浴槽に水を張り、シーツを濡らしてドアの付け根に
-                        詰めてください。黒い煙が出ている換気口を閉じてください。<br>
-                        新鮮な空気が吸える場合のみ窓を開けてください。<br>
-                             -ドアを開けた際、煙や火がある場合はすぐに閉じて、上記、部屋にとどまる場合の
-                        対応を取ってください。</span><br><br>
-        <!-- during evacuation -->
-                    <span style="text-decoration: underline;">3. 避難時の注意点</span><br>
-                    <span style="display: block; margin-left: 20px;"> エレベーターは使用せず、階段を利用してください。<br>
-                        - 煙が充満している場合は、低い姿勢で移動し、濡れた布やタオルで口と鼻を覆ってください。<br>
-                        - 視界が悪い場合は、壁沿いを手で触りながら進むことで、迷わず避難できます。<br>
-                        - 他のゲストやスタッフが見つからない場合は、助けを呼んでください。</span><br><br>
-        <!-- evacuate first -->
-                    <span style="text-decoration: underline;">4. 避難先</span><br>
-                    <span style="display: block; margin-left: 20px;"> - 指定された避難場所に避難し、ホテルスタッフの指示に従ってください。<br>
-                        - 避難場所では、他のゲストやスタッフと一緒にいることが推奨されます。<br>
-                   再入館の指示があるまで建物に戻らないでください。</span><br><br>
-        <!-- general emergency -->
-                    <span style="font-weight:bold;">B. 般的な緊急対応
-                    </span><br>
-                    <span style="text-decoration: underline;">1.医療緊急時</span><br>
-                    <span style="display: block; margin-left: 20px;"> - 急病や怪我が発生した場合は、直ちにフロントデスクに連絡してください。<br>
-                        - フロントデスクが手配する救急車や医療スタッフの到着を待つ間、<br>
-                   可能な範囲で応急処置を行ってください。</span><br><br>
-
-                    <span style="text-decoration: underline;">2.  不審者や不審物の発見</span><br>
-                    <span style="display: block; margin-left: 20px;">  - 不審者や不審物を発見した場合は、直ちにフロントデスクに連絡してください。<br>
-                        - 不審物には触れず、周囲の人々にも知らせないようにしてください。<br>
-                        - フロントデスクが状況を確認し、必要な対策を講じます。</span><br><br>
-                        これらの対応方法を守ることで、緊急時にも安全に避難し、トラブルを最小限に抑えることができます。ホテルスタッフもゲストの安全を最優先に行動しますので、指示に従ってください。</span>
-                    </p>
-                </section>
-                <!-- Add more sections as needed -->
+            <!-- safety -->
+            <div id="Safety" class="tabcontent">
+                <h3>安全に関する情報</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/lock.svg" alt="lock-icon">
+                        <p><span style="font-weight:bold;">ドアロック</span><br>客室のドアは、客室カードキーによるオートロックシステムです。プライバシーとセキュリティのため、ご滞在中はセーフティバーをご利用ください。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/peephole.svg" alt="entrance-icon">
+                        <p><span style="font-weight:bold;">エントランスドア</span><br>ドアを開けることなく、お部屋の外の廊下をご覧いただけるドアスコープを設置しております。ノックに応じて、お部屋に招き入れる前にご利用ください。ホテルの従業員は、名札を着用し、3回ノックした後に自分の存在を告げることが義務付けられています。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/hotel-keycard.svg" alt="keycard-icon">
+                        <p><span style="font-weight:bold;">ゲストルームの鍵</span><br>客室の鍵は安全な場所に保管することをお勧めします。鍵を紛失された場合は、フロントまでご連絡ください。フロントの従業員は、客室の鍵を発行する前に身分証明書を確認させていただきます。ご出発予定日の午後（チェックアウトタイム）には、客室キーは無効となります。予めご了承ください。</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/door-close-svgrepo-com.svg" alt="roomnumber-icon">
+                        <p><span style="font-weight:bold;">客室番号</span><br>セーフティーボックスのご利用をお勧めいたします。各客室にセーフティーボックスをご用意しております。セーフティーボックスはフロントにもあり、24時間ご利用いただけます。</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/time-is-money-svgrepo-com.svg" alt="valuables-icon">
+                        <p><span style="font-weight:bold;">貴重品</span><br>セーフティーボックスのご利用をお勧めいたします。各客室にセーフティーボックスをご用意しております。セーフティーボックスはフロントにもあり、24時間ご利用いただけます。
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/privacy-tips-svgrepo-com.svg" alt="privacy-icon">
+                        <p><span style="font-weight:bold;">プライバシーとセキュリティ</span><br>お部屋への訪問をご希望されない場合は、客室内のタッチパネル【DND】 "Do Not Disturb "のサインを押してください。また、セーフティバーとドアにあるドアスコープで、不審者の侵入を防ぎます。ホテルの従業員は、登録されたお客様の部屋番号を開示しないよう指示されています。
+                        </p>
+                    </section>
+                    <section style="background-color:#DEDEDE" class="box">
+                        <p><span style="font-weight:bold;">安全に関する情報</span><br>【緊急時の対応方法<br><br>グランド・ラヴォーグ・ホテル＆カジノでは、万が一緊急事態が発生した場合に備えて、お客様の安全のために以下の情報を提供しています。<br><br>
+            <!-- in case of emergency -->
+                        <span style="font-weight:bold;">緊急の場合</span><br>
+                        緊急の場合は、フロントにご連絡ください。客室ドアの内側にある避難マップにて、各階の出口、階段、消防設備の位置をご確認ください。<br><br>
+            <!-- fire emergency -->
+                        <span style="font-weight:bold;">1. 火災時の対応e</span><br>
+            <!-- in case of fire alarm -->
+                        <span style="text-decoration: underline;">1. 火災の場合・火災報知器が鳴った場合</span><br>
+                        <span style="display: block; margin-left: 20px;">‐フロントまでご連絡ください。<br>
+                            ‐ルームキーは常にお持ちください。<br>
+                                - 冷静に行動し、パニックを避けてください。<br>
+                                - 最寄りの非常口に向かい、避難してください。<br>
+                            非常口の位置は客室ドアの内側に掲示されている避難経路図を確認してください。<br>
+                                - 客室ドアを開ける前に、ドアノブが熱くないか手の甲で確認してください。</span><br><br>
+            <!-- if the door is hot -->
+                        <span style="text-decoration: underline;">2. ‐ドアが熱い場合</span><br>
+                        <span style="display: block; margin-left: 20px;">部屋にいてドアを閉め、エアコンを切ってください。濡れタオルをドアの下と、
+                            煙のある換気口に当ててください。フロントに連絡し、スタッフに自分の居場所を
+                            知らせてください。そして館内放送を待ってください。また部屋に煙がある場合は、
+                            できるだけ低い姿勢を取って、落ち着いて行動してください。<br>
+                            ‐部屋にとどまる場合は、窓の外にシーツをかけて、室内に閉じ込められていることを
+                            知らせてください。浴槽に水を張り、シーツを濡らしてドアの付け根に
+                            詰めてください。黒い煙が出ている換気口を閉じてください。<br>
+                            新鮮な空気が吸える場合のみ窓を開けてください。<br>
+                                 -ドアを開けた際、煙や火がある場合はすぐに閉じて、上記、部屋にとどまる場合の
+                            対応を取ってください。</span><br><br>
+            <!-- during evacuation -->
+                        <span style="text-decoration: underline;">3. 避難時の注意点</span><br>
+                        <span style="display: block; margin-left: 20px;"> エレベーターは使用せず、階段を利用してください。<br>
+                            - 煙が充満している場合は、低い姿勢で移動し、濡れた布やタオルで口と鼻を覆ってください。<br>
+                            - 視界が悪い場合は、壁沿いを手で触りながら進むことで、迷わず避難できます。<br>
+                            - 他のゲストやスタッフが見つからない場合は、助けを呼んでください。</span><br><br>
+            <!-- evacuate first -->
+                        <span style="text-decoration: underline;">4. 避難先</span><br>
+                        <span style="display: block; margin-left: 20px;"> - 指定された避難場所に避難し、ホテルスタッフの指示に従ってください。<br>
+                            - 避難場所では、他のゲストやスタッフと一緒にいることが推奨されます。<br>
+                       再入館の指示があるまで建物に戻らないでください。</span><br><br>
+            <!-- general emergency -->
+                        <span style="font-weight:bold;">B. 般的な緊急対応
+                        </span><br>
+                        <span style="text-decoration: underline;">1.医療緊急時</span><br>
+                        <span style="display: block; margin-left: 20px;"> - 急病や怪我が発生した場合は、直ちにフロントデスクに連絡してください。<br>
+                            - フロントデスクが手配する救急車や医療スタッフの到着を待つ間、<br>
+                       可能な範囲で応急処置を行ってください。</span><br><br>
+    
+                        <span style="text-decoration: underline;">2.  不審者や不審物の発見</span><br>
+                        <span style="display: block; margin-left: 20px;">  - 不審者や不審物を発見した場合は、直ちにフロントデスクに連絡してください。<br>
+                            - 不審物には触れず、周囲の人々にも知らせないようにしてください。<br>
+                            - フロントデスクが状況を確認し、必要な対策を講じます。</span><br><br>
+                            これらの対応方法を守ることで、緊急時にも安全に避難し、トラブルを最小限に抑えることができます。ホテルスタッフもゲストの安全を最優先に行動しますので、指示に従ってください。</span>
+                        </p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
             </div>
-        </div>
-
+            <div id="Dining" class="tabcontent">
+                <div class="box-container">
+                    <section style="flex-direction: column;" class="box">
+                        <h2>Work on progress...</h2>
+                        <img style="display: flex; max-width: 100%; margin:auto; justify-content: center; align-items: center;
+                        align-content: center; padding:0;"src="icons/samurai.gif">
+                    </section>
+                </div>
+            </div>
+        </section>
         <div class="introduction">
-            <p><span style="font-weight:bold;">GRAND LA VOGUE HOTEL & CASINOへようこそ。</span><br><br>このたびは、当ホテルをお選びいただき誠にありがとうございます。
+            <h2>GRAND LA VOGUE HOTEL & CASINOへようこそ。</h2>
+            このたびは、当ホテルをお選びいただき誠にありがとうございます。
             私たちは、「洗練されたおもてなし」と「進化するシティーリゾート」をコンセプトに、
             日本の伝統的なおもてなしの心を現代的なリゾートに融合させ、お客様に未体験の滞在を提供いたします。お部屋でのひとときをお楽しみいただき、リラックスした時間をお過ごしください。
                 
@@ -540,6 +557,6 @@
             <p>©2024 All Rights Reserved</p>
         </div>
     </footer>
-    <script src="scripts/hotel.js"></script>
 </body>
 </html>
+    
