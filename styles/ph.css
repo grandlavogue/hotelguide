@@ -27,6 +27,11 @@ p {
     font-size: 11pt;
     text-align:justify;
 }
+.signature {
+    font-family: "Ms Madi", cursive;
+    font-size: 25pt;
+    color:#405f96;
+}
 :root {
     --primary-color: #000000;
     --secondary-color: #363636;
