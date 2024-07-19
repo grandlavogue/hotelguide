@@ -1,247 +1,176 @@
-@media (max-width:768px){
-/* Language Menu */
-.languagemenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 100px;
-    max-width: 100%;
-    padding: 20px;
-    position:fixed;
-}
+@media (max-width: 768px){
+    p {
+        font-size: 11pt;
+    }
+    body {
+        margin: 20px;
+        border-style: none;
+        border-color:none;
+        border-width: none;
+    }
+    /* HEADER */
+    header {
+        padding: 20px 0;
+        margin:0;
+    }
+    .glvlogo {
+        margin: 0;
+        width: 100%;
+    }
+    .glvlogo a{
+        width: 25%;
+    }
+    /* Title */
+    .title h1{
+        font-size: 16pt;
+        letter-spacing: 3pt;
+    }
+    /* Language Menu */
+    .languagemenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        max-width: 100%;
+    }
+    
+    .menu-toggle {
+        display: block;
+        background: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+    }
+    
+    .languagemenu.open .menu-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+    }
+    
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        background-color:transparent;
+    }
+    
+    .menu-links a {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px;
+        margin: auto;
+        color:#b47c56;
+        font-family: "Roboto", sans-serif;
+        font-size: 12pt;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .menu-links a:hover {
+        text-decoration: overline;
+    }
+    
+    main{
+        margin: 10px;
+    }
+    /* Introduction */
+    .signature {
+        font-size: 22pt;
+    }
+    /* sections */
+    /* Tabs styling */
+    .tabshere {
+        overflow: hidden;
+        padding: 20px 0;
+    }
+    .tabshere h3 {
+        font-size:15pt;
+        letter-spacing: 4pt;
+    }
+    .tablinks {
+        font-size: 10pt;
+        letter-spacing: 1pt;
+        padding: 10px;
+        transition: 0.3s;
+        margin: 10px 2px;
+        color: #ffffff;
+        background-color:#b47c56;
+    }
+    
+    .tabcontent {
+        display: none;
+        padding: 10px;
+        height: calc(120vh - 200px); 
+        overflow-y: auto;
+    }
+    
+    .tabcontent h3 {
+        font-size: 16pt;
+        margin-bottom: 20px;
+    }
+    /* Box styling for content sections */
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .box {
+        display: flex;
+        column-gap: 10px;
+        flex-direction: column;
+        flex: 1 1 calc(50% - 20px); 
+        padding: 10px;
+        overflow-y: auto; 
+    }
+    .box img {
+        max-width: 30px;
+        height: auto;
+        margin-bottom: 10px;
+    }
 
-.menu-toggle {
-    display: block;
-    background: none;
-    cursor: pointer;
-    outline: none;
-    padding: 0;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: auto;
-}
-
-.languagemenu.open .menu-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: auto;
-    background-color: #2d456d;
-    margin-top: 150px;
-}
-
-.menu-links {
-    display: none;
-    flex-direction: column;
-    background-color:transparent;
-}
-
-.menu-links a {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 10px;
-    margin: auto;
-    font-family: "Roboto", sans-serif;
-    font-size: 12pt;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.menu-links a:hover {
-    text-decoration: overline;
-}
-
-/* header */
-header{
-    display: flex;
-    max-width: 100%;
-    padding:30px;
-    margin:0;
-
-}
-header h1{
-    display: flex;
-    max-width: 100%;
-    text-align: center;
-    margin: auto;
-    font-size: 20pt;
-}
-
-html,
-body {
-    margin:0;
-    padding:0;
-}
-.body{
-    display: flex;
-    max-width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
-}
-.body h6{
-    display:none;
-    text-align: center;
-    font-size: 12pt;
-    padding: 30px 20px;
-    margin:0;
-}
-
-.guide{
-    display: flex;
-    flex-direction: row;
-    padding:0;
-    margin:0;
-}
-.tabshere{
-    max-width: 25%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;    
-    padding: 10px;
-    justify-content: space-around;
-    align-items: left;
-    align-content:left;
-    width: 100%;
-    overflow:hidden;
-    margin:0;
-}
-.tablinks {
-    color: #ffffff;
-    font-size: 11pt;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0;
-    margin:auto;
-    transition: 0.3s;
-    background-color: transparent;
-    width: 100%;
-    height: auto;
-    justify-content: left;
-    align-items: left;
-    align-content:left;
-    text-align: left;
-}
-
-.tablinks:hover {
-    text-decoration: overline;
-}
-
-.tablinks.active {
-    text-decoration: overline;
-}
-
-.tabcontent {
-    display: none;
-    padding: 10px;
-    margin:0;
-    height: calc(50vh - 100px);
-    overflow-y: auto;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.tabcontent h3 {
-    font-size: 14t;
-}
-/* Box styling for content sections */
-.box-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-}
-
-.box {
-    display: flex;
-    max-width: 100%;
-    column-gap: 0;
-    flex-direction: column;
-    flex: 1 1 calc(50vh - 20px); 
-    padding: 10px;
-    overflow-y: auto;
-    margin:auto;
-}
-
-.box img {
-    max-width: 20px;
-    height: auto;
-    margin-bottom: 5px;
-}
-
-.box p { 
-    font-size: 11pt;
-    line-height: 2;
-    text-align: left;
-}
-#Cover,
-#StayGuide,
-#Regulation,
-#FloorGuide,
-#RoomServices,
-#Safety,
-#Rules{
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 80%;
-    height: 70vh;
-}
-.introduction{
-    background-color: #e9e9e9;
-    padding: 20px;
-    margin:0;
-}
-.introduction h2{
-    font-size: 12pt;
-}
-.introduction p{
-    font-size: 12pt;
-    line-height: 150%;
-}
-.Home video{
-    aspect-ratio: 6 / 9;
-    width: auto;
-    object-fit: fill;
-    object-position: right;
-    height: 70vh;
-}
-/* footer */
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: auto;
-    padding: 20px;
- }
- .contact-icons a{
-     width: 100%;
-     padding: 10px;
- }
-
- .copyright h6{
-     font-size: 10pt;
-     text-align: center;
-     color: #b47c56;
-     padding:5px;
-     margin:0;
- }
- .copyright p{
-     font-size: 9pt;
-     text-align: center;
-     color: #b47c56;
-     padding-top:20px;
-     margin:0;
- }
-}
+    .box p {
+        font-size: 11pt;
+        line-height: 2;
+        text-align: left;
+    }
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        padding: 50px 0;
+     }
+     .contact-icons a{
+         width: 100%;
+         padding: 10px;
+     }
+     .contact-icons a img{
+        width: 40px;
+        padding-bottom: 20px;
+     }
+     .copyright h6{
+         font-size: 9pt;
+         text-align: center;
+         padding:5px;
+         margin:0;
+     }
+     .copyright p{
+         font-size: 9pt;
+         padding-top:20px;
+         margin:0;
+     }
+    }
