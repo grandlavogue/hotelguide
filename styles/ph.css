@@ -1,0 +1,248 @@
+.ms-madi-regular {
+    font-family: "Ms Madi", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight:900;
+    font-style: normal;
+  }
+
+  .playfair {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+  }
+
+h1, h2, h3, h4, h5, h6, a, button, p{
+    font-family: "Playfair", serif;
+    font-weight: 100;
+}
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 11pt;
+    text-align:justify;
+}
+:root {
+    --primary-color: #000000;
+    --secondary-color: #363636;
+    --accent1-color: #6a7c9a;
+    --accent2-color: #b47c56;
+}
+/* Language Menu */
+.languagemenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 0;
+    max-width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    color:#0f3f54;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.menu-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 20px;
+    background-color: #a08f84;
+    column-gap: 20px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.languagemenu a {
+    text-decoration: none;
+    color:white;
+    letter-spacing: 1.2pt;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 12pt;
+}
+.languagemenu a:hover {
+    text-decoration: overline;
+}
+/* header */
+header{
+    background-color: #aaaaaa;
+    display: flex;
+    max-width: 100%;
+    padding:50px;
+    margin:0;
+
+}
+header h1{
+    display: flex;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+html,
+body {
+    margin:0;
+    padding:0;
+}
+.body{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+.body h6{
+    text-align: center;
+    font-size: 15pt;
+    padding:50px;
+    margin:0;
+}
+
+.guide{
+    display: flex;
+    flex-direction: row;
+    padding:0;
+    margin:0;
+}
+.tabshere{
+    max-width: 20%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;    
+    padding: 20px;
+    background-color: #6a7c9a;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    overflow:hidden;
+}
+.tablinks {
+    color: #ffffff;
+    font-size: 14pt;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 30px;
+    margin:auto;
+    transition: 0.3s;
+    background-color: transparent;
+    width: 200px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.tablinks:hover {
+    text-decoration: overline;
+}
+
+.tablinks.active {
+    text-decoration: overline;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    margin:auto;
+    height: calc(70vh - 120px);
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.tabcontent h3 {
+    font-size: 20pt;
+    color:#b47c56;
+}
+/* Box styling for content sections */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.box {
+    display: flex;
+    max-width: 100%;
+    column-gap: 50px;
+    flex-direction: row;
+    flex: 1 1 calc(50vh - 20px); 
+    padding: 10px;
+    overflow-y: auto;
+    margin:auto;
+}
+
+.box img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 12pt;
+    line-height: 1.5;
+    text-align: justify;
+}
+#Cover,
+#StayGuide,
+#Regulation,
+#FloorGuide,
+#RoomServices,
+#Safety,
+#Rules{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    height: 70vh;
+}
+.introduction{
+    background-color: #e9e9e9;
+    padding: 50px;
+}
+.Home video{
+    width: 100%;
+    object-fit: fill;
+    height: 70vh;
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    padding: 50px;
+ }
+ .contact-icons a{
+     width: 100%;
+     padding: 10px;
+ }
+ .copyright h6{
+     font-size: 12pt;
+     text-align: center;
+     color: #b47c56;
+     padding:5px;
+     margin:0;
+ }
+ .copyright p{
+     font-size: 10pt;
+     text-align: center;
+     color: #b47c56;
+     padding-top:20px;
+     margin:0;
+ }
