@@ -12,511 +12,527 @@
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Ms+Madi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+<!-- style -->
+    <link rel="stylesheet" href="styles/ph.css">
+    <link rel="stylesheet" href="styles/ph-mobile.css">
 <!-- script -->
-    <link rel="stylesheet" href="styles/hotel.css">
-    <link rel="stylesheet" href="styles/hotel-mobile.css">
+    <script src="scripts/ph.js"></script>
 </head>
 <body>
-<!-- HEADER -->
-    <header>
-        <div class="glvlogo">
-            <a href="index.html"><img src="icons/glv.png" alt="glvlogo"></a>
-        </div>
-        <div class="title">
-            <h1>YOUR STAY GUIDE</h1>
-        </div>
+    <div class="body">
+        <h6>GRAND LA VOGUE HOTEL & CASINO</h6>
         <nav class="languagemenu">
             <button class="menu-toggle"><img src="icons/translate.svg"></button>
             <div class="menu-links">
-                <a href="eng.html">ENGLISH</a>
-                <a href="jp.html">日本語</a>
-                <a href="kh.html">ភាសាខ្មែរ</a>
-                <a href="kr.html">한국어</a>
-                <a href="cn.html">中文</a>
+                <a href="ph.html">ENGLISH</a>
+                <a href="#">日本語</a>
+                <a href="#">ភាសាខ្មែរ</a>
+                <a href="#">한국어</a>
+                <a href="#">中文</a>
+                <a href="tel:+85569838300" target="_blank">CALL US</a>
+                <a href="mailto:info@grandlavogue.com" target="_blank">EMAIL US</a>
             </div>
         </nav>
+    </div>
+
+    <header>
+        <h1>YOUR STAY GUIDE</h1>
     </header>
-<!-- BODY -->
-<main>
-    <div class="tabshere">
-        <h3>CHOOSE HERE</h3>
-        <button class="tablinks" onclick="openTab(event, 'StayGuide')">STAY GUIDE</button>
-        <button class="tablinks" onclick="openTab(event, 'Rules')">RULE</button>
-        <button class="tablinks" onclick="openTab(event, 'Regulation')">REGULATION</button>
-        <button class="tablinks" onclick="openTab(event, 'FloorGuide')">FLOOR GUIDE</button>
-        <button class="tablinks" onclick="openTab(event, 'RoomServices')">SERVICES</button>
-        <button class="tablinks" onclick="openTab(event, 'Safety')">SAFETY</button>
-    </div>
-    
-    <!-- Tab content -->
-    <div id="StayGuide" class="tabcontent">
-        <h3>While You Are Here</h3>
-        <div class="box-container">
-            <section class="box">
-                <img src="icons/wifi.svg" alt="wifi-icon">
-                <p>WIFI_〇F<br>PASSWORD: 12345678</p>
-            </section>
-            <section class="box">
-                <img src="icons/bed.svg" alt="bed-icon">
-                <p>CHECK-IN / CHECK-OUT<br>3:00PM - 12:00PM</p>
-            </section>
-            <section class="box">
-                <img src="icons/breakfast.svg" alt="breakfast-icon">
-                <p>BREAKFAST<br>7:00AM - 10:00AM ➵ 7F</p>
-            </section>
-            <section class="box">
-                <img src="icons/reserve.svg" alt="reserve-icon">
-                <p>RESERVATION<br>To book, extend, cancel or other room requests, please contact the Front Office.</p>
-            </section>
-            <section class="box">
-                <img src="icons/restaurant-svgrepo-com.svg" alt="restaurant-icon">
-                <p>RESTAURANT<br>7:00AM - 23:00PM ➵ 7F</p>
-            </section>
-            <section class="box">
-                <img src="icons/brandy-svgrepo-com.svg" alt="bar-icon">
-                <p>BAR BARON<br>5:00AM - 2:00AM ➵ 2F<br>Closed on Mondays</p>
-            </section>
-            <section class="box">
-                <img src="icons/steak-2-svgrepo-com.svg" alt="steak-icon">
-                <p>TEPPANYAKI<br>4:00AM - 12:00AM ➵ 8F<br><span style="color:#b47c56">(Reservation Required)</span></p>
-            </section>
-            <section class="box">
-                <img src="icons/swim.svg" alt="SWIM-icon">
-                <p>SWIMMING POOL<br>8:00AM - 21:00PM ➵ 7F</p>
-            </section>
-            <section class="box">
-                <img src="icons/sauna.svg" alt="spa-icon">
-                <p>STEAM BATH & SAUNA<br>8:00AM - 21:00PM ➵ 7F<br><span style="color:#b47c56">(Please Ask for Assistance)</span></p>
-            </section>
-            <!-- Add more sections as needed -->
-        </div>
-    </div>
-    <div id="Regulation" class="tabcontent">
-        <h3>Accommodation Regulation</h3>
-        <div class="box-container">
-            <!-- article 1 -->
-            <section class="box">                
-                <p><img style="width: 40px; padding: 0; margin:0"src="icons/reserve.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 1 Application of provisions</span><br>
-                1. The accommodation terms and conditions and related contracts entered into by this hotel shall be as stipulated in these terms and conditions, and matters not stipulated in these terms and conditions shall be governed by laws and customs.<br>
-                2. Reservations made by credit card shall be subject to the provisions of these terms and conditions, and the details thereof shall be determined between the hotel and the credit card company.<br>
-                3. Notwithstanding the provisions of the preceding paragraph, the Hotel may conclude necessary contracts to the extent that it does not violate the spirit of these regulations, laws and customs.
-                </p>
-            </section><br><br>
-<!-- article 2 -->
+    <main>
+        <section class="guide">
+            <nav class="tabshere">
+                <button class="tablinks" onclick="openTab(event, 'Cover')">HOME</button>
+                <button class="tablinks" onclick="openTab(event, 'StayGuide')">STAY GUIDE</button>
+                <button class="tablinks" onclick="openTab(event, 'Rules')">RULE</button>
+                <button class="tablinks" onclick="openTab(event, 'Regulation')">REGULATION</button>
+                <button class="tablinks" onclick="openTab(event, 'FloorGuide')">FLOOR GUIDE</button>
+                <button class="tablinks" onclick="openTab(event, 'RoomServices')">SERVICES</button>
+                <button class="tablinks" onclick="openTab(event, 'Safety')">SAFETY</button>
+                <button class="tablinks" onclick="openTab(event, 'Dining')">DINING</button>
+            </nav>
+            <div id="Cover" class="tabcontent">
+                <div class="box-container">
+                    <section class="Home">
+                        <video src="videos/ceremony.mp4" controls autoplay loop muted> Your browser does not support the video tag.</video>
+                    </section>
+                </div>
+            </div>
+            <div id="StayGuide" class="tabcontent">
+                <h3>While You Are Here</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/wifi.svg" alt="wifi-icon">
+                        <p>WIFI_〇F<br>PASSWORD: 12345678</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/bed.svg" alt="bed-icon">
+                        <p>CHECK-IN / CHECK-OUT<br>3:00PM - 12:00PM</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/breakfast.svg" alt="breakfast-icon">
+                        <p>BREAKFAST<br>7:00AM - 10:00AM ➵ 7F</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/reserve.svg" alt="reserve-icon">
+                        <p>RESERVATION<br>To book, extend, cancel or other room requests, please contact the Front Office.</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/restaurant-svgrepo-com.svg" alt="restaurant-icon">
+                        <p>RESTAURANT<br>7:00AM - 23:00PM ➵ 7F</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/brandy-svgrepo-com.svg" alt="bar-icon">
+                        <p>BAR BARON<br>5:00AM - 2:00AM ➵ 2F<br>Closed on Mondays</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/steak-2-svgrepo-com.svg" alt="steak-icon">
+                        <p>TEPPANYAKI<br>4:00AM - 12:00AM ➵ 8F<br><span style="color:#b47c56">(Reservation Required)</span></p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/swim.svg" alt="SWIM-icon">
+                        <p>SWIMMING POOL<br>8:00AM - 21:00PM ➵ 7F</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/sauna.svg" alt="spa-icon">
+                        <p>STEAM BATH & SAUNA<br>8:00AM - 21:00PM ➵ 7F<br><span style="color:#b47c56">(Please Ask for Assistance)</span></p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
+            </div>
+            <div id="Regulation" class="tabcontent">
+                <h3>Accommodation Regulation</h3>
+                <div class="box-container">
+                    <!-- article 1 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/reserve.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 1 Application of provisions</span><br>
+                        1. The accommodation terms and conditions and related contracts entered into by this hotel shall be as stipulated in these terms and conditions, and matters not stipulated in these terms and conditions shall be governed by laws and customs.<br>
+                        2. Reservations made by credit card shall be subject to the provisions of these terms and conditions, and the details thereof shall be determined between the hotel and the credit card company.<br>
+                        3. Notwithstanding the provisions of the preceding paragraph, the Hotel may conclude necessary contracts to the extent that it does not violate the spirit of these regulations, laws and customs.
+                        </p>
+                    </section><br><br>
+        <!-- article 2 -->
+                        <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 2 Refusal of accommodation request
+                        </span><br>
+                        Our hotel may refuse your application for accommodation in the following cases:<br>
+                        1. When the application for accommodation is not based on these terms and conditions.<br>
+                        2. When the hotel is fully booked and there are no rooms available.<br>
+                        3. When there is a risk that the person seeking accommodation will use the accommodation facility in a manner that violates the provisions of laws and regulations or the maintenance of public order or good morals.<br>
+                        4. When it is clearly recognized that the person seeking accommodation is suffering from an infectious disease.<br>
+                        5. When requesting a special burden from the hotel regarding accommodation.<br>
+                        6. When a person seeking accommodation is found to be in possession of illegal drugs or pets.<br>
+                        7. When the hotel is unable to provide accommodation due to natural disasters, damage to facilities, or other unavoidable reasons.<br>
+                        8. When it violates the rules stipulated by the laws and regulations of the Kingdom of Cambodia.<br>
+                        9. A person seeking accommodation may engage in assault, intimidation, extortion, unreasonable demands, gambling, possession or use of prohibited substances, acts that cause significant inconvenience to other guests, or other acts related to accommodation or within the Hotel. When there is a risk of committing an act that violates the law or public order and morals.</p>
+                    </section><br><br>
+        <!-- article 3 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/passport-1-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 3 Clarification of name, etc.</span><br>
+                        If the hotel accepts an application for accommodation by the day before the accommodation date, the hotel may request the person seeking accommodation to clarify the following matters within a specified period:<br>
+                        1. Name, gender, nationality and occupation of the person seeking accommodation;<br>
+                        2. Other matters deemed necessary by the hotel</p>
+                    </section><br><br>
+        <!-- article 4 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/deposit-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 4 Reservation deposit</span><br>
+                        1. Our hotel will guarantee your accommodation reservation application with the payment of the reservation deposit.
+                        We will also guarantee your reservation if you pay for your stay in advance by credit card.<br>
+                        2. If the provisions of Article 5 apply, the reservation deposit mentioned in the previous paragraph will be applied to the cancellation fee, and the remaining amount will be refunded to the reservation person. However, if you are making a reservation by credit card, please refer to Article 5.<br>
+                        3. If the hotel cancels a reservation, the hotel will notify the reservation person of the reservation number, reservation date, name of the person in charge of reservation, and cancellation fee.</p></section><br><br>
+        <!-- article 5 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;"><br>Article 5 Cancellation of reservation by guest</span><br>
+                        For customers who complete the payment of the reservation deposit, the following cancellation fee will be charged according to the total amount of the canceled room.<br>
+                        1. More than 2 days before arrival date: Free<br>
+                        2. The day before arrival: 50% of the first day's accommodation fee<br>
+                        3. On the day of arrival: 100% of the first day's accommodation fee<br>
+                        4. No-show: Full amount of the booked room<br>
+                        5. If you wish to cancel a reservation made with a credit card through a travel agent, please contact your travel agent.</p></section><br><br>
+        <!-- article 6 -->
+                    <section class="box">                
+                        <p>
+                            <img style="width: 40px; padding: 0; margin:0" src="icons/cancel.svg"><br>
+                            <span style="color:#b47c56; font-weight: bold;">Article 6 Cancellation of reservation by hotel</span><br>
+                            1. Unless otherwise specified, the hotel may cancel the accommodation reservation in the following cases.<br>
+                            <span style="display: block; margin-left: 20px;">
+                                a. When a request pursuant to the provisions of Article 2, Paragraphs 1 to 9 has been made, but the request has not been responded to within the prescribed period.
+                            </span><br>
+                            2. If payment of the reservation deposit as set forth in Article 4, Paragraph 1 is requested, but the payment is not made within the prescribed period. If the hotel cancels the reservation pursuant to each of the preceding paragraphs, the hotel will refund the reservation application deposit.
+                        </p>
+                    </section>
+        <!-- article 7 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/register.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 7 Registration
+                        </span><br>
+                        Guests must register the following information at the front desk of the hotel on the day of arrival.<br>
+                        1. Matters stipulated in Article 3, Paragraph 1.<br>
+                        2. Foreign guests: Passport number, date of entry into Cambodia.<br>
+                        3. Cambodian guests: National registration number.<br>
+                        4. Current address, contact information, occupation, date of birth.<br>
+                        5. Date and time of departure.<br>
+                        6. Other matters deemed necessary by the hotel.<br><br>
+                        
+                        Please note that the personal information you provide will be used only when necessary to achieve the purpose of your stay, and will not be used for any other purpose.</p></section><br><br>
+        <!-- article 8 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/bedroom-sleeping-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 8 Room usage time</span><br>
+                        1. Guests may use the hotel's guest rooms from 3:00 p.m. to 12:00 p.m. the next day. However, if you stay for consecutive nights, you can use it all day except for the day of arrival and the day of departure.<br><br>
+        
+                        2. Notwithstanding the provisions of the preceding paragraph, if the guest room is used beyond the check-out time, the hotel may charge the following additional charges.：<br>
+                        <span style="display: block; margin-left: 20px;">a. Until 3pm: 30% of accommodation fee<br>
+                        b. Until 6pm: 50% of the accommodation fee<br>
+                        c. After 6pm: 100% of accommodation fee</span><br><br>
+        
+                        3. Use before check-in time<br>
+                        <span style="display: block; margin-left: 20px;">a. Before 8:59am: 100% of accommodation fee<br>
+                        b. From 9:00 a.m. to 11:59 a.m. 50% of the accommodation fee<br>
+                        c. From 12:00 pm to 2:59 pm: 30% of the accommodation fee</span></p></section><br><br>
+        <!-- article 9 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/hour.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 9 Business hours</span><br>
+                        Please refer to "FLOOR GUIDE" tab.</p>
+                    </section>
+        <!-- article 10 -->
                 <section class="box">                
-                <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 2 Refusal of accommodation request
-                </span><br>
-                Our hotel may refuse your application for accommodation in the following cases:<br>
-                1. When the application for accommodation is not based on these terms and conditions.<br>
-                2. When the hotel is fully booked and there are no rooms available.<br>
-                3. When there is a risk that the person seeking accommodation will use the accommodation facility in a manner that violates the provisions of laws and regulations or the maintenance of public order or good morals.<br>
-                4. When it is clearly recognized that the person seeking accommodation is suffering from an infectious disease.<br>
-                5. When requesting a special burden from the hotel regarding accommodation.<br>
-                6. When a person seeking accommodation is found to be in possession of illegal drugs or pets.<br>
-                7. When the hotel is unable to provide accommodation due to natural disasters, damage to facilities, or other unavoidable reasons.<br>
-                8. When it violates the rules stipulated by the laws and regulations of the Kingdom of Cambodia.<br>
-                9. A person seeking accommodation may engage in assault, intimidation, extortion, unreasonable demands, gambling, possession or use of prohibited substances, acts that cause significant inconvenience to other guests, or other acts related to accommodation or within the Hotel. When there is a risk of committing an act that violates the law or public order and morals.</p>
-            </section><br><br>
-<!-- article 3 -->
-            <section class="box">                
-                <p><img style="width: 40px; padding: 0; margin:0"src="icons/passport-1-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 3 Clarification of name, etc.</span><br>
-                If the hotel accepts an application for accommodation by the day before the accommodation date, the hotel may request the person seeking accommodation to clarify the following matters within a specified period:<br>
-                1. Name, gender, nationality and occupation of the person seeking accommodation;<br>
-                2. Other matters deemed necessary by the hotel</p>
-            </section><br><br>
-<!-- article 4 -->
-            <section class="box">                
-                <p><img style="width: 40px; padding: 0; margin:0"src="icons/deposit-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 4 Reservation deposit</span><br>
-                1. Our hotel will guarantee your accommodation reservation application with the payment of the reservation deposit.
-                We will also guarantee your reservation if you pay for your stay in advance by credit card.<br>
-                2. If the provisions of Article 5 apply, the reservation deposit mentioned in the previous paragraph will be applied to the cancellation fee, and the remaining amount will be refunded to the reservation person. However, if you are making a reservation by credit card, please refer to Article 5.<br>
-                3. If the hotel cancels a reservation, the hotel will notify the reservation person of the reservation number, reservation date, name of the person in charge of reservation, and cancellation fee.</p></section><br><br>
-<!-- article 5 -->
-            <section class="box">                
-                <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;"><br>Article 5 Cancellation of reservation by guest</span><br>
-                For customers who complete the payment of the reservation deposit, the following cancellation fee will be charged according to the total amount of the canceled room.<br>
-                1. More than 2 days before arrival date: Free<br>
-                2. The day before arrival: 50% of the first day's accommodation fee<br>
-                3. On the day of arrival: 100% of the first day's accommodation fee<br>
-                4. No-show: Full amount of the booked room<br>
-                5. If you wish to cancel a reservation made with a credit card through a travel agent, please contact your travel agent.</p></section><br><br>
-<!-- article 6 -->
-            <section class="box">                
-                <p>
-                    <img style="width: 40px; padding: 0; margin:0" src="icons/cancel.svg"><br>
-                    <span style="color:#b47c56; font-weight: bold;">Article 6 Cancellation of reservation by hotel</span><br>
-                    1. Unless otherwise specified, the hotel may cancel the accommodation reservation in the following cases.<br>
-                    <span style="display: block; margin-left: 20px;">
-                        a. When a request pursuant to the provisions of Article 2, Paragraphs 1 to 9 has been made, but the request has not been responded to within the prescribed period.
-                    </span><br>
-                    2. If payment of the reservation deposit as set forth in Article 4, Paragraph 1 is requested, but the payment is not made within the prescribed period. If the hotel cancels the reservation pursuant to each of the preceding paragraphs, the hotel will refund the reservation application deposit.
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/cash-payment.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 10 Payment of fees</span><br>
+                    Accommodation charges shall be paid in currency, credit card, or coupons approved by the hotel, and must be paid to the front desk upon departure of the guest or when requested by the hotel, such as when the balance is large. The hotel does not accept personal checks. Even if the guest does not use the guest room, accommodation fees will be charged from the start date of the stay.</p>
+                </section>
+        <!-- article 11 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/regulation.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 11 Compliance with regulations</span><br>
+                    Guests are required toTaPlease abide by the rules posted within our hotel.
+                    </p>
+                </section>
+        <!-- article 12 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/refuse.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 12 Refusal to continue accommodation</span><br>
+                    1. The hotel may refuse to continue the stay of a guest in the circumstances mentioned in Article 2.<br>
+                    2. When a guest does not abide by the rules of the hotel.
+                    </p>
+                </section>
+        <!-- article 13 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/responsibility.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 13 Responsibilities of the Hotel</span><br>
+                        1. The hotel's responsibility for accommodation begins when the guest registers for accommodation at the front desk of the hotel or when the guest enters the guest room, whichever comes first.It ends when the guest completes check-out.<br>
+                        2. The hotel is not responsible for any accidents that occur due to the guest's failure to abide by the hotel's rules.<br>
+                        3. If the hotel is unable to provide the guest with the contracted room, the hotel shall, with the consent of the guest, arrange for other accommodations with the same conditions as possible. If the hotel is unable to arrange other accommodations despite the provisions of the preceding paragraph, the hotel will pay the guest a compensation fee equivalent to the cancellation fee, and the compensation fee will be applied to the amount of damages. However, if there is no reason attributable to the hotel for the inability to provide a guest room, no compensation fee will be paid.<br>
+                        4. When a guest uses the hotel's parking lot, the hotel rents out the space and does not assume responsibility for the management of the vehicle, regardless of whether the vehicle key is entrusted to the guest. However, in the event that damage is caused intentionally or negligently by the hotel in managing the parking lot, the hotel will be responsible for compensation.
+                    </p>
+                </section>
+        <!-- article 14 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/hotel-keycard.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 14 Issuance and return of room key</span><br>
+                    1. Guests must leave their room key at the front desk upon check-in and return it to the front desk upon check-out.<br>
+                    2. If a guest loses their room key, please report it to the hotel reception counter. If you lose your key, you will be charged an additional fee.<br>
+                    3. If the guest leaves the accommodation with the room key in hand, the guest must return the room key to the hotel by mail or other means without delay.
+                    </p>
+                </section>
+        <!-- article 15 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/responsibility.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 15 Responsibilities of Guests</span><br>
+                    If the Hotel suffers damage due to the intentional or negligent act of the Guest, the Guest shall compensate the Hotel for the damage.</p>
+                </section>
+        <!-- article 16 -->
+                    <section class="box">                
+                        <p><img style="width: 20px; padding: 0; margin:0"src="icons/disclaimer.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 16 Disclaimers</span><br>
+                        The use of computer communications from our hotel is at the user's own risk. Even if the service is interrupted due to a system failure or other reason while using computer communication, and the user suffers any damage as a result, the hotel will not be held responsible for any damage, unless this is due to intentional or gross negligence on the part of the hotel. I am not responsible. In addition, if there is an act that the hotel deems inappropriate when using computer communications and this causes damage to the hotel or a third party, the guest will be required to compensate for the damage.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div id="Rules" class="tabcontent">
+                <p>In order to maintain the quality of the hotel and ensure that our guests have a safe and comfortable stay, our hotel has established the following usage rules based on Article 11 of the Accommodation Terms and Conditions, and we ask for your cooperation. . If you do not comply with these rules, we will refuse your stay or use of the hotel facilities. Please note that the hotel will not be held responsible for any accidents that occur due to non-compliance with this rule, unless there is intentional or gross negligence on the part of the hotel.
                 </p>
-            </section>
-<!-- article 7 -->
-            <section class="box">                
-                <p><img style="width: 40px; padding: 0; margin:0"src="icons/register.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 7 Registration
-                </span><br>
-                Guests must register the following information at the front desk of the hotel on the day of arrival.<br>
-                1. Matters stipulated in Article 3, Paragraph 1.<br>
-                2. Foreign guests: Passport number, date of entry into Cambodia.<br>
-                3. Cambodian guests: National registration number.<br>
-                4. Current address, contact information, occupation, date of birth.<br>
-                5. Date and time of departure.<br>
-                6. Other matters deemed necessary by the hotel.<br><br>
-                
-                Please note that the personal information you provide will be used only when necessary to achieve the purpose of your stay, and will not be used for any other purpose.</p></section><br><br>
-<!-- article 8 -->
-            <section class="box">                
-                <p><img style="width: 40px; padding: 0; margin:0"src="icons/bedroom-sleeping-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 8 Room usage time</span><br>
-                1. Guests may use the hotel's guest rooms from 3:00 p.m. to 12:00 p.m. the next day. However, if you stay for consecutive nights, you can use it all day except for the day of arrival and the day of departure.<br><br>
-
-                2. Notwithstanding the provisions of the preceding paragraph, if the guest room is used beyond the check-out time, the hotel may charge the following additional charges.：<br>
-                <span style="display: block; margin-left: 20px;">a. Until 3pm: 30% of accommodation fee<br>
-                b. Until 6pm: 50% of the accommodation fee<br>
-                c. After 6pm: 100% of accommodation fee</span><br><br>
-
-                3. Use before check-in time<br>
-                <span style="display: block; margin-left: 20px;">a. Before 8:59am: 100% of accommodation fee<br>
-                b. From 9:00 a.m. to 11:59 a.m. 50% of the accommodation fee<br>
-                c. From 12:00 pm to 2:59 pm: 30% of the accommodation fee</span></p></section><br><br>
-<!-- article 9 -->
-            <section class="box">                
-                <p><img style="width: 40px; padding: 0; margin:0"src="icons/hour.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 9 Business hours</span><br>
-                Please refer to "FLOOR GUIDE" tab.</p>
-            </section>
-<!-- article 10 -->
-        <section class="box">                
-            <p><img style="width: 20px; padding: 0; margin:0"src="icons/cash-payment.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 10 Payment of fees</span><br>
-            Accommodation charges shall be paid in currency, credit card, or coupons approved by the hotel, and must be paid to the front desk upon departure of the guest or when requested by the hotel, such as when the balance is large. The hotel does not accept personal checks. Even if the guest does not use the guest room, accommodation fees will be charged from the start date of the stay.</p>
+                <div class="box-container">
+                    <section class="box">
+                        <p>1. Immediately upon arrival, please check the evacuation route map posted on the back of the guest room entrance door and the emergency exits on each floor.</p>
+                    </section>
+                    <section class="box">
+                        <p>2. Due to the risk of fire, smoking is prohibited outside the guest room or designated areas. If you are found smoking outside of the designated areas, you will be subject to a $300 fine.</p>
+                    </section>
+                    <section class="box">
+                        <p>3. It is prohibited to use home appliances with high power consumption.</p>
+                    </section>
+                    <section class="box">
+                        <p>4. Rooms are for overnight stay only.</p>
+                    </section>
+                    <section class="box">
+                        <p>5. To change your room, please contact the front desk.</p>
+                    </section>
+                    <section class="box">
+                        <p>6. The hotel's fixtures and equipment may not be used for any purpose other than their original purpose, nor may they be taken out of the hotel.</p>
+                    </section>
+                    <section class="box">
+                        <p>7. The following items are not allowed in the cabin:<br>
+                            <span style="display: block; margin-left: 20px;">
+                            a. Flammable explosives<br>
+                            b. Items that emit unpleasant odors (durian, etc.)<br>
+                            c. Items prohibited by Cambodian law<br>
+                            d. Animals and birds</span><br>● Please refrain from using any items that may cause damage to the hotel's electrical system.</p>
+                    </section>
+                    <section class="box">
+                        <p>8. The hotel is not responsible for items left at the hotel beyond the following periods:<br>
+                            <span style="display: block; margin-left: 20px;">
+                                a. Checked baggage: 3 months<br>
+                                b. Lost items: 3 months</span></p>
+                    </section>
+                    <section class="box">
+                        <p>9. We do not allow use of our hotel by organized crime groups, organized crime groups, or their affiliates, or other anti-social forces or their affiliates. In addition, if this fact is discovered after making a reservation or during use, we will refuse your use at that time.</p>
+                    </section>
+                    <section class="box">
+                        <p>10. If assault, intimidation, blackmail, coercive unreasonable demands, or similar acts are detected, you will be immediately refused use of our hotel.</p>
+                    </section>
+                    <section class="box">
+                        <p>11. Please refrain from engaging in any behavior that may or may cause inconvenience to other guests, such as drunkenness or violent behavior.</p>
+                    </section>
+                    <section class="box">
+                        <p>12. Please do not engage in illegal gambling or other acts that disturb public morals.</p>
+                    </section>
+                    <section class="box">
+                        <p>13. Please do not move any equipment or fixtures in the guest room without permission.</p>
+                    </section>
+                    <section class="box">
+                        <p>14. Please do not use the hallways, lobby, or other facilities other than guest rooms while wearing bathrobes, slippers, etc. (excluding pools and saunas).</p>
+                    </section>
+                    <section class="box">
+                        <p>15. Please do not distribute advertising materials or sell goods to other customers within the facility without permission.</p>
+                    </section>
+                    <section class="box">
+                        <p>16. Actual costs will be charged for any damage or loss to equipment or equipment inside or outside the facility.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>17. Items left in the guest room that the hotel determines have been discarded by the guest will be disposed of in accordance with the hotel's internal regulations.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>18. Payment must be made at the front desk upon departure or upon presentation of the invoice.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>19. Front desk and in-room safes are available free of charge. Grand Vogue Hotel & Casino is not responsible for any valuables lost or stolen on hotel premises.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>20. The number of guests in our hotel's rooms is 2 people. (Excluding penthouses) Children under 5 years of age and children under 11 years of age staying in the same bed are free of charge with each adult.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p style="font-weight: bold;">Failure to comply with the above rules may result in dismissal from the premises and may also make you liable for any damages caused.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        
+            <div id="FloorGuide" class="tabcontent">
+                <h3>The Facilities</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/casino.svg" alt="casino-icon">
+                        <p><span style="font-weight:bold">CASINO</span>
+                        <br>Location: 1st floor
+                        <br>Baccarat, blackjack, new-new, slot machine games
+                        <br>Business hours: 6pm – 2am</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/brandy-svgrepo-com.svg" alt="bar-icon">
+                        <p><span style="font-weight:bold">BAR BARON</span>
+                        <br>Location: 2nd floor
+                        <br>Business hours: 5pm – 2am<br>(Closed on Mondays)</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/restaurant-svgrepo-com.svg" alt="restau-icon">
+                        <p><span style="font-weight:bold">RESTAURANT</span>
+                        <br>Location: 7th floor
+                        <br>Business hours: 7am – 11pm</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/spa-svgrepo-com.svg" alt="sauna-icon">
+                        <p><span style="font-weight:bold">SWIMMING POOL, SAUNA, STEAM BATH</span>
+                        <br>Location: 7th floor
+                        <br>Business hours: 8am – 9pm</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/steak-2-svgrepo-com.svg" alt="steak-icon">
+                        <p><span style="font-weight:bold">TEPPANYAKI MATSUNAMI</span>
+                        <br>Location: 8th floor
+                        <br>Business hours:4pm – 12am <br><span style="color:#b47c56">(Reservation Required)</span></p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
+            </div>
+            
+            <div id="RoomServices" class="tabcontent">
+                <h3>The Services We Provide</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/customer-service-agent-svgrepo-com.svg" alt="customer-service-icon">
+                        <p><span style="font-weight:bold;">GUEST RELATIONS</span><br>
+                            Multilingual staff provide a variety of services including:<br>
+                            <span style="display: block; margin-left: 20px;">➵ VIP escort<br>
+                            ➵ sightseeing/shopping services<br>
+                            ➵ island boat information<br>
+                            ➵ reservations, etc.<br>
+                            ➵ event services<br>
+                            ➵information, reservations, etc.<br>
+                            ➵ guest support<br>
+                            ➵ VIP arrangements, etc.</span><br<br>
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/airport.svg" alt="airport-transfer-icon">
+                        <p><span style="font-weight:bold;">TRANSFER SERVICES</span><br>
+                        For information on sightseeing spots and <span style="text-decoration: underline;">airport transfers</span>, please proceed to the Front Office for booking and other information.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/taxi.svg" alt="taxi-transfer-icon">
+                        <p><span style="font-weight:bold;">TAXI</span><br>
+                        For taxi booking assistance, please contact us.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/baggage.svg" alt="luggage-assistance-icon">
+                        <p><span style="font-weight:bold;">LUGGAGE ASSISTANCE</span><br>
+                        For luggage assistance, please contact us.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/housekeeping.svg" alt="housekeeping-icon">
+                        <p><span style="font-weight:bold;">HOUSEKEEPING</span><br>
+                            Room cleaning is from <span style="color:#b47c56;">9am to 5pm</span> daily. Turn on "Please Clean Up" button <img style="width: 20px; padding:0; margin:0;" src="icons/housekeeper-svgrepo-com.svg"> should you wish for room cleaning, otherwise, turn on "Do Not Disturb" <img style="width: 20px; padding:0; margin:0;" src="icons/notification_bell_ringtone_silent_icon_229507.svg">.
+                            Should you wish to request a specific time or additional amenities, please contact us.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/laundry.svg" alt="laundry-icon">
+                        <p><span style="font-weight:bold;">LAUNDRY SERVICE</span><br>
+                        Laundry service is available upon request. Laundry bags are located in the closet. Please fill out the designated form and contact the front desk.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/adapter.svg" alt="adapter-icon">
+                        <p><span style="font-weight:bold;">ADAPTER</span><br>
+                        The voltage in the property is <span style="color:#b47c56;">AC110-220V</span>. Please check your device requirement before using it.</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/ambulance.svg" alt="medical-icon">
+                        <p><span style="font-weight:bold;">MEDICAL ASSISTANCE</span><br>For information on hospitals around the city, please contact us.</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/room-service.svg" alt="medical-icon">
+                        <p><span style="font-weight:bold;">ROOM SERVICE</span><br>In-room dining is available. Please refer to the room menu. To order, please contact us.</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/safe.svg" alt="safebox-icon">
+                        <p><span style="font-weight:bold;">SAFE BOX</span><br> Please use the safe box in the room to secure valuables. The property is not responsible in case of lost belongings. Should the valuables are too large to fit in a safe, please use the storage service at the front desk. </p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
+            </div>
+            
+            <div id="Safety" class="tabcontent">
+                <h3>Privacy, Safety and Security</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/lock.svg" alt="lock-icon">
+                        <p><span style="font-weight:bold;">DOOR LOCK</span><br>All guest rooms has an automatic lock system using the guest room card key. For your privacy and security, please use the safety bar during your stay.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/peephole.svg" alt="entrance-icon">
+                        <p><span style="font-weight:bold;">OBSERVATION PORT</span><br>An observation port or "peephole" is installed in the main door. Please answer the knock before inviting us into your room. Hotel employees are required to wear name tags and announce their presence after knocking three times.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/hotel-keycard.svg" alt="keycard-icon">
+                        <p><span style="font-weight:bold;">GUESTROOM KEY</span><br>Please secure the room key. For lost keycard, please immediately contact us for replacement.</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/door-close-svgrepo-com.svg" alt="roomnumber-icon">
+                        <p><span style="font-weight:bold;">ROOM NUMBER</span><br>Please keep in-mind the room number assigned. In case of forgotten room-number, please contact us.</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/time-is-money-svgrepo-com.svg" alt="valuables-icon">
+                        <p><span style="font-weight:bold;">VALUABLES</span><br>A safety deposit box is available at the front desk 24 hoursy.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/privacy-tips-svgrepo-com.svg" alt="privacy-icon">
+                        <p><span style="font-weight:bold;">PRIVACY AND SECURITY</span><br> Please turn on the "Do Not Disturb" sign on the touch panel [DND] in your room. In addition, a safety bar and an observation port is provided on the door may prevent intruders from entering. Hotel employees have been instructed not to disclose guest room numbers.
+                        </p>
+                    </section>
+                    <section style="background-color:#cde5f1" class="box">
+                        <p><span style="font-weight:bold;">SAFETY INFORMATION</span><br>[How to respond in an emergency]<br><br>In case of emergency, read the following guidelinesfor your safety:<br><br>
+        <!-- in case of emergency -->
+                        <span style="font-weight:bold;">In Case of Emergency</span><br>
+                        In case of emergency, please contact the front desk. Please check the location of exits, stairs, and firefighting equipment on each floor using the evacuation map located inside the guest room door.<br><br>
+            <!-- fire emergency -->
+                        <span style="font-weight:bold;">A. Fire response</span><br>
+            <!-- in case of fire alarm -->
+                        <span style="text-decoration: underline;">1. In case of fire/fire alarm sounds</span><br>
+                        <span style="display: block; margin-left: 20px;">➵ Please contact the front desk.<br>
+                        ➵ Please keep your room key with you at all times.<br>
+                        ➵ Stay calm and avoid panic.<br>
+                        ➵ Head to the nearest emergency exit and evacuate.<br>
+                        ➵ Please check the evacuation route map posted inside the guest room door for the location of the emergency exit.<br>
+                        ➵ Before opening the cabin door, check with the back of your hand whether the doorknob is hot.</span><br><br>
+            <!-- if the door is hot -->
+                        <span style="text-decoration: underline;">2. If the door is hot</span><br>
+                        <span style="display: block; margin-left: 20px;">➵ Stay in your room, close the door, and turn off the air conditioner. Place a wet towel under the door.<br>
+                        ➵ Place it on a vent with smoke. Contact the front desk and let the staff know your whereabouts.
+                        ➵ Please wait for the in-house broadcast. Also, if there is smoke in the room, 
+                        ➵ Stay as low as possible and remain calm.<br>
+                        ➵ If you stay in your room, hang a sheet outside the window to show that you are trapped inside.<br>
+                        ➵ Fill the bathtub with water, wet the sheets, and place them at the base of the door .<br>
+                        ➵ Please pack it. Close the vent where black smoke is coming out.<br>
+                        ➵ Open windows only if you can get some fresh air.<br>
+                        ➵ If there is smoke or fire when you open the door, close it immediately and follow the instructions above when staying in the room.<br>
+                        ➵ Please take action.</span><br><br>
+            <!-- during evacuation -->
+                        <span style="text-decoration: underline;">3. During Evacuation</span><br>
+                        <span style="display: block; margin-left: 20px;">➵ Please use the stairs instead of the elevator.<br>
+                        ➵ If there is smoke, stay low and cover your mouth and nose with a wet cloth or towel. Please cover.<br>
+                        ➵ If visibility is poor, you can evacuate without getting lost by walking along the wall while touching it with your hands.<br>
+                        ➵ If you cannot find other guests or staff, please call for help.</span><br><br>
+            <!-- evacuate first -->
+                        <span style="text-decoration: underline;">4. Evacuate first</span><br>
+                        <span style="display: block; margin-left: 20px;">➵  Evacuate to the designated evacuation area and follow the instructions of hotel staff.<br>
+                        ➵ Guests are encouraged to stay with other guests and staff at the evacuation site.<br>
+                        ➵ Do not return to the building until instructed to re-enter.</span><br><br>
+        <!-- general emergency -->
+                        <span style="font-weight:bold;">B. General Emergency Response
+                        </span><br>
+                        <span style="text-decoration: underline;">1. Medical Emergency</span><br>
+                        <span style="display: block; margin-left: 20px;">➵ In case of sudden illness or injury, please contact the front desk immediately.<br>
+                        ➵ While waiting for the arrival of an ambulance or medical staff arranged by the front desk.<br>
+                        ➵ Please provide first aid to the extent possible.</span><br><br>
+        
+                        <span style="text-decoration: underline;">2. Discovery of Suspicious Persons and Objects</span><br>
+                        <span style="display: block; margin-left: 20px;">➵ If you see any suspicious persons or objects, please contact the front desk immediately.<br>
+                        ➵ Please do not touch the suspicious object and do not alert others.<br>
+                        ➵ The front desk will review the situation and take necessary measures.</span><br><br>
+                        By following these response methods, you can safely evacuate in an emergency and minimize trouble. Hotel staff will also prioritize the safety of our guests, so please follow their instructions.</span>
+                        </p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
+            </div>
+            <div id="Dining" class="tabcontent">
+                <div class="box-container">
+                    <section style="flex-direction: column;" class="box">
+                        <h2>Work on progress...</h2>
+                        <img style="display: flex; max-width: 100%; margin:auto; justify-content: center; align-items: center;
+                        align-content: center; padding:0;"src="icons/samurai.gif">
+                    </section>
+                </div>
+            </div>
         </section>
-<!-- article 11 -->
-        <section class="box">                
-            <p><img style="width: 20px; padding: 0; margin:0"src="icons/regulation.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 11 Compliance with regulations</span><br>
-            Guests are required toTaPlease abide by the rules posted within our hotel.
-            </p>
-        </section>
-<!-- article 12 -->
-        <section class="box">                
-            <p><img style="width: 20px; padding: 0; margin:0"src="icons/refuse.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 12 Refusal to continue accommodation</span><br>
-            1. The hotel may refuse to continue the stay of a guest in the circumstances mentioned in Article 2.<br>
-            2. When a guest does not abide by the rules of the hotel.
-            </p>
-        </section>
-<!-- article 13 -->
-        <section class="box">                
-            <p><img style="width: 20px; padding: 0; margin:0"src="icons/responsibility.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 13 Responsibilities of the Hotel</span><br>
-                1. The hotel's responsibility for accommodation begins when the guest registers for accommodation at the front desk of the hotel or when the guest enters the guest room, whichever comes first.It ends when the guest completes check-out.<br>
-                2. The hotel is not responsible for any accidents that occur due to the guest's failure to abide by the hotel's rules.<br>
-                3. If the hotel is unable to provide the guest with the contracted room, the hotel shall, with the consent of the guest, arrange for other accommodations with the same conditions as possible. If the hotel is unable to arrange other accommodations despite the provisions of the preceding paragraph, the hotel will pay the guest a compensation fee equivalent to the cancellation fee, and the compensation fee will be applied to the amount of damages. However, if there is no reason attributable to the hotel for the inability to provide a guest room, no compensation fee will be paid.<br>
-                4. When a guest uses the hotel's parking lot, the hotel rents out the space and does not assume responsibility for the management of the vehicle, regardless of whether the vehicle key is entrusted to the guest. However, in the event that damage is caused intentionally or negligently by the hotel in managing the parking lot, the hotel will be responsible for compensation.
-            </p>
-        </section>
-<!-- article 14 -->
-        <section class="box">                
-            <p><img style="width: 20px; padding: 0; margin:0"src="icons/hotel-keycard.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 14 Issuance and return of room key</span><br>
-            1. Guests must leave their room key at the front desk upon check-in and return it to the front desk upon check-out.<br>
-            2. If a guest loses their room key, please report it to the hotel reception counter. If you lose your key, you will be charged an additional fee.<br>
-            3. If the guest leaves the accommodation with the room key in hand, the guest must return the room key to the hotel by mail or other means without delay.
-            </p>
-        </section>
-<!-- article 15 -->
-        <section class="box">                
-            <p><img style="width: 20px; padding: 0; margin:0"src="icons/responsibility.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 15 Responsibilities of Guests</span><br>
-            If the Hotel suffers damage due to the intentional or negligent act of the Guest, the Guest shall compensate the Hotel for the damage.</p>
-        </section>
-<!-- article 16 -->
-            <section class="box">                
-                <p><img style="width: 20px; padding: 0; margin:0"src="icons/disclaimer.svg"><br><span style="color:#b47c56; font-weight: bold;">Article 16 Disclaimers</span><br>
-                The use of computer communications from our hotel is at the user's own risk. Even if the service is interrupted due to a system failure or other reason while using computer communication, and the user suffers any damage as a result, the hotel will not be held responsible for any damage, unless this is due to intentional or gross negligence on the part of the hotel. I am not responsible. In addition, if there is an act that the hotel deems inappropriate when using computer communications and this causes damage to the hotel or a third party, the guest will be required to compensate for the damage.
-                </p>
-            </section>
+        <div class="introduction">
+            <h2>Welcome to Grand La Vogue Hotel & Casino</h2>
+            <p>Established in 2024, our hotel is dedicated to bringing you an unparalleled experience of Japanese excellence right here in Cambodia. We strive to blend the rich traditions of Japanese hospitality with the vibrant culture of our local surroundings, ensuring that every moment of your stay is extraordinary.<br><br>From the meticulously designed rooms to the exquisite culinary offerings, every detail at Grand La Vogue is crafted to provide you with a unique and memorable experience. Our commitment to impeccable service and serene ambiance guarantees that you will enjoy the finest comforts and warmest welcomes.<br><br>We are delighted to have you with us and look forward to making your stay exceptional.<br><br>Experience the Harmony of Japan in the Heart of Cambodia.<br><br><span style="font-family: Ms Madi, cursive; font-size: 20pt; color:rgb(0, 57, 104)">Tsutsui Yuji</span><br><span class="gm">Tsutsui Yuji (Thomas)<br>GENERAL MANAGER</span></p>
         </div>
-    </div>
-    <div id="Rules" class="tabcontent">
-        <p>In order to maintain the quality of the hotel and ensure that our guests have a safe and comfortable stay, our hotel has established the following usage rules based on Article 11 of the Accommodation Terms and Conditions, and we ask for your cooperation. . If you do not comply with these rules, we will refuse your stay or use of the hotel facilities. Please note that the hotel will not be held responsible for any accidents that occur due to non-compliance with this rule, unless there is intentional or gross negligence on the part of the hotel.
-        </p>
-        <div class="box-container">
-            <section class="box">
-                <p>1. Immediately upon arrival, please check the evacuation route map posted on the back of the guest room entrance door and the emergency exits on each floor.</p>
-            </section>
-            <section class="box">
-                <p>2. Due to the risk of fire, smoking is prohibited outside the guest room or designated areas. If you are found smoking outside of the designated areas, you will be subject to a $300 fine.</p>
-            </section>
-            <section class="box">
-                <p>3. It is prohibited to use home appliances with high power consumption.</p>
-            </section>
-            <section class="box">
-                <p>4. Rooms are for overnight stay only.</p>
-            </section>
-            <section class="box">
-                <p>5. To change your room, please contact the front desk.</p>
-            </section>
-            <section class="box">
-                <p>6. The hotel's fixtures and equipment may not be used for any purpose other than their original purpose, nor may they be taken out of the hotel.</p>
-            </section>
-            <section class="box">
-                <p>7. The following items are not allowed in the cabin:<br>
-                    <span style="display: block; margin-left: 20px;">
-                    a. Flammable explosives<br>
-                    b. Items that emit unpleasant odors (durian, etc.)<br>
-                    c. Items prohibited by Cambodian law<br>
-                    d. Animals and birds</span><br>● Please refrain from using any items that may cause damage to the hotel's electrical system.</p>
-            </section>
-            <section class="box">
-                <p>8. The hotel is not responsible for items left at the hotel beyond the following periods:<br>
-                    <span style="display: block; margin-left: 20px;">
-                        a. Checked baggage: 3 months<br>
-                        b. Lost items: 3 months</span></p>
-            </section>
-            <section class="box">
-                <p>9. We do not allow use of our hotel by organized crime groups, organized crime groups, or their affiliates, or other anti-social forces or their affiliates. In addition, if this fact is discovered after making a reservation or during use, we will refuse your use at that time.</p>
-            </section>
-            <section class="box">
-                <p>10. If assault, intimidation, blackmail, coercive unreasonable demands, or similar acts are detected, you will be immediately refused use of our hotel.</p>
-            </section>
-            <section class="box">
-                <p>11. Please refrain from engaging in any behavior that may or may cause inconvenience to other guests, such as drunkenness or violent behavior.</p>
-            </section>
-            <section class="box">
-                <p>12. Please do not engage in illegal gambling or other acts that disturb public morals.</p>
-            </section>
-            <section class="box">
-                <p>13. Please do not move any equipment or fixtures in the guest room without permission.</p>
-            </section>
-            <section class="box">
-                <p>14. Please do not use the hallways, lobby, or other facilities other than guest rooms while wearing bathrobes, slippers, etc. (excluding pools and saunas).</p>
-            </section>
-            <section class="box">
-                <p>15. Please do not distribute advertising materials or sell goods to other customers within the facility without permission.</p>
-            </section>
-            <section class="box">
-                <p>16. Actual costs will be charged for any damage or loss to equipment or equipment inside or outside the facility.
-                </p>
-            </section>
-            <section class="box">
-                <p>17. Items left in the guest room that the hotel determines have been discarded by the guest will be disposed of in accordance with the hotel's internal regulations.
-                </p>
-            </section>
-            <section class="box">
-                <p>18. Payment must be made at the front desk upon departure or upon presentation of the invoice.
-                </p>
-            </section>
-            <section class="box">
-                <p>19. Front desk and in-room safes are available free of charge. Grand Vogue Hotel & Casino is not responsible for any valuables lost or stolen on hotel premises.
-                </p>
-            </section>
-            <section class="box">
-                <p>20. The number of guests in our hotel's rooms is 2 people. (Excluding penthouses) Children under 5 years of age and children under 11 years of age staying in the same bed are free of charge with each adult.
-                </p>
-            </section>
-            <section class="box">
-                <p style="font-weight: bold;">Failure to comply with the above rules may result in dismissal from the premises and may also make you liable for any damages caused.
-                </p>
-            </section>
-        </div>
-    </div>
-
-    <div id="FloorGuide" class="tabcontent">
-        <h3>The Facilities</h3>
-        <div class="box-container">
-            <section class="box">
-                <img src="icons/casino.svg" alt="casino-icon">
-                <p><span style="font-weight:bold">CASINO</span>
-                <br>Location: 1st floor
-                <br>Baccarat, blackjack, new-new, slot machine games
-                <br>Business hours: 6pm – 2am</p>
-            </section>
-            <section class="box">
-                <img src="icons/brandy-svgrepo-com.svg" alt="bar-icon">
-                <p><span style="font-weight:bold">BAR BARON</span>
-                <br>Location: 2nd floor
-                <br>Business hours: 5pm – 2am<br>(Closed on Mondays)</p>
-            </section>
-            <section class="box">
-                <img src="icons/restaurant-svgrepo-com.svg" alt="restau-icon">
-                <p><span style="font-weight:bold">RESTAURANT</span>
-                <br>Location: 7th floor
-                <br>Business hours: 7am – 11pm</p>
-            </section>
-            <section class="box">
-                <img src="icons/spa-svgrepo-com.svg" alt="sauna-icon">
-                <p><span style="font-weight:bold">SWIMMING POOL, SAUNA, STEAM BATH</span>
-                <br>Location: 7th floor
-                <br>Business hours: 8am – 9pm</p>
-            </section>
-            <section class="box">
-                <img src="icons/steak-2-svgrepo-com.svg" alt="steak-icon">
-                <p><span style="font-weight:bold">TEPPANYAKI MATSUNAMI</span>
-                <br>Location: 8th floor
-                <br>Business hours:4pm – 12am <br><span style="color:#b47c56">(Reservation Required)</span></p>
-            </section>
-            <!-- Add more sections as needed -->
-        </div>
-    </div>
-    
-    <div id="RoomServices" class="tabcontent">
-        <h3>The Services We Provide</h3>
-        <div class="box-container">
-            <section class="box">
-                <img src="icons/customer-service-agent-svgrepo-com.svg" alt="customer-service-icon">
-                <p><span style="font-weight:bold;">GUEST RELATIONS</span><br>
-                    Multilingual staff provide a variety of services including:<br>
-                    <span style="display: block; margin-left: 20px;">➵ VIP escort<br>
-                    ➵ sightseeing/shopping services<br>
-                    ➵ island boat information<br>
-                    ➵ reservations, etc.<br>
-                    ➵ event services<br>
-                    ➵information, reservations, etc.<br>
-                    ➵ guest support<br>
-                    ➵ VIP arrangements, etc.</span><br<br>
-                </p>
-            </section>
-            <section class="box">
-                <img src="icons/airport.svg" alt="airport-transfer-icon">
-                <p><span style="font-weight:bold;">TRANSFER SERVICES</span><br>
-                For information on sightseeing spots and <span style="text-decoration: underline;">airport transfers</span>, please proceed to the Front Office for booking and other information.
-                </p>
-            </section>
-            <section class="box">
-                <img src="icons/taxi.svg" alt="taxi-transfer-icon">
-                <p><span style="font-weight:bold;">TAXI</span><br>
-                For taxi booking assistance, please contact us.
-                </p>
-            </section>
-            <section class="box">
-                <img src="icons/baggage.svg" alt="luggage-assistance-icon">
-                <p><span style="font-weight:bold;">LUGGAGE ASSISTANCE</span><br>
-                For luggage assistance, please contact us.
-                </p>
-            </section>
-            <section class="box">
-                <img src="icons/housekeeping.svg" alt="housekeeping-icon">
-                <p><span style="font-weight:bold;">HOUSEKEEPING</span><br>
-                    Room cleaning is from <span style="color:#b47c56;">9am to 5pm</span> daily. Turn on "Please Clean Up" button <img style="width: 20px; padding:0; margin:0;" src="icons/housekeeper-svgrepo-com.svg"> should you wish for room cleaning, otherwise, turn on "Do Not Disturb" <img style="width: 20px; padding:0; margin:0;" src="icons/notification_bell_ringtone_silent_icon_229507.svg">.
-                    Should you wish to request a specific time or additional amenities, please contact us.
-                </p>
-            </section>
-            <section class="box">
-                <img src="icons/laundry.svg" alt="laundry-icon">
-                <p><span style="font-weight:bold;">LAUNDRY SERVICE</span><br>
-                Laundry service is available upon request. Laundry bags are located in the closet. Please fill out the designated form and contact the front desk.
-                </p>
-            </section>
-            <section class="box">
-                <img src="icons/adapter.svg" alt="adapter-icon">
-                <p><span style="font-weight:bold;">ADAPTER</span><br>
-                The voltage in the property is <span style="color:#b47c56;">AC110-220V</span>. Please check your device requirement before using it.</p>
-            </section>
-            <section class="box">
-                <img src="icons/ambulance.svg" alt="medical-icon">
-                <p><span style="font-weight:bold;">MEDICAL ASSISTANCE</span><br>For information on hospitals around the city, please contact us.</p>
-            </section>
-            <section class="box">
-                <img src="icons/room-service.svg" alt="medical-icon">
-                <p><span style="font-weight:bold;">ROOM SERVICE</span><br>In-room dining is available. Please refer to the room menu. To order, please contact us.</p>
-            </section>
-            <section class="box">
-                <img src="icons/safe.svg" alt="safebox-icon">
-                <p><span style="font-weight:bold;">SAFE BOX</span><br> Please use the safe box in the room to secure valuables. The property is not responsible in case of lost belongings. Should the valuables are too large to fit in a safe, please use the storage service at the front desk. </p>
-            </section>
-            <!-- Add more sections as needed -->
-        </div>
-    </div>
-    
-    <div id="Safety" class="tabcontent">
-        <h3>Privacy, Safety and Security</h3>
-        <div class="box-container">
-            <section class="box">
-                <img src="icons/lock.svg" alt="lock-icon">
-                <p><span style="font-weight:bold;">DOOR LOCK</span><br>All guest rooms has an automatic lock system using the guest room card key. For your privacy and security, please use the safety bar during your stay.
-                </p>
-            </section>
-            <section class="box">
-                <img src="icons/peephole.svg" alt="entrance-icon">
-                <p><span style="font-weight:bold;">OBSERVATION PORT</span><br>An observation port or "peephole" is installed in the main door. Please answer the knock before inviting us into your room. Hotel employees are required to wear name tags and announce their presence after knocking three times.
-                </p>
-            </section>
-            <section class="box">
-                <img src="icons/hotel-keycard.svg" alt="keycard-icon">
-                <p><span style="font-weight:bold;">GUESTROOM KEY</span><br>Please secure the room key. For lost keycard, please immediately contact us for replacement.</p>
-            </section>
-            <section class="box">
-                <img src="icons/door-close-svgrepo-com.svg" alt="roomnumber-icon">
-                <p><span style="font-weight:bold;">ROOM NUMBER</span><br>Please keep in-mind the room number assigned. In case of forgotten room-number, please contact us.</p>
-            </section>
-            <section class="box">
-                <img src="icons/time-is-money-svgrepo-com.svg" alt="valuables-icon">
-                <p><span style="font-weight:bold;">VALUABLES</span><br>A safety deposit box is available at the front desk 24 hoursy.
-                </p>
-            </section>
-            <section class="box">
-                <img src="icons/privacy-tips-svgrepo-com.svg" alt="privacy-icon">
-                <p><span style="font-weight:bold;">PRIVACY AND SECURITY</span><br> Please turn on the "Do Not Disturb" sign on the touch panel [DND] in your room. In addition, a safety bar and an observation port is provided on the door may prevent intruders from entering. Hotel employees have been instructed not to disclose guest room numbers.
-                </p>
-            </section>
-            <section style="background-color:#DEDEDE" class="box">
-                <p><span style="font-weight:bold;">SAFETY INFORMATION</span><br>[How to respond in an emergency]<br><br>In case of emergency, read the following guidelinesfor your safety:<br><br>
-<!-- in case of emergency -->
-                <span style="font-weight:bold;">In Case of Emergency</span><br>
-                In case of emergency, please contact the front desk. Please check the location of exits, stairs, and firefighting equipment on each floor using the evacuation map located inside the guest room door.<br><br>
-    <!-- fire emergency -->
-                <span style="font-weight:bold;">A. Fire response</span><br>
-    <!-- in case of fire alarm -->
-                <span style="text-decoration: underline;">1. In case of fire/fire alarm sounds</span><br>
-                <span style="display: block; margin-left: 20px;">➵ Please contact the front desk.<br>
-                ➵ Please keep your room key with you at all times.<br>
-                ➵ Stay calm and avoid panic.<br>
-                ➵ Head to the nearest emergency exit and evacuate.<br>
-                ➵ Please check the evacuation route map posted inside the guest room door for the location of the emergency exit.<br>
-                ➵ Before opening the cabin door, check with the back of your hand whether the doorknob is hot.</span><br><br>
-    <!-- if the door is hot -->
-                <span style="text-decoration: underline;">2. If the door is hot</span><br>
-                <span style="display: block; margin-left: 20px;">➵ Stay in your room, close the door, and turn off the air conditioner. Place a wet towel under the door.<br>
-                ➵ Place it on a vent with smoke. Contact the front desk and let the staff know your whereabouts.
-                ➵ Please wait for the in-house broadcast. Also, if there is smoke in the room, 
-                ➵ Stay as low as possible and remain calm.<br>
-                ➵ If you stay in your room, hang a sheet outside the window to show that you are trapped inside.<br>
-                ➵ Fill the bathtub with water, wet the sheets, and place them at the base of the door .<br>
-                ➵ Please pack it. Close the vent where black smoke is coming out.<br>
-                ➵ Open windows only if you can get some fresh air.<br>
-                ➵ If there is smoke or fire when you open the door, close it immediately and follow the instructions above when staying in the room.<br>
-                ➵ Please take action.</span><br><br>
-    <!-- during evacuation -->
-                <span style="text-decoration: underline;">3. During Evacuation</span><br>
-                <span style="display: block; margin-left: 20px;">➵ Please use the stairs instead of the elevator.<br>
-                ➵ If there is smoke, stay low and cover your mouth and nose with a wet cloth or towel. Please cover.<br>
-                ➵ If visibility is poor, you can evacuate without getting lost by walking along the wall while touching it with your hands.<br>
-                ➵ If you cannot find other guests or staff, please call for help.</span><br><br>
-    <!-- evacuate first -->
-                <span style="text-decoration: underline;">4. Evacuate first</span><br>
-                <span style="display: block; margin-left: 20px;">➵  Evacuate to the designated evacuation area and follow the instructions of hotel staff.<br>
-                ➵ Guests are encouraged to stay with other guests and staff at the evacuation site.<br>
-                ➵ Do not return to the building until instructed to re-enter.</span><br><br>
-<!-- general emergency -->
-                <span style="font-weight:bold;">B. General Emergency Response
-                </span><br>
-                <span style="text-decoration: underline;">1. Medical Emergency</span><br>
-                <span style="display: block; margin-left: 20px;">➵ In case of sudden illness or injury, please contact the front desk immediately.<br>
-                ➵ While waiting for the arrival of an ambulance or medical staff arranged by the front desk.<br>
-                ➵ Please provide first aid to the extent possible.</span><br><br>
-
-                <span style="text-decoration: underline;">2. Discovery of Suspicious Persons and Objects</span><br>
-                <span style="display: block; margin-left: 20px;">➵ If you see any suspicious persons or objects, please contact the front desk immediately.<br>
-                ➵ Please do not touch the suspicious object and do not alert others.<br>
-                ➵ The front desk will review the situation and take necessary measures.</span><br><br>
-                By following these response methods, you can safely evacuate in an emergency and minimize trouble. Hotel staff will also prioritize the safety of our guests, so please follow their instructions.</span>
-                </p>
-            </section>
-            <!-- Add more sections as needed -->
-        </div>
-    </div>
-      <!-- Introduction -->
-      <div class="introduction">
-        <p><span style="font-weight:bold;">Welcome to GRAND LA VOGUE HOTEL & CASINO.</span><br><br>Established in 2024, our hotel is dedicated to bringing you an unparalleled experience of Japanese excellence right here in Cambodia. We strive to blend the rich traditions of Japanese hospitality with the vibrant culture of our local surroundings, ensuring that every moment of your stay is extraordinary.<br><br>From the meticulously designed rooms to the exquisite culinary offerings, every detail at Grand La Vogue is crafted to provide you with a unique and memorable experience. Our commitment to impeccable service and serene ambiance guarantees that you will enjoy the finest comforts and warmest welcomes.<br><br>We are delighted to have you with us and look forward to making your stay exceptional.<br><br>Experience the Harmony of Japan in the Heart of Cambodia.<br><br><span class="signature">Tsutsui Yuji</span><br><span class="gm">Tsutsui Yuji (Thomas)<br>GENERAL MANAGER</span></p>
-    </div>
-</main>
-
-<!-- FOOTER -->
+    </main>
     <footer>
         <div class="contact-icons">
             <a href="#"><img src="icons/messenger.svg" alt="messenger"></a>
@@ -528,6 +544,6 @@
             <p>©2024 All Rights Reserved</p>
         </div>
     </footer>
-    <script src="scripts/hotel.js"></script>
 </body>
 </html>
+    
