@@ -103,7 +103,7 @@ body {
 }
 .tabshere{
     max-width: 25%;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;    
     padding: 20px;
@@ -193,7 +193,7 @@ body {
     align-items: center;
     align-content: center;
     width: 80%;
-    height: 50vh;
+    height: 70vh;
 }
 .introduction{
     background-color: #e9e9e9;
@@ -210,7 +210,7 @@ body {
 .Home video{
     width: auto;
     object-fit: fill;
-    height: 50vh;
+    height: 70vh;
 }
 /* footer */
 footer{
