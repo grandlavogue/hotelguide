@@ -1,13 +1,15 @@
-@media (max-width:768px){
+@media (max-width:480px){
 /* Language Menu */
 .languagemenu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    top:-0%;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
     max-width: 100%;
     padding: 20px;
-    position:fixed;
+    position: fixed;
+    z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .menu-toggle {
@@ -17,27 +19,27 @@
     outline: none;
     padding: 0;
     margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: auto;
+    justify-content: flex-start; /* Align to the top-left */
+    align-items: flex-start; /* Align to the top-left */
+    align-content: flex-start; /* Align to the top-left */
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
 }
 
 .languagemenu.open .menu-links {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
-    background-color: #2d456d;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    align-content: flex-start; 
     margin-top: 50px;
 }
 
 .menu-links {
     display: none;
     flex-direction: column;
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .menu-links a {
@@ -45,13 +47,15 @@
     flex-direction: column;
     list-style: none;
     padding: 10px;
-    margin: auto;
+    margin: 10px;
     font-family: "Roboto", sans-serif;
     font-size: 12pt;
+    background:#ffffff;
+    width: 100px;
+    height: 20px;
     text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    border: 1pt #b47c56 solid;
+    color:#b47c56;
 }
 
 .menu-links a:hover {
@@ -59,14 +63,13 @@
 }
 
 /* header */
-header{
+header {
     display: flex;
     max-width: 100%;
-    padding:30px;
-    margin:0;
-
+    padding: 30px;
+    margin: 0;
 }
-header h1{
+header h1 {
     display: flex;
     max-width: 100%;
     text-align: center;
@@ -76,10 +79,10 @@ header h1{
 
 html,
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-.body{
+.body {
     display: flex;
     max-width: 100%;
     flex-direction: column;
@@ -87,32 +90,32 @@ body {
     align-content: center;
     margin: auto;
 }
-.body h6{
-    display:none;
+.body h6 {
+    display: none;
     text-align: center;
     font-size: 12pt;
     padding: 30px 20px;
-    margin:0;
+    margin: 0;
 }
 
-.guide{
+.guide {
     display: flex;
     flex-direction: row;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
-.tabshere{
+.tabshere {
     max-width: 25%;
     height: 70vh;
     display: flex;
     flex-direction: column;    
     padding: 10px;
     justify-content: space-around;
-    align-items: left;
-    align-content:left;
+    align-items: flex-start;
+    align-content: flex-start;
     width: 100%;
-    overflow:hidden;
-    margin:0;
+    overflow: hidden;
+    margin: 0;
 }
 .tablinks {
     color: #ffffff;
@@ -121,14 +124,14 @@ body {
     outline: none;
     cursor: pointer;
     padding: 0;
-    margin:auto;
+    margin: auto;
     transition: 0.3s;
     background-color: transparent;
     width: 100%;
     height: auto;
-    justify-content: left;
-    align-items: left;
-    align-content:left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
     text-align: left;
 }
 
@@ -143,7 +146,7 @@ body {
 .tabcontent {
     display: none;
     padding: 10px;
-    margin:0;
+    margin: 0;
     height: calc(50vh - 100px);
     overflow-y: auto;
     justify-content: center;
@@ -152,8 +155,9 @@ body {
 }
 
 .tabcontent h3 {
-    font-size: 14t;
+    font-size: 14pt;
 }
+
 /* Box styling for content sections */
 .box-container {
     display: flex;
