@@ -209,8 +209,10 @@ body {
     line-height: 150%;
 }
 .Home video{
+    aspect-ratio: 6 / 9;
     width: auto;
     object-fit: fill;
+    object-position: right;
     height: 70vh;
 }
 /* footer */
