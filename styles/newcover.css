@@ -82,7 +82,7 @@ main h2 {
 @media(max-width:768px){
     html, body {
         height: 100%;
-        padding: 100px 20px;
+        padding: 50px 20px;
         overflow: hidden;
         font-family: Arial, sans-serif;
         justify-content: center;
@@ -115,9 +115,9 @@ main h2 {
     }
     
     .title h1 {
-        font-size: 2em;
+        font-size: 16pt;
         margin: 0;
-        padding: 10px 0;
+        padding: 20px 0;
     }
     
     main h2 {
