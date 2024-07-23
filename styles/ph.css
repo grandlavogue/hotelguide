@@ -185,6 +185,10 @@ body {
     font-size: 20pt;
     color:#b47c56;
 }
+.tabcontent h4{
+    font-size:16pt;
+    background-color: rgb(255, 243, 226);
+}
 /* Box styling for content sections */
 .box-container {
     display: flex;
@@ -220,7 +224,8 @@ body {
 #FloorGuide,
 #RoomServices,
 #Safety,
-#Rules{
+#Rules,
+#Dining{
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -233,6 +238,56 @@ body {
 .Home video{
     width: 100%;
 }
+/* dining menu */
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding:20px;
+    margin:0;
+    background-color: #f3e4d2;
+}
+.menu-container img{
+    width: 100%;
+}
+.menu-box {
+    display: flex;
+    max-width: 100%;
+    column-gap: 20px;
+    flex-direction: row;
+    padding: 10px;
+}
+#item-number {
+    width: 10%;
+}
+#item-name {
+    width: 80%;
+}
+#price {
+    width: 10%;
+}
+#item-number h5{
+    font-size: 18pt;
+    padding:0;
+    margin:0;
+}
+#item-name h6{
+    font-size: 16pt;
+    padding:0;
+    margin:0;
+}
+#item-name p{
+    font-size: 10pt;
+    padding:0;
+    margin:0;
+}
+#price h6{
+    font-size: 18pt;
+    padding:0;
+    margin:0;
+}
+
 /* footer */
 footer{
     display: flex;
