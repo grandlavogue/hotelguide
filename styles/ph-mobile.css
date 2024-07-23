@@ -193,7 +193,8 @@ body {
 #FloorGuide,
 #RoomServices,
 #Safety,
-#Rules{
+#Rules,
+#Dining{
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -214,6 +215,54 @@ body {
 .Home video{
     width:100%;
 }
+/* dining menu */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding:10px;
+    margin:0;
+}
+.menu-container img{
+    width: 100%;
+}
+.menu-box {
+    display: flex;
+    max-width: 100%;
+    column-gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+#item-number {
+    width: 5%;
+}
+#item-name {
+    width: 85%;
+}
+#price {
+    width: 10%;
+}
+#item-number h5{
+    font-size: 12pt;
+    padding:0;
+    margin:0;
+}
+#item-name h6{
+    font-size: 12pt;
+    padding:0;
+    margin:0;
+}
+#item-name p{
+    font-size: 9pt;
+    padding:0;
+    margin:0;
+}
+#price h6{
+    font-size: 12pt;
+    padding:0;
+    margin:0;
+}
+
 /* footer */
 footer{
     display: flex;
