@@ -16,6 +16,7 @@ html, body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+
 }
 
 header, main, footer {
@@ -82,6 +83,7 @@ main h2 {
         margin: auto;
         top:50%;
         bottom: 50%;
+        overflow-y: auto;
     }
     
     #background-video {
