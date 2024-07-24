@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOUR STAY GUIDE</title>
+    <title>お客様の滞在ガイド</title>
     <meta name="description" content="We are delighted to welcome you with warm gratitude for being here with us!">
     <meta name="author" content="La Vogue Group">
 <!-- google fonts -->
@@ -12,35 +12,1026 @@
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Ms+Madi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+<!-- style -->
+    <link rel="stylesheet" href="styles/ph.css">
+    <link rel="stylesheet" href="styles/ph-mobile.css">
 <!-- script -->
-    <link rel="stylesheet" href="styles/hotel.css">
-    <link rel="stylesheet" href="styles/hotel-mobile.css">
+    <script src="scripts/ph.js"></script>
+    <script src="scripts/dining.js"></script>
 </head>
 <body>
-<!-- HEADER -->
-    <header>
-        <div class="glvlogo">
-            <a href="index.html"><img src="icons/glv.png" alt="glvlogo"></a></div>
-            <img style="width: 50%; padding: 0; margin:0;" src="icons/sihanoukville.png">
-        <div class="title">
-            <h1>YOUR STAY GUIDE</h1>
+    <div class="body">
+        <img class="background-photo" src="images/sihanouk.jpg">
+        <div class="home-logo">
+            <a href="index.html"><img src="icons/glv.png"></a>
         </div>
         <nav class="languagemenu">
-            <button class="menu-toggle"><img src="icons/translate.svg"></button>
+            <button class="menu-toggle"><img style="width: 100px;" src="icons/bar.svg"></button>
             <div class="menu-links">
                 <a href="eng.html">ENGLISH</a>
                 <a href="jp.html">日本語</a>
-                <a href="kh.html">ភាសាខ្មែរ</a>
+                <a href="#">ភាសាខ្មែរ</a>
                 <a href="kr.html">한국어</a>
-                <a href="cn.html">中文</a>
+                <a href="#">中文</a>
+                <a href="tel:+85569838300" target="_blank">CALL US</a>
+                <a href="mailto:info@grandlavogue.com" target="_blank">EMAIL US</a>
             </div>
         </nav>
+    </div>
+
+    <header>
+        <h1>숙박 가이드</h1>
     </header>
-<!-- BODY -->
     <main>
-        <h2>Work on progress...</h2>
-        <img style="display: flex; max-width: 100%; margin:auto; justify-content: center; align-items: center;
-        align-content: center; padding:0;"src="icons/samurai.gif">
+        <section class="guide">
+            <nav class="tabshere">
+                <button class="tablinks" onclick="openTab(event, 'Cover')">집</button>
+                <button class="tablinks" onclick="openTab(event, 'StayGuide')">숙박 안내</button>
+                <button class="tablinks" onclick="openTab(event, 'Rules')">규칙</button>
+                <button class="tablinks" onclick="openTab(event, 'Regulation')">숙박에 관한 규정</button>
+                <button class="tablinks" onclick="openTab(event, 'FloorGuide')">층별 가이드</button>
+                <button class="tablinks" onclick="openTab(event, 'RoomServices')">서비스</button>
+                <button class="tablinks" onclick="openTab(event, 'Safety')">안전</button>
+                <button class="tablinks" onclick="openTab(event, 'Dining')">다이닝</button>
+            </nav>
+            <div id="Cover" class="tabcontent">
+                <div class="box-container">
+                    <section class="Home">
+                        <video src="videos/ceremony.mp4" controls autoplay loop muted> Your browser does not support the video tag.</video>
+                    </section>
+                    <div class="introduction">
+                        <p><span style="font-weight:bold;">그랜드 라 보그 호텔 & 카지노에 오신 것을 진심으로 환영합니다.</span><br><br>저희 호텔을 선택해 주셔서 대단히 감사합니다.
+                            저희는 "세련된 환대"와 "진화하는 시티 리조트"를 컨셉으로 전통적인 일본의 환대와 현대적인 리조트를 결합하여 고객님들에게 전례 없는 숙박을 제공하고자 합니다. 객실에서 즐거운 시간을 보내시고 편안한 휴식을 취하시길 바랍니다. 숙박하시는 동안 궁금한 점이나 요청 사항이 있으시면 언제든지 프런트로 연락해 주십시오.
+                            또한 귀하가 즐기실 수 있는 다양한 시설과 서비스를 제공합니다.
+                            저희와 함께 지내시는 동안 멋진 추억이 되시기를 진심으로 바랍니다.
+                            <br><br><span class="signature">Tsutsui Yuji</span><br><span class="gm">Tsutsui Yuji (Thomas)<br>총지배인</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="StayGuide" class="tabcontent">
+                <h3>While You Are Here</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/wifi.svg" alt="wifi-icon">
+                        <p>WIFI_〇F<br>PASSWORD: 12345678</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/bed.svg" alt="bed-icon">
+                        <p>CHECK-IN / CHECK-OUT<br>3:00PM - 12:00PM</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/breakfast.svg" alt="breakfast-icon">
+                        <p>BREAKFAST<br>7:00AM - 10:00AM ➵ 7F</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/reserve.svg" alt="reserve-icon">
+                        <p>RESERVATION<br>To book, extend, cancel or other room requests, please contact the Front Office.</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/restaurant-svgrepo-com.svg" alt="restaurant-icon">
+                        <p>RESTAURANT<br>7:00AM - 23:00PM ➵ 7F</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/brandy-svgrepo-com.svg" alt="bar-icon">
+                        <p>BAR BARON<br>5:00AM - 2:00AM ➵ 2F<br>Closed on Mondays</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/steak-2-svgrepo-com.svg" alt="steak-icon">
+                        <p>TEPPANYAKI<br>4:00AM - 12:00AM ➵ 8F<br><span style="color:#b47c56">(Reservation Required)</span></p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/swim.svg" alt="SWIM-icon">
+                        <p>SWIMMING POOL<br>8:00AM - 21:00PM ➵ 7F</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/sauna.svg" alt="spa-icon">
+                        <p>STEAM BATH & SAUNA<br>8:00AM - 21:00PM ➵ 7F<br><span style="color:#b47c56">(Please Ask for Assistance)</span></p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
+            </div>
+            <div id="Regulation" class="tabcontent">
+                <h3>숙박에 관한 규정</h3>
+                <div class="box-container">
+                    <!-- article 1 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/reserve.svg"><br><span style="color:#b47c56; font-weight: bold;">제1조 규정의 적용</span><br>
+                            1. 당 호텔이 체결한 숙박의 약관 및 관련 계약은 본 약관에서 규정하는 바와 같으며, 본 약관에서 규정하지 않은 사항은 법률과 관습에 따릅니다.<br>
+                            2. 신용카드에 의한 예약은 본 약관의 규정에 따르며, 그 세부 내용은 호텔과 카드사 간에 정하는 바에 준합니다.<br>
+                            3. 항목의 규정에도 불구하고 호텔은 본 규정, 법률 및 관습의 취지에 위배되지 않는 범위에서 필요한 계약을 체결할 수 있습니다.
+                        </p>
+                    </section><br><br>
+        <!-- article 2 -->
+                        <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;">제2조 숙박 요청의 거부
+                        </span><br>
+                        당 호텔은 다음과 같은 경우 고객님의 숙박 신청을 거부할 수 있습니다:<br>
+                        1. 숙박 신청이 본 약관에 근거하지 않은 경우
+                        2. 호텔이 예약으로 만실이 되어 사용이 가능한 객실이 없을 경우<br>
+                        3. 숙박을 구하는 자가 법령의 규정이나 공공의 질서와 선량한 풍속에 저촉되는 방법으로 숙박시설을 이용할 우려가 있는 경우<br>
+                        4. 숙박을 구하는 자가 감염병을 앓고 있음이 명백하게 인정되는 경우<br>
+                        5. 숙박과 관련하여 호텔에 특별한 부담을 요청할 경우<br>
+                        6. 숙박을 구하는 자가 불법 약물이나 애완동물을 소지하고 있는 것이 발각된 경우<br>
+                        7. 천재지변, 시설물 훼손, 그 밖의 부득이한 사유로 호텔에 숙박을 제공 할 수 없을 때<br>
+                        8. 캄보디아 정부의 법령에서 정한 규칙을 위반한 경우<br>
+                        9. 숙박을 원하는 자는 폭행, 협박, 갈취, 공갈, 부당한 요구, 불법도박, 금지약물의 소지 또는 사용, 다른 투숙객에게 현저한 불편을 주는 행위, 그 밖에 숙박과 관련된 공공질서와 선량한 풍속에 위배되는 행위를 할 우려가 있을 때</p>
+                    </section><br><br>
+        <!-- article 3 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/passport-1-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">제3조 성명의 명확성 등</span><br>
+                        호텔이 숙박일 전날까지 숙박신청을 접수하는 경우 호텔은 일정한 기간 내에 숙박을 희망하는 자에게 다음 사항을 소명할 것을 요구할 수 있습니다:<br>
+                        1. 숙박을 원하는 사람의 성명, 성별, 국적 및 직업<br>
+                        2. 기타 당 호텔에서 필요하다고 인정하는 사항</p>
+                    </section><br><br>
+        <!-- article 4 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/deposit-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">제4조 예약금</span><br>
+                            1. 당 호텔은 예약 보증금의 납부와 함께 고객님의 숙박 예약 신청을 보증해 드립니다. 또한 신용카드로 숙박비를 미리 지불하시것도 예약을 보장해 드립니다.<br>
+                            2. 제5조의 규정이 적용되는 경우에는 전항의 예약금이 취소수수료로 적용되며, 잔액은 예약자에게 환불됩니다. 단, 신용카드로 예약을 하는 경우에는 제5조를 참고하시기 바랍니다.<br>
+                            3. 당 호텔은 예약을 취소하는 경우에는 예약 번호, 예약 날짜, 예약 담당자 이름, 취소 수수료의 내용을 예약자에게 알려드립니다.
+                            </p></section><br><br>
+        <!-- article 5 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/cancel.svg"><br><span style="color:#b47c56; font-weight: bold;"><br>제5조 예약취소 손님에 의한 예약취소</span><br>
+                            예약 보증금 납부를 완료한 고객의 경우 취소된 객실의 총액에 따라 다음과 같은 취소 수수료가 부과됩니다.<br>
+                            1. 도착일 2일 전 이상:무료<br>
+                            2. 도착 전일: 첫날 숙박료의 50%<br>
+                            3. 도착 당일: 첫날 수박료의 100%<br>
+                            4. 노 쇼: 예약된 방의 전액<br>
+                            5. 여행사를 통해 신용카드로 예약한 것을 취소하시려면 여행사에 문의하시기 바랍니다.</p></section><br><br>
+        <!-- article 6 -->
+                    <section class="box">                
+                        <p>
+                            <img style="width: 40px; padding: 0; margin:0" src="icons/cancel.svg"><br>
+                            <span style="color:#b47c56; font-weight: bold;">제6조 호텔에 의한 예약 취소</span><br>
+                            1. 특별한 사정이 없는 한, 호텔은 다음의 경우 숙박 예약을 취소할 수 있습니다<br>
+                            <span style="display: block; margin-left: 20px;">
+                                a.제2조 제1항부터 제9항의 규정에 의한 청구를 하였으나 소정의 기간 내에 그 청구에 응하지 아니한 때.
+                            </span><br>
+                            2.  제4조 제1항에 따른 예약금의 지급을 청구하였으나 소정의 기간 내에 지급하지 아니한 경우 호텔은 전항 각 호에 따라 예약을 취소한 경우 예약 신청보증금을 환급합니다.
+                        </p>
+                    </section>
+        <!-- article 7 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/register.svg"><br><span style="color:#b47c56; font-weight: bold;">제7조 등록
+                        </span><br>
+                        투숙객은 도착 당일 호텔 프런트에 아래의 정보를 등록해야 합니다.<br>
+                        1. 제3조 제1항에 규정된 사항.<br>
+                        2. 외국인 투숙객:여권번호, 캄보디아 입국일자.<br>
+                        3. 캄보디안 손님:국가등록번호.<br>
+                        4. 현재 주소, 연락처, 직업, 생년월일.<br>
+                        5. 출발일과 시간<br>
+                        6. 그 밖에 호텔에서 필요하다고 인정하는 사항.<br><br>
+                        기입해 주신 개인의 정보는 숙박의 목적을 위해 필요한 경우에만 이용되며, 다른 목적으로는 사용되지 않음을 알려드립니다.</p></section><br><br>
+        <!-- article 8 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/bedroom-sleeping-svgrepo-com.svg"><br><span style="color:#b47c56; font-weight: bold;">8조 객실 이용 시간</span><br>
+                        1. 투숙객들은 오후 3시부터 다음날 12시까지 호텔 객실을 이용할 수 있습니다. 단, 연박일 경우에는 도착 당일과 출발 당일을 제외하고 종일 이용 가능합니다.<br><br>
+        
+                        2. 전항의 규정에도 불구하고 체크아웃 시간을 초과하여 객실을 이용하는 경우에는 호텔은 다음과 같이 추가 요금을 부과할 수 있습니다：<br>
+                        <span style="display: block; margin-left: 20px;">
+                        1. 오후 3시까지:숙박요금의 30%
+                        2. 호후 6시까지:숙박요금의 50%
+                        3. 호후 6시 이후:숙박요금의 100%</span><br><br>
+        
+                        3. 체크인 시간 이전 이용<br>
+                        <span style="display: block; margin-left: 20px;">a.  오전 8시 59분이전:숙박요금의 100%<br>
+                        b.  오전 9시부터 11시59분까지는 숙박요금의 50%<br>
+                        c. 12시부터 2시 59분까지는 숙박요금의 30%</span></p></section><br><br>
+        <!-- article 9 -->
+                    <section class="box">                
+                        <p><img style="width: 40px; padding: 0; margin:0"src="icons/hour.svg"><br><span style="color:#b47c56; font-weight: bold;">제9조 영업시간</span><br>
+                            저희 호텔의 각 시설의 영업 시간은 본 디렉토리의 층별 가이드 정보에 나열되어 있습니다.</p>
+                    </section>
+        <!-- article 10 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/cash-payment.svg"><br><span style="color:#b47c56; font-weight: bold;">제10조 요금의 지급</span><br>
+                        숙박료는 호텔에서 승인한 화폐, 신용카드 또는 호텔이 인정한 쿠폰으로 지급하며, 투숙객 출국 시 또는 이용 잔고가 큰 경우 등 호텔에서 요청하는 경우 프런트에 지급해야 합니다. 호텔은 개인 수표는 받지 않습니다.
+                        투숙객이 객실을 이용하지 않더라도 숙박 개시일부터 숙박요금은 부과됩니다.
+                        </p>
+                </section>
+        <!-- article 11 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/regulation.svg"><br><span style="color:#b47c56; font-weight: bold;">제11조 규정의 준수</span><br>
+                    투숙객은 호텔에서 정한 규칙을 준수하고 지켜주시기 바랍니다.
+                    </p>
+                </section>
+        <!-- article 12 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/refuse.svg"><br><span style="color:#b47c56; font-weight: bold;">제12조 숙박의 계속적인 거부</span><br>
+                        당 호텔은 투숙객이 수용하더라도 다음의 경우 호텔은 투숙을 계속 거부할 수 있습니다.<br>
+                    1. 제2조 제2항 내지 제9항의 규정이 적용되는 경우.<br>
+                    2. 숙객이 호텔의 규칙을 지키지 않을 때.
+                    </p>
+                </section>
+        <!-- article 13 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/responsibility.svg"><br><span style="color:#b47c56; font-weight: bold;">제13조 호텔의 책임</span><br>
+                        1. 숙박에 대한 호텔의 책임은 투숙객이 호텔 프런트에서 숙박을 등록할 때 또는 투숙객이 객실에 들어올 때 중 먼저 도착하는 것으로 시작하여 체크아웃을 완료하면 끝납니다.<br>
+
+                        2. 투숙객이 호텔의 규칙을 지키지 않아 발생한 사고에 대해서는 호텔 측에서 책임을 지지 않습니다.<br>
+
+                        3.  호텔이 투숙객에게 계약된 객실을 제공할 수 없는 경우, 호텔은 투숙객의 동의를 얻어 가능한 한 동일한 조건의 다른 숙소를 마련합니다. 전항의 규정에도 불구하고 호텔이 다른 숙소를 마련할 수 없는 경우, 호텔은 투숙객에게 취소 수수료에 해당하는 보상금을 지급하고, 손해배상액에 대해서는 보상금을 적용합니다. 다만, 객실을 제공할 수 없는 호텔의 귀책사유가 없는 경우에는 보상금을 지급하지 않습니다.<br>
+
+                        4. 투숙객이 호텔의 주차장을 이용할 때, 호텔은 차량 키를 투숙객이 맡겼는지 여부와 관계없이 장소를 대여하는 것으로, 차량 관리에 대한 책임을 지지 않습니다. 다만, 호텔이 주차장을 관리함에 있어 고의 또는 과실로 손해가 발생한 경우에는 호텔이 배상 책임을 지도록 하겠습니다.
+                    </p>
+                </section>
+        <!-- article 14 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/hotel-keycard.svg"><br><span style="color:#b47c56; font-weight: bold;">제14조 객실 키의 발급 및 반환</span><br>
+                    1. 투숙객은 체크인 시 객실 키를 프런트에서 받으시고 체크아웃 시 프런트에 반납해야 합니다.<br>
+                    2. 투숙객이 객실 키를 분실할 경우 호텔 접수창구에 신청해 주시기 바랍니다. 키를 분실할 경우 추가 요금이 부과됩니다.<br>
+                    3. 객실 키를 소지하고 떠나는 경우 객실 키를 지체 없이 우편 등의 방법으로 호텔에 반납해야 합니다.  </p>
+                </section>
+        <!-- article 15 -->
+                <section class="box">                
+                    <p><img style="width: 20px; padding: 0; margin:0"src="icons/responsibility.svg"><br><span style="color:#b47c56; font-weight: bold;">제15조 손님의 책임/span><br>
+                    투숙객의 고의 또는 과실로 인해 당 호텔이 손해를 입었을  경우, 투숙객은 호텔에 손해를 배상해야 합니다.</p>
+                </section>
+        <!-- article 16 -->
+                    <section class="box">                
+                        <p><img style="width: 20px; padding: 0; margin:0"src="icons/disclaimer.svg"><br><span style="color:#b47c56; font-weight: bold;">제16조 면책조항</span><br>
+                        당 호텔의 컴퓨터 통신 이용에 있어서는 이용자 본인의 책임입니다. 컴퓨터 통신을 이용 하다가 시스템 장애 등의 사유로 서비스가 중단되어 이용자가 손해를 입더라도 호텔 측의 고의 또는 중대한 과실에 의한 것이 아닌 한 호텔은 어떠한 손해도 책임지지 않습니다. 또한, 컴퓨터 통신을 이용할 때 호텔이 부적절하다고 판단되는 행위가 있어 호텔 또는 제3자에게 손해를 입힌 경우 해당 손해를 배상하도록 요구합니다.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div id="Rules" class="tabcontent">
+                <p>규칙을 준수하지 않으실 경우 투숙 및 호텔 시설 이용을 거부합니다. 호텔 측의 고의 또는 중대한 과실이 없는 한 이 규칙을 준수하지 않아 발생하는 사고에 대해서는 책임을 지지 않습니다.
+                </p>
+                <div class="box-container">
+                    <section class="box">
+                        <p>1. 도착 즉시 객실 출입문 뒷면에 게시된 대피경로 지도와 각 층 비상구를 확인하시기 바랍니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>2. 화재의 위험성 때문에 객실 또는 지정된 구역 내에서는 흡연이 금지됩니다. 지정된 구역 내에서 흡연하는 것이 발견되면 300불의 벌금이 부과됩니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>3.  소비전력이 높은 가전제품의 사용은 금지되어 있습니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>4. 객실은 하룻밤만 묵을 수 있습니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>5.  객실을 변경하시려면 프런트에 문의해 주시기 바랍니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>6. 호텔의 장비나 비품은 본래의 목적 이외의 용도로 사용할 수 없으며, 호텔 밖으로 반출할 수 없습니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>다음의 항목은 객실에서 사용할 수 없습니다:<br>
+                            <span style="display: block; margin-left: 20px;">
+                        a. 인화성폭발물<br>
+                        b. 불쾌한 냄새(두리안 등)를 배출하는 품목<br>
+                        c. 캄보디아 법으로 금지된 품목<br>
+                        d. 동물과 새<br>
+                        •호텔 전기 시스템에 손상을 줄 수 있는 물품은 사용을 자제해 주시기 바랍니다.</p>
+                        
+                    </section>
+                    <section class="box">
+                        <p>8.  호텔은 다음 기간을 초과하여 호텔에 남겨진 물품에 대해서는 책임을 지지 않습니다.<br>
+                            <span style="display: block; margin-left: 20px;">
+                            a.  위탁 수하물:3개월<br>
+                            b. 분실물:3개월</span></p>
+                    </section>
+                    <section class="box">
+                        <p>9.조직범죄단체, 조직범죄단체의 계열사, 기타 반사회적 세력 또는 그 계열사들은 저희 호텔 이용을 허용하지 않습니다. 또한 예약 후 또는 이용 중에 이 사실이 발각될 경우 해당 시간에 이용을 거부하겠습니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>10. 폭행, 협박, 공갈, 강압적인 무리한 요구 또는 이와 유사한 행위가 적박될 경우 즉시 저희 호텔 이용을 거부합니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>11.  음주나 폭력적인 행동 등 다른 투숙객들에게 불편을 주거나 줄 수 있는 행동은 삼가해 주시기 바랍니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>12.불법적인 도박, 그 밖에 공중도덕을 문란하게 하는 행위를 하지 말아 주시기 바랍니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>13.  객실 내의 장비나 비품을 무단으로 이동하지 말아 주시기 바랍니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>14. 목욕 가운과 슬리퍼(수영장, 사우나 제외)를 착용한 상태에서 복도, 로비 등 객실 이외의 시설을 이용하지 말아 주시기 바랍니다.</p>
+                    </section>
+                    <section class="box">
+                        <p>15. 시설 내에서 다른 고객에게 무단으로 광고물을 배포하거나 물품을 판매하지 말아 주시기 바랍니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>16.  시설 내외의 시설 및 장비의 손상 또는 손실에 대한 것은 실제 비용이 청구됩니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>17.  호텔 측에서 투숙객이 폐기하였다고 판단하는 객실에 남은 물품은 호텔 내부 규정에 따라 폐기 처리할 예정입니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>18.  결제는 출발 시 또는 송장 제시 시 프런트에서 해야 합니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>19.  프런트와 객실 내 안전 금고는 무료로 이용할 수 있습니다. 그랜 라 보그 호텔 & 카지노는 호텔 건물에서 귀중품을 분실하거나 도난당한 경우에 대해 책임을 지지 않습니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p>20.   저희 호텔 객실의 투숙객 수는 2명입니다. (펜트하우스 제외) 5세 미만 소아와 11세 미만 어린이는 각 성인 당 한 명씩 함께 한 침대에 묵는 것은 무료입니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <p style="font-weight: bold;"> 이 규칙을 준수하지 않으면 건물에서 나가라는 요청을 받을 수 있습니다. 또한 이 규칙을 준수하지 않아 발생한 손해에 대한 책임을 질 수 있습니다.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        
+            <div id="FloorGuide" class="tabcontent">
+                <h3>층별 가이드</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/casino.svg" alt="casino-icon">
+                        <p><span style="font-weight:bold">카지노</span>
+                        저희는 다양한 테이블 게임과 슬롯 머신이 준비되어 있습니다<br>
+                        바카라, 블랙잭, 니우 니우, 텍사스 홀덤 등 다양한 게임으로 새롭고 특별한 경험을 느껴보시기 바랍니다.<br>
+                        장소: 1층<br>
+                        바카라, 블랙잭, 니우 니우, 슬롯 머신<br>
+                        영업시간: 오후 6시 ~ 새벽 2시</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/brandy-svgrepo-com.svg" alt="bar-icon">
+                        <p><span style="font-weight:bold">바론 바</span>
+                            일본 도쿄에 매장이 있는 바가 시아누크빌에도 매장을 오픈했습니다. 일본 바텐더들이 준비한 매력있는 칵테일 외에도 엄선된 위스키등도 다양하게 준비되어 있습니다. 고급스럽고 클래식한 공간에서 주류의 여운을 느끼며 시가도 함께 즐기실 수 있습니다. 멋지고 즐거운 시간을 보내 보십시요.
+                        <br>장소: 2층</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/restaurant-svgrepo-com.svg" alt="restau-icon">
+                        <p><span style="font-weight:bold">레스토랑</span><br>
+                            저희 레스토랑에서는 일식,양식,한식,크메르식을 포함한 다양한 요리를 즐길 수 있습니다. 각각의 요리마다 고유의 매력을 가지고 있고 네 가지의 다른 요리 문화가 함께 있는 저희 레스토랑에서 멋진 요리 여행을 경험해보십시요.
+                            다양한 메뉴를 제공하는 올데이 다이닝 외에도 레스토랑과 바에서만의 매력적인 경험을 즐길 수 있어 비즈니스 행사, 가족과의 식사, 친구 등 다양한 요구 사항을 충족하실 수 있습니다. 또한 시간에 따라 달라지는 아름다운 풍경의 매력도 보실 수가 있습니다.<br><br>
+                            장소: 7층<br>
+                            영업시간: 오전 7시 ~ 오후 11시<br>
+                            조식: 오전 7시 ~ 11시
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/spa-svgrepo-com.svg" alt="sauna-icon">
+                        <p><span style="font-weight:bold">수영장 & 사우나</span><br>
+                        개방된 수영장에서도 휴식을 취할 수 있습니다. 또한 어린이들이 안전하게 놀 수 있는 수심이 얕은 수영장이 있으므로 가족 동반의 손님들에게도 추천합니다. 사우나에서 따뜻하고 심신을 상쾌하게 해주는 특별한 시간을 즐겨보십시요.
+                        <br>Location: 7th floor
+                        <br>Business hours: 8am – 9pm</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/steak-2-svgrepo-com.svg" alt="steak-icon">
+                        <p><span style="font-weight:bold">마쓰나미 철판구이</span><br>
+                        1978년 일본 도쿄 아사쿠사에 설립된 전통 있는 고급 스테이크하우스가 캄보디아에도 문을 열었습니다. 저희는 고베 소고기를 포함하여 엄선된 쿠로게 와규 소고기를 고객의 바로 앞에서 요리하여 제공합니다. 매우 독특하고 개인적인 프라이빗 룸에서 “특별한 시간”을 제공합니다.
+                        <br>Location: 8th floor
+                        <br>Business hours:4pm – 12am <br><span style="color:#b47c56">(Reservation Required)</span></p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
+            </div>
+            
+            <div id="RoomServices" class="tabcontent">
+                <h3>숙박 가이드</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/customer-service-agent-svgrepo-com.svg" alt="customer-service-icon">
+                        <p><span style="font-weight:bold;">고객분들에게</span><br>
+                            프론트 오피스에서는 다국어 직원이 VIP 에스코트, 관광/쇼핑 서비스(섬에관한 정보, 예약 등), 이벤트에 관한 서비스(정보, 예약 등), 손님 지원, VIP 준비 등 다양한 서비스를 제공합니다.<br>
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/airport.svg" alt="airport-transfer-icon">
+                        <p><span style="font-weight:bold;">픽업 서비스/공항 픽업</span><br>
+                        관광지 및 공황 교통편에 대한 정보는 프런트에 문의하시기 바랍니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/taxi.svg" alt="taxi-transfer-icon">
+                        <p><span style="font-weight:bold;">택시</span><br>
+                        택시를 이용하시고자 한다면 프런트로 연락해 주시기 바랍니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/baggage.svg" alt="luggage-assistance-icon">
+                        <p><span style="font-weight:bold;">수하물 지원</span><br>
+                        수하물 및 기타 서비스에 대한 문의는 프런트에 문의해 주시기 바랍니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/housekeeping.svg" alt="housekeeping-icon">
+                        <p><span style="font-weight:bold;">하우스키핑</span><br>
+                            객실 청소는 매일 오전 9시부터 오후 5시까지 준비합니다. 특정 시간대나 추가 객실 용품 요청은 프런트로 언제든지 연락주시기 바랍니다.
+                            <br>"Please Clean Up"<img style="width: 20px; padding:0; margin:0;" src="icons/housekeeper-svgrepo-com.svg"> <br>"Do Not Disturb" <img style="width: 20px; padding:0; margin:0;" src="icons/notification_bell_ringtone_silent_icon_229507.svg">.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/laundry.svg" alt="laundry-icon">
+                        <p><span style="font-weight:bold;">세탁 서비스</span><br>
+                            고객의 요청 시 세탁 서비스가 가능합니다. 세탁을 요청하는 백은 옷장에 비치되어 있습니다. 지정된 양식을 작성하시고 프런트로 연락주시기 바랍니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/adapter.svg" alt="adapter-icon">
+                        <p><span style="font-weight:bold;">어댑터</span><br>
+                            캄보디아의 전압은 <span style="color:#b47c56;">AC110-220V</span> 입니다. 사용 전에 전기 제품의 전압을 확인하십시오.</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/ambulance.svg" alt="medical-icon">
+                        <p><span style="font-weight:bold;">의료지원</span><br>저희의 고객관리 부서에서는 시내 병원에 대한 정보를 제공할 수 있습니다. 프런트로 연락해 주시기 바랍니다.
+                            </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/room-service.svg" alt="roomservice-icon">
+                        <p><span style="font-weight:bold;">룸서비스</span><br>일품요리 메뉴를 룸서비스를 통해 객실에서 이용하실 수 있습니다.
+                            프런트에 연락해 주시기 바랍니다.
+                            </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/safe.svg" alt="safebox-icon">
+                        <p><span style="font-weight:bold;">안전 금고</span><br>저희 호텔은 객실마다 안전 금고를 제공하고 있습니다. 무료로 이용하실 수 있습니다.<br>
+                        사용방법: 객실에 설치된 금고는 비밀번호를 이용하여 잠금 및 해제가 가능합니다. 사용 시 안내에 따라 주시기 바랍니다.<br>
+                        호텔책임: 안전 금고에 보관된 귀중품의 분실 또는 도난에 대해서는 호텔은 일절 책임을 지지 않습니다. 미리 양해를 바랍니다. 보관하신 귀중품의 가치는 고객님께서 결정하실 책임이 있으며, 귀중품이 금고에 넣을 수 없을 정도로 귀중하고 크다면 프런트에 맡기는 서비스를 이용하여 주시기 바랍니다.</p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
+            </div>
+            
+            <div id="Safety" class="tabcontent">
+                <h3>보안 공지</h3>
+                <div class="box-container">
+                    <section class="box">
+                        <img src="icons/lock.svg" alt="lock-icon">
+                        <p><span style="font-weight:bold;">문 잠금 장치</span><br>객실 문에는 객실 카드키를 이용한 자동 잠금 시스템이 설치되어 있습니다. 개인정보 보호와 보안을 위해 투숙하시는 동안 안전 잠금 장치를 이용해 주시기 바랍니다.
+
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/peephole.svg" alt="entrance-icon">
+                        <p><span style="font-weight:bold;">출입문</span><br>문을 열지 않고도 객실 밖 복도를 볼 수 있는 도어 스코프를 설치했습니다. 객실로 초대하기 전에 노크 소리에 확인해 주시기 바랍니다. 호텔 직원들은 명찰을 착용하고 3번 두르린 후에 자신의 존재를 알리는 의무가 있습니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/hotel-keycard.svg" alt="keycard-icon">
+                        <p><span style="font-weight:bold;">객실 키</span><br>객실용 키는 안전한 곳에 보관하시는 것이 좋습니다. 키를 분실하신 경우에는 프런트에 문의해 주십시요. 객실 키는 재 발급 전 접수 직원이 신분증을 확인할 것입니다. 객실 키는 출발 예정일 오후(체크아웃 시간)에 무효 처리되는 점을 참고 하시기 바랍니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/door-close-svgrepo-com.svg" alt="roomnumber-icon">
+                        <p><span style="font-weight:bold;">객실 번호</span><br>호텔 직원은 투숙객의 안전과 보안을 위해 등록된 객실 번호를 제공하지 않도록 특별히 지도합니다.</p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/time-is-money-svgrepo-com.svg" alt="valuables-icon">
+                        <p><span style="font-weight:bold;">귀중품</span><br>안전 금고를 사용하는 것을 추천합니다. 각 객실마다 안전 금고가 구비되어 있습니다. 프런트에도 금고가 구비되어 있으며 24시간 이용이 가능합니다.
+                        </p>
+                    </section>
+                    <section class="box">
+                        <img src="icons/privacy-tips-svgrepo-com.svg" alt="privacy-icon">
+                        <p><span style="font-weight:bold;">개인정보 보호 및 보안</span><br> 고객의 객실 방문을 원하지 않으실 경우 객실 내 터치패널(DND)의 “방해금지” 안내문구를 눌러주시기 바랍니다. 또한 출입문의 안전장치와 도어 스코프가 침입자의 출입을 방지합니다. 호텔 직원들은 등록된 객실 번호를 공개하지 않도록 교육을 받았습니다.
+                        </p>
+                    </section>
+                    <section style="background-color:#cde5f1" class="box">
+                        <p><span style="font-weight:bold;">안전에 그랜드 라 보그 & 카지노에서는 긴급 상황에 대비하여 다음과 같은 서비스를 제공합니다:<br>
+                        고객님의 안전을 위해 다음과 같은 정보를 제공합니다.
+                        <br><br>
+        <!-- in case of emergency -->
+                        <span style="font-weight:bold;">비상시</span><br>
+                        비상시에는 프런트로 연락을 주시기 바랍니다. 객실 문 안쪽에 위치한 대피도를 이용하여 각 층의 출구, 계단, 소방 기구의 위치를 확인하시기 바랍니다.<br><br>
+            <!-- fire emergency -->
+                        <span style="font-weight:bold;">A.	화재시 대응</span><br>
+            <!-- in case of fire alarm -->
+                        <span style="text-decoration: underline;">1. 화재 발생/화재 경보음 발생 시</span><br>
+                        <span style="display: block; margin-left: 20px;">
+                        ➵ 프런트에 알려 주시기 바랍니다<br>
+                        ➵ 객실 키는 항상 소지하시기 바랍니다<br>
+                        ➵ 침착하게 행동하고 공황 상태를 피하십시요<br>
+                        ➵ 가장 가까운 비상구로 가서 대피하십시요<br>
+                        비상구의 위치는 객실 문 안쪽에 게시된 대피경로도를 확인하시기 바랍니다
+                        ➵ 객실 문을 열기 전에 문 손잡이가 뜨겁지 <br>않은지 손등으로 확인합니다.
+                        </span><br><br>
+            <!-- if the door is hot -->
+                        <span style="text-decoration: underline;">2. 문이 뜨거울 경우</span><br>
+                        <span style="display: block; margin-left: 20px;">➵ 객실에 머무르며, 문을 닫고 에어컨을 끄세요. 문 아래 부분에 물수건을 두십시요
+                        연기가 나는 환풍구에도 두십시요. 프런트에 연락해서 직원에게 자신의 위치를 알려주십시요. 그리고 사내 방송을 기다려 주십시요. 또한 방 안에 연기가 있다면 가능한 한 낮은 자세를 유지하면서 침착하게 행동 하십시요.
+                            <br>
+                        ➵ -	방에 머루른다면 창문 밖에 시트를 걸어 안에 갇혀 있음을 보여줍니다
+                        -	욕조에 물을 채우고 시트를 적신 후 문 밑 부분에 두십시요
+                        - 검은 연기가 나오는 환풍구를 닫거나 막아주십시요.
+                        - 문을 열었을 때 연기가 나거나 화재가 발생한 경우에는 즉시 문을 닫고 객실 투숙 시 위의 지시에 따릅니다.
+                        -내용을 따라 주시기 바랍니다.
+                        </span><br><br>
+            <!-- during evacuation -->
+                        <span style="text-decoration: underline;">3.대피 시 유의사항</span><br>
+                        <span style="display: block; margin-left: 20px;">➵ 엘리베이터는 사용하지 말고 계단을 이용해 주시기 바랍니다.<br>
+                            ➵ 연기가 나는 경우에는 낮은 자세로 젖은 천이나 수건으로 입과 코를 가려줍니다<br>
+                            ➵ 시야가 좋지 않은 경우 손으로 만지면서 벽을 따라 걸으면 길을 잃지 않고 대피할 수 있습니다.<br>
+                            ➵ 다른 손님이나 직원을 찾을 수 없는 경우 도움을 요청하십시요.
+                            </span><br><br>
+            <!-- evacuate first -->
+                        <span style="text-decoration: underline;">4.대피처</span><br>
+                        <span style="display: block; margin-left: 20px;">➵ 지정된 대피 구역으로 대패하고 호텔 직원의 지시에 따릅니다
+                            ➵ 대피 장소에서 다른 손님들과 직원들과 함께 지내도록 권장합니다.
+                            ➵ 재입장하라는 지시가 있을 때까지는 건물로 돌아가지 마십시요.
+                            </span><br><br>
+        <!-- general emergency -->
+                        <span style="font-weight:bold;">B. 2.	일반적인 비상대응
+                        </span><br>
+                        <span style="text-decoration: underline;">1.의료상의 위급상황</span><br>
+                        <span style="display: block; margin-left: 20px;">➵ 갑작스러운 질병이나 부상의 경우 즉시 프런트로 연락주시기 바랍니다.<br>
+                            ➵ 프런트에서 준비한 구급차나 의료진의 도착을 기다리는 동안.<br>
+                            가능한 범위 내에서 응급처치를 부탁드립니다.
+                            </span><br><br>
+                        <span style="text-decoration: underline;">2. 수상한 사람과 물건의 발견</span><br>
+                        <span style="display: block; margin-left: 20px;">➵ 의심스러운 사람이나 물건이 보이면 즉시 프런트로 연락주시기 바랍니다
+                        ➵ 의심스러운 물건은 만지지 말고 다른 사람에게도 주의를 주지 마십시요.
+                        ➵ 프런트에서 상황을 검토하고 필요한 조치를 취할 것입니다.
+                       <br>이러한 대응 방법을 따르면 비상시 안전하게 대피할 수 있으며 문제를 최소화 할 수 있습니다. 호텔 직원들도 투숙객의 안전을 최우선으로 할 것이니 안내에 따라 주시기 바랍니다.</span>
+                        </p>
+                    </section>
+                    <!-- Add more sections as needed -->
+                </div>
+            </div>
+<!-- DINING MENU -->
+            <div id="Dining" class="tabcontent">
+               <h3>All Day Dining Menu</h3>
+                <!-- item 1 -->
+                <div class="menu-container">
+                    <h4>APPETIZERS & SNACKS</h4>
+                    <img src="images/caesar salad.jpg">
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#01</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Caesar Salad (chiken or grilled salmon)</h6>
+                            <p>romaine lettuce, anchovies, crispy bacon, grilled</p>
+                        </div>
+                        <div id="price">
+                            <h6>$9.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 2 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#02</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>French Fries	</h6>
+                            <p>potato, seasonings</p>
+                        </div>
+                        <div id="price">
+                            <h6>$5.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 3 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#03</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Deep Fried Chicken Wing 4pcs<br>
+                            Deep Fried Chicken Wing	8pcs</h6>
+                            <p>chicken wings, seasonings</p>
+                        </div>
+                        <div id="price">
+                            <h6>$5.00<br>$8.00</h6>
+                        </div>
+                    </section> 
+                    <h4>SOUP</h4>
+                    <!-- item 4 -->
+                    <img src="images/jjigae.JPG">
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#04</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Budae Kimchi Jjigae</h6>
+                            <p>spicy kimchi stew with ham, sausage, pork belly, tofu 
+                                served with steamed rice and Korean side dishes</p>
+                        </div>
+                        <div id="price">
+                            <h6>$5.00</h6>
+                        </div>
+                    </section> 
+                    <!-- item 5 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#05</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Yuk Gejang</h6>
+                            <p>spicy soup , beef, vegetables, served with steamed rice and 
+                                Korean side dishes</p>
+                        </div>
+                        <div id="price">
+                            <h6>$9.00</h6>
+                        </div>
+                    </section>  
+                    <!-- item 6 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#06</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Hwangtae Haejang Kook	</h6>
+                            <p>pollock, seafood, bean sprout</p>
+                        </div>
+                        <div id="price">
+                            <h6>$9.00</h6>
+                        </div>
+                    </section> 
+                    <!-- item 7 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#07</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Soondubu Jjigae</h6>
+                            <p>potato, seasoningssteamed tofu and vegetables with steamed rice and Korean side dishes/p>
+                        </div>
+                        <div id="price">
+                            <h6>$9.00</h6>
+                        </div>
+                    </section> 
+                    <h4>PASTA & NOODLES</h4>
+                    <img src="images/carbonara.jpg">
+                    <!-- item 8 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#08</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Spaghetti Carbonara	</h6>
+                            <p>...</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section> 
+                    <!-- item 9 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#09</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Spaghetti Bolognese<br>
+                            Spgahetti Vongole</h6>
+                            <p>...</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section> 
+                    <!-- item 10 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#10</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Gim Bab & Shin Ra Myeon</h6>
+                            <p>instant noodles, seafood,  steamed rice, ham, egg, crabmeat stick, and vegetables rolled with dried seaweed</p>
+                        </div>
+                        <div id="price">
+                            <h6>$8.00</h6>
+                        </div>
+                    </section>
+                     <!-- item 11 -->
+                     <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#11</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Hu Tieu Noodle Soup</h6>
+                            <p>(pork / beef / chicken / seafood )noodles in pork bone broth, bean sprout, and lettuce with sweet soybean sauce or chili</p>
+                        </div>
+                        <div id="price">
+                            <h6>$8.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 12 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#12</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Fried Noodles</h6>
+                            <p>(pork / beef / chicken / seafood)Chinese dried noodles with choice of chicken, pork, beef,and bean sprout, lettuce with sweet soybean sauce or chili</p>
+                        </div>
+                        <div id="price">
+                            <h6>$8.00</h6>
+                        </div>
+                    </section>   
+                    <!-- item 13 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#13</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Curry Udon (pork / beef / chicken / seafood)</h6>
+                            <p>...</p>
+                        </div>
+                        <div id="price">
+                            <h6>$8.00</h6>
+                        </div>
+                    </section> 
+                    <!-- item 14 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#14</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Curry Soba	(pork / beef / chicken / seafood)</h6>
+                            <p>...</p>
+                        </div>
+                        <div id="price">
+                            <h6>$8.00</h6>
+                        </div>
+                    </section> 
+                    <h4>BURGER & SANDWICH</h4>
+                    <img src="images/burger.jpg">
+                    <!-- item 15 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#14</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Curry Soba	(pork / beef / chicken / seafood)</h6>
+                            <p>...</p>
+                        </div>
+                        <div id="price">
+                            <h6>$8.00</h6>
+                        </div>
+                    </section> 
+                    <!-- item 16 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#16</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Deep Fried Chicken Thigh Burger</h6>
+                            <p>chicken thigh, chopped carrot, onion gherkin, tomatoes, pickles and French Fries</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section> 
+                    <!-- item 17 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#17</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Cheese Burger with Fries</h6>
+                            <p>...</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section> 
+                    <!-- item 18 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#18</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Club House Sandwich with Fries</h6>
+                            <p>chicken breast, ham, bacon, cheddar cheese served with fried potato chips</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section>
+                    <h4>CURRY RICE, FRIED RICE,
+                        RICE BOWL</h4>
+                    <img src="images/curry.jpg">
+                    <!-- item 19 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#19</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Curry Rice & Miso Soup </h6>
+                            <p>( beef / pork / chicken / seafood )
+                                potato, carrot, onion, and curry paste with steamed rice</p>
+                        </div>
+                        <div id="price">
+                            <h6>$9.00</h6>
+                        </div>
+                    </section> 
+                    <!-- item 20 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#20</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Cutlet Curry Rice & Miso Soup</h6>
+                            <p>( beef / pork / chicken / seafood )	
+                                cutlet, potato, carrot, onion, and curry paste with steamed rice</p>
+                        </div>
+                        <div id="price">
+                            <h6>$14.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 21 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#21</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Oyako Don & Miso Soup</h6>
+                            <p>chicken and egg rice bowl</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section> 
+                    <!-- item 22 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#22</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Pork Cutlet Don & Miso Soup	</h6>
+                            <p>chicken cutlet and egg rice bowl</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 23 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#23</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Chicken Cutlet Don & Miso Soup</h6>
+                            <p>chicken cutlet and egg rice bowl</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 24 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#24</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Bi Bim Bab</h6>
+                            <p>steamed rice with sauteed minced beef, vegetable fried egg in stone bowl served with chili paste and soup</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section> 
+                     <!-- item 25 -->
+                     <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#25</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Fried Rice<br>(beef / pork / chicken / seafood)</h6>
+                            <p>fried rice with choice of pork , beef, chicken, or vegetables pickles, red cut chili, soya sauce </p>
+                        </div>
+                        <div id="price">
+                            <h6>$8.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 26 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#26</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Gim Bab	</h6>
+                            <p>roll of rice sesame oil flavor with beef, egg, cucumber and carrot</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section>
+                     <!-- item 27 -->
+                     <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#27</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Traditional Khmer Beef Loklak</h6>
+                            <p>sauteed marinated local beef tenderloin cube with tomato and onion served with steamed rice topped with fried egg </p>
+                        </div>
+                        <div id="price">
+                            <h6>$9.00</h6>
+                        </div>
+                    </section>
+                    <h4>CUTLET</h4>
+                    <img src="images/tonkatsu.jpg">
+                    <!-- item 28 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#28</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Pork Cutlet, Steamed Rice & Miso Soup</h6>
+                            <p>...</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section>
+                     <!-- item 29 -->
+                     <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#29</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Pork Cutlet, Steamed Rice & Miso SoupChicken Cutlet, Steamed Rice & Miso Soup</h6>
+                            <p>...</p>
+                        </div>
+                        <div id="price">
+                            <h6>$10.00</h6>
+                        </div>
+                    </section>
+                    <h4>MAIN DISH</h4>
+                    <img src="images/bokum.JPG">
+                    <!-- item 30 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#30</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Jeyuk Bokkum</h6>
+                            <p>stir- fried marinated pork and vegetables with steamed rice</p>
+                        </div>
+                        <div id="price">
+                            <h6>$12.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 31 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#31</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Bossam</h6>
+                            <p>boiled pork belly wrapped with lettuce, kimchi, radish salad, and seasoning bean paste sauce or salty shrimp sauce</p>
+                        </div>
+                        <div id="price">
+                            <h6>$15.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 32 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#32</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Grilled Salmon Steak</h6>
+                            <p>...</p>
+                        </div>
+                        <div id="price">
+                            <h6>$22.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 33 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#33</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Grilled Beef Ribeye Steak</h6>
+                            <p>...</p>
+                        </div>
+                        <div id="price">
+                            <h6>$28.00</h6>
+                        </div>
+                    </section>
+                    <h4>DESSERT</h4>
+                    <img src="images/vanilla.jpg">
+                    <!-- item 34 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#34</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Fresh Fruit Platter</h6>
+                            <p>assorted fresh seasonal fruits</p>
+                        </div>
+                        <div id="price">
+                            <h6>$5.00</h6>
+                        </div>
+                    </section>
+                    <!-- item 35 -->
+                    <section class="menu-box">
+                        <div id="item-number">
+                            <h5>#35</h5>
+                        </div>
+                        <div id="item-name">
+                            <h6>Ice Cream</h6>
+                            <p>Vanilla, Chocolate, Matcha</p>
+                        </div>
+                        <div id="price">
+                            <h6>$5.00</h6>
+                        </div>
+                    </section>
+        </section>
     </main>
     <footer>
         <div class="contact-icons">
@@ -53,6 +1044,5 @@
             <p>©2024 All Rights Reserved</p>
         </div>
     </footer>
-    <script src="scripts/hotel.js"></script>
 </body>
 </html>
