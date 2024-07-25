@@ -119,7 +119,20 @@ body {
     margin: auto;
     height: 50vh;
 }
+.body h1{
+    text-align: center;
+    color: white;
+}
 .background-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    z-index: -1;
+}
+#background-video {
     position: fixed;
     top: 0;
     left: 0;
@@ -128,7 +141,6 @@ body {
     object-fit: cover;
     z-index: -1;
 }
-
 .body h6{
     text-align: center;
     font-size: 15pt;
@@ -244,7 +256,11 @@ body {
     height: 70vh;
 }
 .introduction{
-    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+    padding: 50px;
 }
 .Home video{
     width: 100%;
