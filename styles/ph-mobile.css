@@ -86,6 +86,7 @@ header {
     max-width: 100%;
     padding: 30px;
     margin: 0;
+    background-color: transparent;
 }
 header h1 {
     display: flex;
