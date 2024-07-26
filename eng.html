@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/ph-mobile.css">
 <!-- script -->
     <script src="scripts/ph.js"></script>
-    <script src="scripts/dining.js"></script>
+
 </head>
 <body>
     <div class="body">
@@ -527,12 +527,32 @@
             </div>
 <!-- DINING MENU -->
             <div id="Dining" class="tabcontent">
-               <h3>All Day Dining Menu</h3>
+                <h3>Join Us in Our Culinary Journey </h3>
                 <!-- item 1 -->
-                <div class="menu-container">
-                    <h4>APPETIZERS & SNACKS</h4>
+                <div class="dining-buttons">
+                    <button class="menuoptions" onclick="openTab(event, 'Breakfast')">BREAKFAST</button>
+                    <button class="menuoptions" onclick="openTab(event, 'MainMenu')">MAIN MENU</button>
+                    <button class="menuoptions" onclick="openTab(event, 'Drinks')">DRINKS</button>
+                    <button class="menuoptions" onclick="openTab(event, 'Specials')">SPECIALS</button>
+                </div>
+            <!-- breakfast -->
+                <div id="Breakfast" class="menucontent">
+                    <p style="text-align: center;">✰ Breakfast is served from 7:00AM to 11:00AM.</p>
+                    <div class="box-container">
+                        <section style="flex-direction: column; padding: 150px 0;" class="box">
+                            <h2 style="text-align: center;">Work on progress...</h2>
+                            <img style="display: flex; max-width: 100%; margin:auto; justify-content: center; align-items: center;
+                            align-content: center; padding:0;"src="icons/samurai.gif">
+                        </section>
+                    </div>
+                </div>
+            <!-- menu -->
+                <div id="MainMenu" class="menucontent">
+                    <h3>All-Day Menu</h3>
+                    <div class="menucontainer">
+                        <h4>APPETIZERS & SNACKS</h4>
                     <img src="images/caesar salad.jpg">
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#01</h5>
                         </div>
@@ -545,7 +565,7 @@
                         </div>
                     </section>
                     <!-- item 2 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#02</h5>
                         </div>
@@ -558,7 +578,7 @@
                         </div>
                     </section>
                     <!-- item 3 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#03</h5>
                         </div>
@@ -574,7 +594,7 @@
                     <h4>SOUP</h4>
                     <!-- item 4 -->
                     <img src="images/jjigae.JPG">
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#04</h5>
                         </div>
@@ -588,7 +608,7 @@
                         </div>
                     </section> 
                     <!-- item 5 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#05</h5>
                         </div>
@@ -602,7 +622,7 @@
                         </div>
                     </section>  
                     <!-- item 6 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#06</h5>
                         </div>
@@ -615,7 +635,7 @@
                         </div>
                     </section> 
                     <!-- item 7 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#07</h5>
                         </div>
@@ -630,7 +650,7 @@
                     <h4>PASTA & NOODLES</h4>
                     <img src="images/carbonara.jpg">
                     <!-- item 8 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#08</h5>
                         </div>
@@ -643,7 +663,7 @@
                         </div>
                     </section> 
                     <!-- item 9 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#09</h5>
                         </div>
@@ -657,7 +677,7 @@
                         </div>
                     </section> 
                     <!-- item 10 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#10</h5>
                         </div>
@@ -670,7 +690,7 @@
                         </div>
                     </section>
                      <!-- item 11 -->
-                     <section class="menu-box">
+                     <section class="menubox">
                         <div id="item-number">
                             <h5>#11</h5>
                         </div>
@@ -683,7 +703,7 @@
                         </div>
                     </section>
                     <!-- item 12 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#12</h5>
                         </div>
@@ -696,7 +716,7 @@
                         </div>
                     </section>   
                     <!-- item 13 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#13</h5>
                         </div>
@@ -709,7 +729,7 @@
                         </div>
                     </section> 
                     <!-- item 14 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#14</h5>
                         </div>
@@ -724,7 +744,7 @@
                     <h4>BURGER & SANDWICH</h4>
                     <img src="images/burger.jpg">
                     <!-- item 15 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#14</h5>
                         </div>
@@ -737,7 +757,7 @@
                         </div>
                     </section> 
                     <!-- item 16 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#16</h5>
                         </div>
@@ -750,7 +770,7 @@
                         </div>
                     </section> 
                     <!-- item 17 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#17</h5>
                         </div>
@@ -763,7 +783,7 @@
                         </div>
                     </section> 
                     <!-- item 18 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#18</h5>
                         </div>
@@ -779,7 +799,7 @@
                         RICE BOWL</h4>
                     <img src="images/curry.jpg">
                     <!-- item 19 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#19</h5>
                         </div>
@@ -793,7 +813,7 @@
                         </div>
                     </section> 
                     <!-- item 20 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#20</h5>
                         </div>
@@ -807,7 +827,7 @@
                         </div>
                     </section>
                     <!-- item 21 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#21</h5>
                         </div>
@@ -820,7 +840,7 @@
                         </div>
                     </section> 
                     <!-- item 22 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#22</h5>
                         </div>
@@ -833,7 +853,7 @@
                         </div>
                     </section>
                     <!-- item 23 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#23</h5>
                         </div>
@@ -846,7 +866,7 @@
                         </div>
                     </section>
                     <!-- item 24 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#24</h5>
                         </div>
@@ -859,7 +879,7 @@
                         </div>
                     </section> 
                      <!-- item 25 -->
-                     <section class="menu-box">
+                     <section class="menubox">
                         <div id="item-number">
                             <h5>#25</h5>
                         </div>
@@ -872,7 +892,7 @@
                         </div>
                     </section>
                     <!-- item 26 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#26</h5>
                         </div>
@@ -885,7 +905,7 @@
                         </div>
                     </section>
                      <!-- item 27 -->
-                     <section class="menu-box">
+                     <section class="menubox">
                         <div id="item-number">
                             <h5>#27</h5>
                         </div>
@@ -900,7 +920,7 @@
                     <h4>CUTLET</h4>
                     <img src="images/tonkatsu.jpg">
                     <!-- item 28 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#28</h5>
                         </div>
@@ -913,7 +933,7 @@
                         </div>
                     </section>
                      <!-- item 29 -->
-                     <section class="menu-box">
+                     <section class="menubox">
                         <div id="item-number">
                             <h5>#29</h5>
                         </div>
@@ -928,7 +948,7 @@
                     <h4>MAIN DISH</h4>
                     <img src="images/bokum.JPG">
                     <!-- item 30 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#30</h5>
                         </div>
@@ -941,7 +961,7 @@
                         </div>
                     </section>
                     <!-- item 31 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#31</h5>
                         </div>
@@ -967,7 +987,7 @@
                         </div>
                     </section>
                     <!-- item 33 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#33</h5>
                         </div>
@@ -982,7 +1002,7 @@
                     <h4>DESSERT</h4>
                     <img src="images/vanilla.jpg">
                     <!-- item 34 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#34</h5>
                         </div>
@@ -995,7 +1015,7 @@
                         </div>
                     </section>
                     <!-- item 35 -->
-                    <section class="menu-box">
+                    <section class="menubox">
                         <div id="item-number">
                             <h5>#35</h5>
                         </div>
@@ -1007,6 +1027,30 @@
                             <h6>$5.00</h6>
                         </div>
                     </section>
+                </div>
+            </div>
+            <!-- drinks-->
+            <div id="Drinks" class="menucontent">
+                <div class="box-container">
+                    <section style="flex-direction: column; padding: 150px 0;" class="box">
+                        <h2 style="text-align: center;">Work on progress...</h2>
+                        <img style="display: flex; max-width: 100%; margin:auto; justify-content: center; align-items: center;
+                        align-content: center; padding:0;"src="icons/samurai.gif">
+                    </section>
+                </div>
+            </div>
+            <!-- specials -->
+            <div id="Specials" class="menucontent">
+                <p style="text-align: center;">No Specials This Time.</p>
+                <div class="box-container">
+                    <section style="flex-direction: column; padding: 150px 0;" class="box">
+                        <h2 style="text-align: center;">Work on progress...</h2>
+                        <img style="display: flex; max-width: 100%; margin:auto; justify-content: center; align-items: center;
+                        align-content: center; padding:0;"src="icons/samurai.gif">
+                    </section>
+                </div>
+            </div>
+<!-- ---------------------------------------------------------- -->
         </section>
     </main>
     <footer>
