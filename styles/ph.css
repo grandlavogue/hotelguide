@@ -286,10 +286,6 @@ main{
     border: 1pt #000000 solid;
     
 }
-.menuoptions img{
-    width:50px;
-
-
 .menuoptions:hover{
     scale: 1.1;
 }
