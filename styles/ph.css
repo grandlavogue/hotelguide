@@ -54,8 +54,6 @@ p {
 .languagemenu {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    margin: 0;
     max-width: 100%;
 }
 
@@ -155,7 +153,10 @@ main{
     display: flex;
     flex-direction: row;
     padding:0;
-    margin:0;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 .tabshere{
     max-width: 20%;
@@ -169,6 +170,7 @@ main{
     align-content: center;
     width: 100%;
     overflow:hidden;
+    margin:auto;
 }
 .tablinks {
     color: #ffffff;
@@ -176,12 +178,10 @@ main{
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 30px;
+    padding: 0;
     margin:auto;
     transition: 0.3s;
     background-color: transparent;
-    width: 200px;
-    height: 20px;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -222,6 +222,7 @@ main{
     flex-wrap: wrap;
     margin: auto;
     background-color: white;
+    width: 80%;
 }
 
 .box {
