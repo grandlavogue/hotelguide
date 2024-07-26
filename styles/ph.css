@@ -210,6 +210,7 @@ main{
 .tabcontent h3 {
     font-size: 20pt;
     color:#b47c56;
+    text-align: center;
 }
 .tabcontent h4{
     font-size:16pt;
@@ -277,12 +278,16 @@ main{
     align-items: center;
     align-content: center;
     margin: auto;
-    padding: 20px 0;
-    background-color:#405f96;
-    column-gap: 10px;
+    padding: 20px 20px;
+    column-gap: 20px;
 }
 .menuoptions{
-    background-color: #b47c56;
+    background-color: transparent;
+    border: 1pt #000000 solid;
+    
+}
+.menuoptions:hover{
+    scale: 1.1;
 }
 /* dining tabs */
 .menucontent {
