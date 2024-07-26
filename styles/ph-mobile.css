@@ -266,7 +266,9 @@ body {
     background-color: transparent;
     border: 1pt rgb(235, 235, 235) solid;
 }
-
+.menuoptions img{
+    width: 30px;
+}
 /* end of dining tabs */
 .menucontainer {
     display: flex;
