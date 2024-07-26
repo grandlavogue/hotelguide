@@ -246,17 +246,39 @@ body {
     width:100%;
 }
 /* dining menu */
-.menu-container {
+.dining-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    padding: 20px 0;
+    column-gap: 10px;
+}
+.dining-buttons img{
+    width: 30px;
+}
+/* dining tabs */
+
+.menuoptions{
+    background-color: transparent;
+    border: 1pt rgb(235, 235, 235) solid;
+}
+
+/* end of dining tabs */
+.menucontainer {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     padding:10px;
     margin:0;
 }
-.menu-container img{
+.menucontainer img{
     width: 100%;
 }
-.menu-box {
+.menubox {
     display: flex;
     max-width: 100%;
     column-gap: 20px;
