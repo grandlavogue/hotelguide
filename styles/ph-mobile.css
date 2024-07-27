@@ -270,6 +270,9 @@ body {
     width: 30px;
 }
 /* end of dining tabs */
+.menucontent p {
+    font-size: 12pt;
+}
 .menucontainer {
     display: flex;
     flex-direction: column;
