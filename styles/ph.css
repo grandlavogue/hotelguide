@@ -317,6 +317,9 @@ main{
     flex-direction: row;
     padding: 10px;
 }
+.box-container img{
+    width:100%;
+}
 #item-number {
     width: 10%;
 }
