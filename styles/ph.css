@@ -282,6 +282,14 @@ main{
     padding: 20px 20px;
     column-gap: 20px;
 }
+#Specials{
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+}
+#Specials p{
+    text-align: center;
+}
 .menuoptions{
     background-color: transparent;
     border: 1pt #000000 solid;
