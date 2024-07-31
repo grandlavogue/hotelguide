@@ -305,6 +305,9 @@ main{
     display: flex;
     background-color: #ffffff;
 }
+.menucontent h3{
+    padding-top: 20px;
+}
 
 /* end of dining tabs */
 .menucontainer {
