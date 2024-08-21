@@ -305,7 +305,7 @@ main{
     height: auto;
 }
 .calltoorder:hover{
-    scale:1.2;
+    background-color: #b47c56;
 }
 #Specials{
     text-align: center;
