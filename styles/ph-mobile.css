@@ -268,7 +268,7 @@ body {
     align-content: flex-start; /* Align to the top-left */
     position: absolute;
     bottom: 80px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
+    right: 0; /* Adjust as needed */
 }
 .calltoorder a{
     color: #ffffff;
