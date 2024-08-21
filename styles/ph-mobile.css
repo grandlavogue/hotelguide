@@ -260,6 +260,27 @@ body {
 .dining-buttons img{
     width: 30px;
 }
+.calltoorder{
+    display: block;
+    padding: 10px;
+    justify-content: flex-start; /* Align to the top-left */
+    align-items: flex-start; /* Align to the top-left */
+    align-content: flex-start; /* Align to the top-left */
+    position: absolute;
+    bottom: 100px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+.calltoorder a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.calltoorder img{
+    width: 30px;
+    height: auto;
+}
+.calltoorder:hover{
+    scale:1.2;
+}
 /* dining tabs */
 
 .menuoptions{
