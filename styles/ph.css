@@ -317,7 +317,7 @@ main{
 }
 .menuoptions{
     background-color: transparent;
-    border: 1pt #000000 solid;
+    border: none;
 }
 
 .menuoptions img{
