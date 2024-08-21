@@ -282,6 +282,31 @@ main{
     padding: 20px 20px;
     column-gap: 20px;
 }
+.calltoorder{
+    display: block;
+    background: #415a81;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    justify-content: flex-start; /* Align to the top-left */
+    align-items: flex-start; /* Align to the top-left */
+    align-content: flex-start; /* Align to the top-left */
+    position: absolute;
+    bottom: -300px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+.calltoorder a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.calltoorder img{
+    width: 50px;
+    height: auto;
+}
+.calltoorder:hover{
+    scale:1.2;
+}
 #Specials{
     text-align: center;
     align-items: center;
@@ -294,6 +319,7 @@ main{
     background-color: transparent;
     border: 1pt #000000 solid;
 }
+
 .menuoptions img{
     width: 50px;
 }
