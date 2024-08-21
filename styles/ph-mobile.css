@@ -267,7 +267,7 @@ body {
     align-items: flex-start; /* Align to the top-left */
     align-content: flex-start; /* Align to the top-left */
     position: absolute;
-    bottom: 80px; /* Adjust as needed */
+    bottom: 60px; /* Adjust as needed */
     right: 0; /* Adjust as needed */
 }
 .calltoorder a{
