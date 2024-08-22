@@ -268,8 +268,8 @@
         justify-content: flex-start; /* Align to the top-left */
         align-items: flex-start; /* Align to the top-left */
         align-content: flex-start; /* Align to the top-left */
-        position: absolute;
-        bottom: 10px; /* Adjust as needed */
+        position: fixed;
+        bottom: 200px;
         right: 0; /* Adjust as needed */
     }
     .calltoorder a{
