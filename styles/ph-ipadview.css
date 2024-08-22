@@ -1,0 +1,372 @@
+@media (max-width:1024px){
+    .home-logo{
+        display: block;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: flex-end;
+        position: absolute;
+        margin-top: 20px;
+        top: 10px;
+        right: 20px;
+        outline: none;
+    }
+    .home-logo img{
+        padding: 0;
+        width:80px;
+    }
+    /* Language Menu */
+    .languagemenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        padding: 50px 0;
+        position: fixed;
+        z-index: 1000;
+        
+    }
+    
+    .menu-toggle {
+        display: block;
+        background: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        margin-top: 20px;
+        justify-content: flex-start; /* Align to the top-left */
+        align-items: flex-start; /* Align to the top-left */
+        align-content: flex-start; /* Align to the top-left */
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        left: 20px; /* Adjust as needed */
+    }
+    
+    .languagemenu.open .menu-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: flex-start;
+        align-content: flex-start; 
+        margin-top: 60px;
+    }
+    
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        background-color: transparent;
+    }
+    
+    .menu-links a {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+        font-family: "Roboto", sans-serif;
+        font-size: 13pt;
+        background:#ffffff;
+        width: 100px;
+        height: 20px;
+        text-decoration: none;
+        border: 1pt #b47c56 solid;
+        color:#b47c56;
+    }
+    
+    .menu-links a:hover {
+        color: #ffffff;
+        background-color:rgb(72, 86, 114);
+        border: 1pt rgb(72, 86, 114) solid;
+    }
+    
+    /* header */
+    header {
+        display: flex;
+        max-width: 100%;
+        padding: 30px;
+        margin: 0;
+        background-color: #3c556d;
+    }
+    header h1 {
+        display: flex;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+        font-size: 20pt;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .body {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        height: 50vh;
+    }
+    .background-photo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .body h6 {
+        display: none;
+        text-align: center;
+        font-size: 12pt;
+        padding: 30px 20px;
+        margin: 0;
+    }
+    
+    .guide {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+    .tabshere {
+        max-width: 25%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;    
+        padding: 10px;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: flex-start;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+    .tablinks {
+        color: #ffffff;
+        font-size: 16pt;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+        margin: auto;
+        transition: 0.3s;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        text-align: left;
+    }
+    
+    .tablinks:hover {
+        text-decoration: overline;
+    }
+    
+    .tablinks.active {
+        text-decoration: overline;
+    }
+    
+    .tabcontent {
+        display: none;
+        padding: 10px;
+        margin: 0;
+        height: calc(70vh - 100px);
+        overflow-y: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .tabcontent h3 {
+        font-size: 16pt;
+    }
+    
+    /* Box styling for content sections */
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    
+    .box {
+        display: flex;
+        max-width: 100%;
+        column-gap: 0;
+        flex-direction: column;
+        flex: 1 1 calc(70vh - 20px); 
+        padding: 20px;
+        overflow-y: auto;
+        margin:auto;
+    }
+    
+    .box img {
+        max-width: 30px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    
+    .box p { 
+        font-size: 12pt;
+        line-height: 2;
+        text-align: left;
+    }
+    #Cover,
+    #StayGuide,
+    #Regulation,
+    #FloorGuide,
+    #RoomServices,
+    #Safety,
+    #Rules,
+    #Dining{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 80%;
+        height: 70vh;
+    }
+    .introduction{
+        height: 70vh;
+        padding: 50px 0;
+    }
+    
+    .introduction h2{
+        font-size: 13pt;
+    }
+    .introduction p{
+        font-size: 13pt;
+        line-height: 150%;
+    }
+    .Home video{
+        width:100%;
+    }
+    /* dining menu */
+    .dining-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        padding: 20px 0;
+        column-gap: 10px;
+    }
+    .dining-buttons img{
+        width: 30px;
+    }
+    .calltoorder{
+        display: block;
+        padding: 10px;
+        justify-content: flex-start; /* Align to the top-left */
+        align-items: flex-start; /* Align to the top-left */
+        align-content: flex-start; /* Align to the top-left */
+        position: absolute;
+        bottom: -250px; /* Adjust as needed */
+        right: 0; /* Adjust as needed */
+    }
+    .calltoorder a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .calltoorder img{
+        width: 50px;
+        height: auto;
+    }
+    /* dining tabs */
+    
+    .menuoptions{
+        background-color: transparent;
+        border: none;
+    }
+    .menuoptions img{
+        width: 50px;
+    }
+    /* end of dining tabs */
+    .menucontent p {
+        font-size: 13pt;
+    }
+    .menucontainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        padding:10px;
+        margin:0;
+    }
+    .menucontainer img{
+        width: 100%;
+    }
+    .menubox {
+        display: flex;
+        max-width: 100%;
+        column-gap: 20px;
+        flex-direction: column;
+        padding: 10px;
+    }
+    #item-number {
+        width: 5%;
+    }
+    #item-name {
+        width: 85%;
+    }
+    #price {
+        width: 10%;
+    }
+    #item-number h5{
+        font-size: 14pt;
+        padding:0;
+        margin:0;
+    }
+    #item-name h6{
+        font-size: 13pt;
+        padding:0;
+        margin:0;
+    }
+    #item-name p{
+        font-size: 11pt;
+        padding:0;
+        margin:0;
+    }
+    #price h6{
+        font-size: 13pt;
+        padding:0;
+        margin:0;
+    }
+    
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        padding: 30px;
+    
+     }
+     .contact-icons a{
+         width: 100%;
+         padding: 10px;
+     }
+    
+     .copyright h6{
+         font-size: 12pt;
+         text-align: center;
+         color: #b47c56;
+         padding:5px;
+         margin:0;
+     }
+     .copyright p{
+         font-size: 10;
+         text-align: center;
+         color: #b47c56;
+         padding-top:20px;
+         margin:0;
+     }
+    }
+    
