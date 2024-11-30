@@ -25,3 +25,17 @@ main a img{
     justify-content: center;
     align-items: center;
 }
+
+.copy-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color:transparent;
+    border: 1pt solid #ffcd00;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .copy-button:hover {
+    background-color: #ffd633;
+  }
