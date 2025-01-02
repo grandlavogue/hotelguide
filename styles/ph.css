@@ -70,7 +70,7 @@ p {
     flex-direction: row;
     list-style-type: none;
     padding: 20px;
-    background: #69113a;
+    background: #b3879b;
     column-gap: 20px;
     max-width: 100%;
     justify-content: space-between;
@@ -90,7 +90,7 @@ p {
 /* header */
 header{
     /* background-color: #3c556d; */
-    background-color: #751140;
+    background-color: #bb94a6;
     display: flex;
     max-width: 100%;
     padding:50px;
@@ -399,8 +399,7 @@ footer{
     align-content: center;
     margin: auto;
     padding: 50px;
-    /* background-color: #212b35; */
-    background: linear-gradient(to top, #000000, #002666);
+    background-color: #354c63;
  }
  .contact-icons a{
      width: 100%;
