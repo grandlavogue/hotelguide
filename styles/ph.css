@@ -70,7 +70,7 @@ p {
     flex-direction: row;
     list-style-type: none;
     padding: 20px;
-    background-color: #a08f84;
+    background: none;
     column-gap: 20px;
     max-width: 100%;
     justify-content: space-between;
@@ -89,7 +89,8 @@ p {
 }
 /* header */
 header{
-    background-color: #3c556d;
+    /* background-color: #3c556d; */
+    background: linear-gradient(to right, #69113a, #b10354);
     display: flex;
     max-width: 100%;
     padding:50px;
@@ -164,7 +165,9 @@ main{
     display: flex;
     flex-direction: column;    
     padding: 20px;
-    background-color: #6a7c9a;
+    /* background-color: #6a7c9a; */
+    background: linear-gradient(to top,
+    rgb(90, 0, 94) 30%,rgb(163, 0, 95) 90%);
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -397,7 +400,8 @@ footer{
     align-content: center;
     margin: auto;
     padding: 50px;
-    background-color: #212b35;
+    /* background-color: #212b35; */
+    background: linear-gradient(to top, #000000, #002666);
  }
  .contact-icons a{
      width: 100%;
