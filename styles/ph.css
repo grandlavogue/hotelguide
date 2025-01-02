@@ -59,7 +59,7 @@ p {
 
 .menu-toggle {
     display: none;
-    color:#0f3f54;
+    color:#ffffff;
     padding: 10px;
     font-size: 20px;
     border: none;
@@ -70,7 +70,7 @@ p {
     flex-direction: row;
     list-style-type: none;
     padding: 20px;
-    background: none;
+    background: #69113a;
     column-gap: 20px;
     max-width: 100%;
     justify-content: space-between;
@@ -90,7 +90,7 @@ p {
 /* header */
 header{
     /* background-color: #3c556d; */
-    background: linear-gradient(to right, #69113a, #b10354);
+    background-color: #751140;
     display: flex;
     max-width: 100%;
     padding:50px;
@@ -166,8 +166,7 @@ main{
     flex-direction: column;    
     padding: 20px;
     /* background-color: #6a7c9a; */
-    background: linear-gradient(to top,
-    rgb(90, 0, 94) 30%,rgb(163, 0, 95) 90%);
+    background-color: #803d7c;
     justify-content: center;
     align-items: center;
     align-content: center;
