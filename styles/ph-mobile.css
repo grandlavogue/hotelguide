@@ -55,7 +55,7 @@
 .menu-links {
     display: none;
     flex-direction: column;
-    background-color: transparent;
+    background-color: none;
 }
 
 .menu-links a {
@@ -76,8 +76,10 @@
 
 .menu-links a:hover {
     color: #ffffff;
-    background-color:rgb(72, 86, 114);
-    border: 1pt rgb(72, 86, 114) solid;
+    /* background-color:rgb(72, 86, 114);*/
+    border: 1pt rgb(72, 86, 114) solid; 
+    background: linear-gradient(to right, #180083, 
+    #770150);
 }
 
 /* header */
