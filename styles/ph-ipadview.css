@@ -66,18 +66,9 @@
         margin: 10px;
         font-family: "Roboto", sans-serif;
         font-size: 13pt;
-        background:#ffffff;
         width: 100px;
         height: 20px;
         text-decoration: none;
-        border: 1pt #b47c56 solid;
-        color:#b47c56;
-    }
-    
-    .menu-links a:hover {
-        color: #ffffff;
-        background-color:rgb(72, 86, 114);
-        border: 1pt rgb(72, 86, 114) solid;
     }
     
     /* header */
@@ -86,7 +77,6 @@
         max-width: 100%;
         padding: 30px;
         margin: 0;
-        background-color: #3c556d;
     }
     header h1 {
         display: flex;
@@ -147,7 +137,6 @@
         margin: 0;
     }
     .tablinks {
-        color: #ffffff;
         font-size: 16pt;
         border: none;
         outline: none;
@@ -274,7 +263,6 @@
         right: 0; /* Adjust as needed */
     }
     .calltoorder a{
-        color: #ffffff;
         text-decoration: none;
     }
     .calltoorder img{
@@ -360,14 +348,12 @@
      .copyright h6{
          font-size: 12pt;
          text-align: center;
-         color: #b47c56;
          padding:5px;
          margin:0;
      }
      .copyright p{
          font-size: 10;
          text-align: center;
-         color: #b47c56;
          padding-top:20px;
          margin:0;
      }
