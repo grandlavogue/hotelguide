@@ -239,15 +239,9 @@
         padding: 100px 0;
     }
     
-    .introduction h2{
-        font-size: 13pt;
-    }
     .introduction p{
-        font-size: 13pt;
+        font-size: small;
         line-height: 150%;
-    }
-    .Home video{
-        width:100%;
     }
     /* dining menu */
     .dining-buttons{
