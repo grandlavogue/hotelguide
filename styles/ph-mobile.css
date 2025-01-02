@@ -146,7 +146,7 @@ body {
 }
 .tablinks {
     color: #ffffff;
-    font-size: 10pt;
+    font-size: small;
     border: none;
     outline: none;
     cursor: pointer;
