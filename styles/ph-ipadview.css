@@ -76,8 +76,9 @@
     
     .menu-links a:hover {
         color: #ffffff;
-        background-color:rgb(72, 86, 114);
+        /* background-color:rgb(72, 86, 114);*/
         border: 1pt rgb(72, 86, 114) solid;
+        background: linear-gradient(to right, #180083, #770150);
     }
     
     /* header */
@@ -86,7 +87,6 @@
         max-width: 100%;
         padding: 30px;
         margin: 0;
-        background-color: #3c556d;
     }
     header h1 {
         display: flex;
